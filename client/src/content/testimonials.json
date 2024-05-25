@@ -1,0 +1,34 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Jane Doe",
+      "title": "Parent",
+      "testimonial": "CodeKids has been an incredible experience for my child. The instructors are knowledgeable and engaging, and my child has learned so much about coding and problem-solving."
+    },
+    {
+      "id": 2,
+      "name": "John Smith",
+      "title": "Student",
+      "testimonial": "I love the projects we work on at CodeKids! They're fun and challenging, and I've learned a lot about different coding languages and how to think like a programmer."
+    },
+    {
+      "id": 3,
+      "name": "Sarah Johnson",
+      "title": "Teacher",
+      "testimonial": "The curriculum at CodeKids is top-notch. It's well-structured and provides a great balance of theory and hands-on practice. The students are always excited to learn and create new things."
+    },
+    {
+      "id": 4,
+      "name": "Michael Brown",
+      "title": "Parent",
+      "testimonial": "My daughter has gained so much confidence since joining CodeKids. She loves the supportive environment and the chance to work on real coding projects with her peers."
+    },
+    {
+      "id": 5,
+      "name": "Emily Wilson",
+      "title": "Student",
+      "testimonial": "CodeKids is amazing! The teachers are really helpful, and I've learned so many cool things about coding. I can't wait to come back for more classes."
+    }
+  ]
+}

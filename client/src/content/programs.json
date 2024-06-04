@@ -2,9 +2,9 @@
   "programs": [
     {
       "id": 1,
-      "name": "Python Coding",
+      "title": "Python Coding",
       "description": "Learn the world's fastest growing and most popular text-based programming language used by actual code developers and computer scientists in a fun project-based manner!",
-      "coverImage": "http://placehold.it/350x150",
+      "coverImage": "src/assets/program_python.jpg",
       "details": {
         "description": "This course is designed for late primary to secondary aged students who are looking to learn to code using a proper “grown-up” programming language. Learn to code in Python and develop fun games. Python is particularly suitable for this age group because it is concise and easy to read and has multiple applications in the real world (web development, app development and other scientific uses such as data science). This camp is a great introduction to both fundamental programming concepts and the Python programming language. By the end, the students will be comfortable programming in Python and taking their newly acquired programming skills home",
         "take_aways": [
@@ -81,9 +81,9 @@
     },
     {
       "id": 2,
-      "name": "Web Development",
+      "title": "Web Development",
       "description": "Dive into the world of web development and learn how to create beautiful and responsive websites using HTML, CSS, and JavaScript.",
-      "coverImage": "http://placehold.it/350x150",
+      "coverImage": "src/assets/program_webdev.jpg",
       "details": {
         "description": "This course is perfect for students who are interested in building and designing websites. They will learn the basics of HTML for structure, CSS for styling, and JavaScript for interactivity. By the end of the course, students will have a fully functional website that they can showcase.",
         "take_aways": [
@@ -156,13 +156,13 @@
           }
         ]
       },
-      "courses": [4, 5, 6]
+      "courses": [4, 5]
     },
     {
       "id": 3,
-      "name": "Robotics",
+      "title": "Robotics",
       "description": "Explore the exciting world of robotics and learn how to build and program your own robots.",
-      "coverImage": "http://placehold.it/350x150",
+      "coverImage": "src/assets/program_robotics.jpg",
       "details": {
         "description": "This course introduces students to the fundamentals of robotics, including building robots using kits and programming them to perform tasks. Students will learn about sensors, motors, and basic electronics, and they will get hands-on experience in assembling and coding robots.",
         "take_aways": [
@@ -235,7 +235,7 @@
           }
         ]
       },
-      "courses": [7, 8, 9]
+      "courses": [6, 7, 8, 9]
     }
   ]
 }

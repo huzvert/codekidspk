@@ -23,7 +23,11 @@ export default function About() {
             and level of understanding.
           </p>
         </div>
-        <img src={hero_image} className="lg:max-w-screen-md" alt="About Us" />
+        <img
+          src={hero_image}
+          className="lg:max-w-screen-md object-cover"
+          alt="About Us"
+        />
       </section>
 
       {/* Stats */}

@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "Python Coding 1, May Half Term Mini-Camp (28th May - 31st May 2024) - AM",
-      "coverImage": "http://placehold.it/350x150",
+      "coverImage": "src/assets/course_1.png",
       "description": "The Python coding 1 course is designed for late primary to secondary aged students who are looking to learn to code using a proper “grown-up” programming language. Students will learn to code in Python and create fun games and useful applications. Python is particularly suitable for this age group because it is concise, easy to read and has multiple applications in the real world (web development, app development and other scientific uses such as data science). It is the most popular programming language in the world and is widely used by all the leading tech companies such as Google, Amazon and Facebook. This class is a great introduction to both fundamental coding concepts and the Python programming language. After this course, students will be comfortable coding in Python and have the confidence to extend their knowledge at home.",
       "take_aways": [
         "Learn Python syntax (structure)",
@@ -34,7 +34,7 @@
     {
       "id": 2,
       "title": "Python Coding 2, Summer Camp (12th June - 16th June 2024) - PM",
-      "coverImage": "http://placehold.it/350x150",
+      "coverImage": "src/assets/course_1.png",
       "description": "The Python coding 2 course is for students who have a basic understanding of Python and are looking to advance their skills. This course will cover more complex programming concepts and involve creating more sophisticated games and applications. Students will learn about object-oriented programming, working with libraries, and data handling.",
       "take_aways": [
         "Advance Python syntax and structure",
@@ -65,7 +65,7 @@
     {
       "id": 3,
       "title": "Python Coding 3, Autumn Term (1st October - 5th October 2024) - AM",
-      "coverImage": "http://placehold.it/350x150",
+      "coverImage": "src/assets/course_1.png",
       "description": "The Python coding 3 course is designed for students who have advanced Python knowledge and want to explore more complex applications and projects. This course includes topics such as advanced data structures, algorithms, and GUI development. Students will work on real-world projects to apply their skills.",
       "take_aways": [
         "Master advanced Python concepts",

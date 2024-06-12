@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Logo from '../assets/logo1.png';
 import { Button } from '@/components/ui/button';
@@ -17,15 +17,32 @@ const links = [
 function Navbar() {
   const pathname = useLocation().pathname;
   const [isOpen, setIsOpen] = useState(false);
+  const navbarRef = useRef(null);
+
+  // Close the navbar when clicking outside of it
+  useEffect(() => {
+    const handleClickOutside = event => {
+      if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   return (
     <>
-      <nav className="bg-black text-white p-4">
+      <nav ref={navbarRef} className="bg-black text-white p-4">
         <div className="flex justify-between items-center sm:mb-5">
           <Link to="/">
             <img src={Logo} className="w-[70px]" alt="CodeKids" />
           </Link>
-          <Button className="default-button hidden sm:flex">Book Now</Button>
+          <Link to="/programs" className="hidden sm:flex">
+            <Button className="default-button">Book Now</Button>
+          </Link>
 
           <FontAwesomeIcon
             icon={isOpen ? faTimes : faBars}
@@ -48,13 +65,20 @@ function Navbar() {
                   className={`relative before:bg-c_accent ${
                     pathname === link.path ? 'text-c_accent' : 'nav-link'
                   }`}
+                  onClick={() => setIsOpen(false)} // Close navbar when a link is clicked
                 >
                   {link.name}
                 </Link>
               </li>
             ))}
           </ul>
-          <Button className="default-button my-5 sm:hidden">Book Now</Button>
+          <Link
+            to="/programs"
+            className="my-5 sm:hidden"
+            onClick={() => setIsOpen(false)}
+          >
+            <Button className="default-button">Book Now</Button>
+          </Link>
         </div>
       </nav>
       <Separator className="bg-c_primary-light/70" />

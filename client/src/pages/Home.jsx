@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import MailList from '../components/MailList';
 import Footer from '../components/Footer';
 import { Button } from '@/components/ui/button';
+import { Separator } from '@/components/ui/separator';
 import hero_image from '../assets/arif-riyanto-vJP-wZ6hGBg-unsplash.jpg';
 import offering_image from '../assets/kelly-sikkema-37Gug7AWjoo-unsplash.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -13,8 +14,6 @@ import {
   faUserCog,
   faUserGroup,
   faUsers,
-  faBullseye,
-  faEye,
 } from '@fortawesome/free-solid-svg-icons';
 import {
   Carousel,
@@ -24,6 +23,7 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel';
 import Autoplay from 'embla-carousel-autoplay';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   return (
@@ -49,12 +49,14 @@ export default function Home() {
               a journey of coding and creativity.
             </p>
           </div>
-          <Button
-            variant="outline"
-            className="mt-10 sm:mb-16 py-6 md:p-7 outline-button"
-          >
-            Explore Our Programs
-          </Button>
+          <Link to="/programs">
+            <Button
+              variant="outline"
+              className="mt-10 sm:mb-16 py-6 md:p-7 outline-button"
+            >
+              Explore Our Programs
+            </Button>
+          </Link>
 
           {/* Mailing List Subscription */}
           <div className="absolute bottom-3 sm:right-0 text-white z-30">
@@ -63,40 +65,30 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ----------------- Mission & Vision -------------- */}
-      <section className="bg-c_primary-light text-center py-16 px-4">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl sm:text-6xl font-bold text-white">
-            Our Mission & Vision
+      {/* ----------------- Mission & Vision -------------- editing */}
+      <section className="relative p-0 grid md:grid-cols-[1fr_1.5fr] lg:grid-cols-2 shadow-md">
+        <div className="p-4 grid place-content-center bg-gray-50">
+          <Separator className="bg-c_primary-light max-w-16 h-1.5 mb-6 ml-1" />
+          <h2 className="text-2xl sm:text-5xl font-bold">
+            <span className="text-c_primary-light">Mission</span> <br /> and
+            Vision
           </h2>
-          <div className="mt-12 flex flex-col sm:flex-row gap-12 items-center justify-center">
-            <div className="flex flex-col items-center text-center">
-              <div className="bg-c_secondary-light p-6 rounded-full mb-6">
-                <FontAwesomeIcon
-                  icon={faBullseye}
-                  size="3x"
-                  className="text-white"
-                />
-              </div>
-              <h3 className="text-2xl sm:text-3xl font-semibold text-white mb-4">
-                Our Mission
-              </h3>
+        </div>
+
+        <div className="py-16 md:py-32 px-6 md:px-12 self-stretch bg-[#1B1B2F]">
+          <div className="flex flex-col gap-16 max-w-md mx-auto h-full justify-center items-center">
+            <div className="flex gap-8">
+              <h3 className="text-[#FBD33C]">Mission</h3>
               <p className="text-white max-w-md">
                 At CodeKids, we aim to nurture young minds with the skills and
                 knowledge needed to thrive in a digital world.
               </p>
             </div>
-            <div className="flex flex-col items-center text-center">
-              <div className="bg-c_secondary-light p-6 rounded-full mb-6">
-                <FontAwesomeIcon
-                  icon={faEye}
-                  size="3x"
-                  className="text-white"
-                />
-              </div>
-              <h3 className="text-2xl sm:text-3xl font-semibold text-white mb-4">
-                Our Vision
-              </h3>
+
+            <Separator className="bg-[#FBD33C] max-w-[80%] mx-auto" />
+
+            <div className="flex gap-8">
+              <h3 className="text-[#FBD33C]">Vision</h3>
               <p className="text-white max-w-md">
                 Our vision is to create a fun, engaging, and educational
                 environment where kids can learn to code and develop critical
@@ -182,7 +174,7 @@ export default function Home() {
         </div>
 
         {/* Content */}
-        <div className="relative z-20 text-center text-white">
+        <div className="relative z-20 text-center text-white mx-auto max-w-screen-lg">
           <h2 className="relative inline-block text-3xl sm:text-6xl">
             Our Offerings
             <span className="absolute left-1/2 transform -translate-x-1/2 bottom-[-10px] w-3/4 h-0.5 bg-c_accent"></span>
@@ -192,40 +184,31 @@ export default function Home() {
             crucial coding skills to the next generation of innovators.
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             <div className="bg-black/40 p-3 flex flex-col rounded-md shadow-md h-full">
               <div className="mb-4 self-center text-white w-24 h-24 rounded-full p-2 flex justify-center items-center">
                 <FontAwesomeIcon size="3x" icon={faChalkboardTeacher} />
               </div>
-              <h3 className="">Holiday Camps</h3>
+              <h3>Camps and Classes</h3>
               <p className="text-white flex-grow">
-                Immersive, project-based learning through full day holiday
-                camps!
+                Immersive, project-based learning through full-day holiday camps
+                and after school/weekend term time classes!
               </p>
-              <Button variant="outline" className="mt-8 outline-button">
-                Book Camps
-              </Button>
-            </div>
-
-            <div className="bg-black/40 p-3 flex flex-col rounded-md shadow-md h-full">
-              <div className="mb-4 self-center text-white w-24 h-24 rounded-full p-2 flex justify-center items-center">
-                <FontAwesomeIcon size="3x" icon={faCode} />
-              </div>
-              <h3 className="">Term Time Classes</h3>
-              <p className="text-white flex-grow">
-                After school and weekend term time classes that help you learn
-                to code!
-              </p>
-              <Button variant="outline" className="mt-8 outline-button">
-                Book Term Time Classes
-              </Button>
+              <Link to="/programs">
+                <Button
+                  variant="outline"
+                  className="mt-8 min-w-full outline-button"
+                >
+                  View Programs
+                </Button>
+              </Link>
             </div>
 
             <div className="bg-black/40 p-3 flex flex-col rounded-md shadow-md h-full">
               <div className="mb-4 self-center text-white w-24 h-24 rounded-full p-2 flex justify-center items-center">
                 <FontAwesomeIcon size="3x" icon={faUserGroup} />
               </div>
-              <h3 className="">1:1 Tutoring</h3>
+              <h3>1:1 Tutoring</h3>
               <p className="text-white flex-grow">
                 We work with your child individually to help them achieve more
                 through a targeted learning approach.
@@ -261,9 +244,11 @@ export default function Home() {
         <p className="mt-6 mb-12 max-w-3xl mx-auto">
           Join us and start your coding journey today!
         </p>
-        <Button variant="outline" className="outline-button">
-          Book a Class
-        </Button>
+        <Link to="/programs">
+          <Button variant="outline" className="outline-button">
+            Book a Class
+          </Button>
+        </Link>
       </section>
 
       {/* ----------------- Footer -------------- */}
@@ -282,7 +267,7 @@ function Testimonials() {
   }, []);
 
   return (
-    <section className="text-center space-y-12">
+    <section className="text-center space-y-12 mx-auto max-w-screen-lg">
       <h2 className="relative inline-block text-3xl sm:text-6xl">
         Our Parents and Students Say
         <span className="absolute left-1/2 transform -translate-x-1/2 bottom-[-10px] w-3/4 h-0.5 bg-c_accent"></span>

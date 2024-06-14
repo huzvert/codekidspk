@@ -95,15 +95,11 @@
     },
     {
       "id": 4,
-      "title": "Web Development 1, May Half Term Mini-Camp (28th May - 31st May 2024) - AM",
+      "title": "Scratch Beginner, May Half Term Mini-Camp (28th May - 31st May 2024) - AM",
       "coverImage": "http://placehold.it/350x150",
       "description": "The Web Development 1 course introduces students to the fundamentals of web development. Students will learn how to create websites using HTML for structure, CSS for styling, and JavaScript for interactivity. By the end of the course, students will have built their own functional website.",
       "take_aways": [
-        "Understand the basics of HTML, CSS, and JavaScript",
-        "Create and style web pages",
-        "Add interactivity to web pages using JavaScript",
-        "Develop a personal project",
-        "Gain insight into web design and user experience"
+        ""
       ],
       "timetable": "9:00 am - 12:00 pm",
       "age_requirement": "10+ years old",
@@ -126,15 +122,11 @@
     },
     {
       "id": 5,
-      "title": "Web Development 2, Summer Camp (12th June - 16th June 2024) - PM",
+      "title": "Scratch Intermediate, Summer Camp (12th June - 16th June 2024) - PM",
       "coverImage": "http://placehold.it/350x150",
       "description": "The Web Development 2 course is for students who have a basic understanding of web development and want to deepen their skills. This course covers more advanced topics such as responsive design, frameworks, and back-end development. Students will build a more complex web application by the end of the course.",
       "take_aways": [
-        "Learn advanced HTML, CSS, and JavaScript",
-        "Understand responsive design principles",
-        "Work with web development frameworks",
-        "Introduction to back-end development",
-        "Create a complex web application"
+        ""
       ],
       "timetable": "1:00 pm - 4:00 pm",
       "age_requirement": "12+ years old",
@@ -157,15 +149,11 @@
     },
     {
       "id": 6,
-      "title": "Robotics with Python, Autumn Term (1st October - 5th October 2024) - PM",
+      "title": "Scratch Advanced, Autumn Term (1st October - 5th October 2024) - PM",
       "coverImage": "http://placehold.it/350x150",
-      "description": "The Robotics with Python course combines programming with hands-on robotics. Students will learn to control robots using Python, working with sensors and actuators to create autonomous systems. This course is perfect for students interested in both coding and robotics.",
+      "description": "",
       "take_aways": [
-        "Understand the basics of robotics",
-        "Learn to program robots using Python",
-        "Work with sensors and actuators",
-        "Create autonomous robotic systems",
-        "Develop problem-solving and critical thinking skills"
+        ""
       ],
       "timetable": "1:00 pm - 4:00 pm",
       "age_requirement": "12+ years old",
@@ -188,15 +176,11 @@
     },
     {
       "id": 7,
-      "title": "Introduction to Data Science with Python, Winter Term (15th December - 20th December 2024) - AM",
+      "title": "Minecraft Beginner, Winter Term (15th December - 20th December 2024) - AM",
       "coverImage": "http://placehold.it/350x150",
       "description": "The Introduction to Data Science with Python course is designed for students interested in data analysis and machine learning. Students will learn to use Python libraries such as Pandas and Scikit-Learn to manipulate and analyze data, and build simple machine learning models.",
       "take_aways": [
-        "Learn data manipulation with Pandas",
-        "Understand data visualization techniques",
-        "Implement basic machine learning algorithms",
-        "Analyze and interpret data",
-        "Work on a data science project"
+        ""
       ],
       "timetable": "9:00 am - 12:00 pm",
       "age_requirement": "14+ years old",
@@ -219,7 +203,7 @@
     },
     {
       "id": 8,
-      "title": "Advanced Data Science with Python, Winter Term (15th December - 20th December 2024) - PM",
+      "title": "Minecraft Intermediate, Winter Term (15th December - 20th December 2024) - PM",
       "coverImage": "http://placehold.it/350x150",
       "description": "The Advanced Data Science with Python course is for students who have a solid understanding of basic data science concepts and want to delve deeper into advanced techniques. This course covers topics such as deep learning, natural language processing, and complex data visualizations.",
       "take_aways": [
@@ -228,6 +212,33 @@
         "Understand natural language processing",
         "Create complex data visualizations",
         "Work on advanced data science projects"
+      ],
+      "timetable": "1:00 pm - 4:00 pm",
+      "age_requirement": "16+ years old",
+      "what_you_need": [
+        "A laptop (Windows, Mac or Chromebook) with Python installed",
+        "Zoom installed on your laptop",
+        "A charger",
+        "A mouse (optional)",
+        "A snack and a drink"
+      ],
+      "prior_knowledge": "Basic understanding of data science and Python required.",
+      "start": "December 15, 2024 1:00 pm",
+      "end": "December 20, 2024 4:00 pm",
+      "address": "Blackheath High Senior School, Vanbrugh Park, London SE3 7AG",
+      "location": "https://www.google.com/maps/place/51%C2%B028'38.9%22N+0%C2%B000'57.8%22E/@51.4774592,0.0134715,17z/data=!3m1!4b1!4m4!3m3!8m2!3d51.4774592!4d0.0160464?entry=ttu",
+      "price": 226.0,
+      "discount": 0.0,
+      "discounted_price": 226.0,
+      "availability": 10
+    },
+    {
+      "id": 9,
+      "title": "Minecraft Advanced, Winter Term (15th December - 20th December 2024) - PM",
+      "coverImage": "http://placehold.it/350x150",
+      "description": "",
+      "take_aways": [
+        ""
       ],
       "timetable": "1:00 pm - 4:00 pm",
       "age_requirement": "16+ years old",

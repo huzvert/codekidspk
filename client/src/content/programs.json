@@ -2,38 +2,18 @@
   "programs": [
     {
       "id": 1,
-      "title": "Python Coding",
-      "description": "Learn the world's fastest growing and most popular text-based programming language used by actual code developers and computer scientists in a fun project-based manner!",
+      "title": "Python",
+      "description": "" ,
       "coverImage": "src/assets/program_python.jpg",
       "details": {
-        "description": "This course is designed for late primary to secondary aged students who are looking to learn to code using a proper “grown-up” programming language. Learn to code in Python and develop fun games. Python is particularly suitable for this age group because it is concise and easy to read and has multiple applications in the real world (web development, app development and other scientific uses such as data science). This camp is a great introduction to both fundamental programming concepts and the Python programming language. By the end, the students will be comfortable programming in Python and taking their newly acquired programming skills home",
+        "description": "",
         "take_aways": [
-          "Learn Python syntax (structure)",
-          "Use loops and conditionals (IF/THEN/ELSE)",
-          "Understand variables (number, Boolean, string)",
-          "Create and use functions",
-          "Use all of the above to make a super cool game"
+          
         ],
         "whatYouWillLearn": [
           {
-            "title": "Coding",
-            "description": "Learn to code in a fun, familiar environment"
-          },
-          {
-            "title": "Logic",
-            "description": "Increased complexity with Loops, Conditions and Variables"
-          },
-          {
-            "title": "Test and Debug",
-            "description": "using logic and systematic reasoning"
-          },
-          {
-            "title": "Creating Games",
-            "description": "Make super awesome games with Python"
-          },
-          {
-            "title": "Discover",
-            "description": "Open up a world of possibilities by tinkering your code"
+            "title": "",
+            "description": ""
           }
         ],
         "whatToBring": [
@@ -81,38 +61,18 @@
     },
     {
       "id": 2,
-      "title": "Web Development",
-      "description": "Dive into the world of web development and learn how to create beautiful and responsive websites using HTML, CSS, and JavaScript.",
+      "title": "Scratch",
+      "description": "",
       "coverImage": "src/assets/program_webdev.jpg",
       "details": {
-        "description": "This course is perfect for students who are interested in building and designing websites. They will learn the basics of HTML for structure, CSS for styling, and JavaScript for interactivity. By the end of the course, students will have a fully functional website that they can showcase.",
+        "description": "",
         "take_aways": [
-          "Understand the basics of HTML, CSS, and JavaScript",
-          "Create and style web pages",
-          "Add interactivity to web pages using JavaScript",
-          "Develop a personal project",
-          "Gain insight into web design and user experience"
+          ""
         ],
         "whatYouWillLearn": [
           {
-            "title": "HTML",
-            "description": "Learn to structure web pages with HTML"
-          },
-          {
-            "title": "CSS",
-            "description": "Style your web pages using CSS"
-          },
-          {
-            "title": "JavaScript",
-            "description": "Add interactivity to your web pages"
-          },
-          {
-            "title": "Web Design",
-            "description": "Understand the basics of web design and UX"
-          },
-          {
-            "title": "Project Development",
-            "description": "Work on a personal web development project"
+            "title": "",
+            "description": ""
           }
         ],
         "whatToBring": [
@@ -134,8 +94,7 @@
             "title": "SUITABLE FOR",
             "details": [
               "Aged 10 or above",
-              "No prior coding experience necessary",
-              "Interest in web design and development"
+              "No prior coding experience necessary"
             ]
           },
           {
@@ -156,42 +115,22 @@
           }
         ]
       },
-      "courses": [4, 5]
+      "courses": [4, 5, 6]
     },
     {
       "id": 3,
-      "title": "Robotics",
-      "description": "Explore the exciting world of robotics and learn how to build and program your own robots.",
+      "title": "Minecraft",
+      "description": "",
       "coverImage": "src/assets/program_robotics.jpg",
       "details": {
-        "description": "This course introduces students to the fundamentals of robotics, including building robots using kits and programming them to perform tasks. Students will learn about sensors, motors, and basic electronics, and they will get hands-on experience in assembling and coding robots.",
+        "description": "",
         "take_aways": [
-          "Understand the basics of robotics",
-          "Learn to build robots using kits",
-          "Program robots to perform tasks",
-          "Work with sensors and motors",
-          "Participate in a mini robotics competition"
+          ""
         ],
         "whatYouWillLearn": [
           {
-            "title": "Robotics Basics",
-            "description": "Introduction to robotics and components"
-          },
-          {
-            "title": "Building Robots",
-            "description": "Hands-on experience in assembling robots"
-          },
-          {
-            "title": "Programming",
-            "description": "Learn to program robots using block-based coding"
-          },
-          {
-            "title": "Sensors and Motors",
-            "description": "Understand how to use sensors and motors in robots"
-          },
-          {
-            "title": "Competition",
-            "description": "Participate in a mini robotics competition"
+            "title": "",
+            "description": ""
           }
         ],
         "whatToBring": [
@@ -235,7 +174,7 @@
           }
         ]
       },
-      "courses": [6, 7, 8, 9]
+      "courses": [7, 8, 9]
     }
   ]
 }

@@ -2,15 +2,11 @@
   "courses": [
     {
       "id": 1,
-      "title": "Python Coding 1, May Half Term Mini-Camp (28th May - 31st May 2024) - AM",
+      "title": "Python Level 1, May Half Term Mini-Camp (28th May - 31st May 2024) - AM",
       "coverImage": "src/assets/course_1.png",
-      "description": "The Python coding 1 course is designed for late primary to secondary aged students who are looking to learn to code using a proper “grown-up” programming language. Students will learn to code in Python and create fun games and useful applications. Python is particularly suitable for this age group because it is concise, easy to read and has multiple applications in the real world (web development, app development and other scientific uses such as data science). It is the most popular programming language in the world and is widely used by all the leading tech companies such as Google, Amazon and Facebook. This class is a great introduction to both fundamental coding concepts and the Python programming language. After this course, students will be comfortable coding in Python and have the confidence to extend their knowledge at home.",
+      "description": "Embark on your programming journey with our comprehensive Python Level 1 course, perfect for beginners. This course introduces you to Python, covering the essentials from setting up your environment to writing your first script. You'll dive into core topics such as handling user input, understanding data types, and utilizing conditionals to make decisions in your code. Explore the power of loops with for, while, and nested loops, enabling you to handle repetitive tasks efficiently. You'll also learn to work with lists, dictionaries, and tuples, mastering common operations and understanding their applications. By the end of the course, you'll be proficient in writing functions, creating reusable and modular code, and ready to tackle more advanced Python programming challenges. Join us to build a solid foundation in Python and start coding confidently!",
       "take_aways": [
-        "Learn Python syntax (structure)",
-        "Use loops and conditionals (IF/THEN/ELSE)",
-        "Understand variables (number, Boolean, string)",
-        "Create and use functions",
-        "Use all of the above to make a super cool game"
+        ""
       ],
       "timetable": "9:00 am - 12:00 pm",
       "age_requirement": "10+ years old",
@@ -21,7 +17,7 @@
         "A mouse (optional)",
         "A snack and a drink"
       ],
-      "prior_knowledge": "No prior coding experience necessary. If you have been to one of our camps before or attended a term-long Python 1 class, then we would suggest booking the Python 2 class which covers more advanced topics.",
+      "prior_knowledge": "No prior coding experience necessary.",
       "start": "May 28, 2024 9:00 am",
       "end": "May 31, 2024 12:00 pm",
       "address": "Blackheath High Senior School, Vanbrugh Park, London SE3 7AG",
@@ -33,15 +29,11 @@
     },
     {
       "id": 2,
-      "title": "Python Coding 2, Summer Camp (12th June - 16th June 2024) - PM",
+      "title": "Python Level 2, Summer Camp (12th June - 16th June 2024) - PM",
       "coverImage": "src/assets/course_1.png",
-      "description": "The Python coding 2 course is for students who have a basic understanding of Python and are looking to advance their skills. This course will cover more complex programming concepts and involve creating more sophisticated games and applications. Students will learn about object-oriented programming, working with libraries, and data handling.",
+      "description": "Our Python Level 2 course builds upon foundational skills with a focus on advanced concepts and practical applications. Students will explore a variety of libraries such as time, random, and turtle, learning to implement real-time functionalities, graphical shapes, and interactive games. They'll deepen their understanding of conditional statements through advanced projects and tackle error handling with try and except blocks. The course introduces students to APIs for fetching and using real-world data, and covers essential skills such as generating PDF files, QR codes, and working with fundamental data structures like stacks and queues. With a focus on GUI development using Tkinter, students will create engaging applications including games and utility tools like a GUI calculator. By the end of Python Level 2, students will have expanded their programming repertoire, equipped with the skills to develop more complex projects and solve real-world problems with Python.",
       "take_aways": [
-        "Advance Python syntax and structure",
-        "Use object-oriented programming",
-        "Work with external libraries",
-        "Handle data and files",
-        "Create more advanced projects and games"
+        ""
       ],
       "timetable": "1:00 pm - 4:00 pm",
       "age_requirement": "12+ years old",
@@ -52,7 +44,7 @@
         "A mouse (optional)",
         "A snack and a drink"
       ],
-      "prior_knowledge": "Basic understanding of Python required. Ideal for students who have completed Python Coding 1.",
+      "prior_knowledge": "Basic understanding of Python required. Ideal for students who have completed Python Level 1.",
       "start": "June 12, 2024 1:00 pm",
       "end": "June 16, 2024 4:00 pm",
       "address": "Blackheath High Senior School, Vanbrugh Park, London SE3 7AG",
@@ -64,15 +56,11 @@
     },
     {
       "id": 3,
-      "title": "Python Coding 3, Autumn Term (1st October - 5th October 2024) - AM",
+      "title": "Python Level 3, Autumn Term (1st October - 5th October 2024) - AM",
       "coverImage": "src/assets/course_1.png",
-      "description": "The Python coding 3 course is designed for students who have advanced Python knowledge and want to explore more complex applications and projects. This course includes topics such as advanced data structures, algorithms, and GUI development. Students will work on real-world projects to apply their skills.",
+      "description": "Python Level 3 is designed to elevate students' programming skills with a focus on advanced concepts and object-oriented programming (OOP). Students will delve into functional programming using lambda functions, map, filter, and reduce functions, enhancing their ability to process data efficiently. They'll also learn to utilize regular expressions for tasks such as password validation and text manipulation. The course emphasizes the transition to OOP, covering foundational concepts like classes, objects, attributes, and methods. Students will explore the benefits of OOP over procedural programming through hands-on projects like building a Tic Tac Toe game using Tkinter. They'll gain proficiency in defining classes, creating objects, and understanding the distinction between class attributes and instance attributes. Advanced topics include constructors (__init__ method), destructors (__del__ method), inheritance, and polymorphism, essential for developing scalable and modular applications. By the end of Python Level 3, students will have a solid grasp of OOP principles and be capable of designing and implementing complex projects using Python and Tkinter.",
       "take_aways": [
-        "Master advanced Python concepts",
-        "Implement complex data structures and algorithms",
-        "Develop GUI applications",
-        "Work on real-world projects",
-        "Prepare for advanced programming challenges"
+        ""
       ],
       "timetable": "9:00 am - 12:00 pm",
       "age_requirement": "14+ years old",
@@ -83,7 +71,7 @@
         "A mouse (optional)",
         "A snack and a drink"
       ],
-      "prior_knowledge": "Advanced understanding of Python required. Ideal for students who have completed Python Coding 2.",
+      "prior_knowledge": "Advanced understanding of Python required. Ideal for students who have completed Python Level 2.",
       "start": "October 1, 2024 9:00 am",
       "end": "October 5, 2024 12:00 pm",
       "address": "Blackheath High Senior School, Vanbrugh Park, London SE3 7AG",
@@ -95,15 +83,11 @@
     },
     {
       "id": 4,
-      "title": "Web Development 1, May Half Term Mini-Camp (28th May - 31st May 2024) - AM",
+      "title": "Scratch Beginner, May Half Term Mini-Camp (28th May - 31st May 2024) - AM",
       "coverImage": "http://placehold.it/350x150",
-      "description": "The Web Development 1 course introduces students to the fundamentals of web development. Students will learn how to create websites using HTML for structure, CSS for styling, and JavaScript for interactivity. By the end of the course, students will have built their own functional website.",
+      "description": "Our Scratch Level 1 course introduces young learners to the basics of programming through fun and interactive activities. Starting with simple tasks, students learn what programming is and how to make the Scratch cat perform basic actions. They will become familiar with different blocks and movements, gradually building their confidence in coding. The course also covers sound and looks blocks, allowing students to enhance their projects with audio effects and visual changes. As the course progresses, students will explore essential programming concepts such as animations, loops, and conditional statements. They'll learn to use variables to keep track of scores and understand the principles of broadcasting and receiving messages. By the end of the course, students will have a solid foundation in Scratch programming, enabling them to create their own interactive projects and games. Join us to embark on a fun-filled coding adventure with Scratch!",
       "take_aways": [
-        "Understand the basics of HTML, CSS, and JavaScript",
-        "Create and style web pages",
-        "Add interactivity to web pages using JavaScript",
-        "Develop a personal project",
-        "Gain insight into web design and user experience"
+        ""
       ],
       "timetable": "9:00 am - 12:00 pm",
       "age_requirement": "10+ years old",
@@ -126,15 +110,11 @@
     },
     {
       "id": 5,
-      "title": "Web Development 2, Summer Camp (12th June - 16th June 2024) - PM",
+      "title": "Scratch Intermediate, Summer Camp (12th June - 16th June 2024) - PM",
       "coverImage": "http://placehold.it/350x150",
-      "description": "The Web Development 2 course is for students who have a basic understanding of web development and want to deepen their skills. This course covers more advanced topics such as responsive design, frameworks, and back-end development. Students will build a more complex web application by the end of the course.",
+      "description": "Building on the fundamentals from Scratch Level 1, our Scratch Level 2 course expands both the concepts and functionality of student projects. Learners will delve into more advanced motion and control blocks, custom blocks for modular coding, and lists for managing collections of data. This course encourages the creation of dynamic and interactive projects, with increased complexity and more sophisticated game mechanics. Students will also explore cloning to create multiple sprite instances, advanced variables for enhanced data handling, and complex conditional statements for refined decision-making. The introduction of event handling techniques will enable students to develop more interactive and responsive programs. By the end of Scratch Level 2, students will be proficient in creating multi-faceted projects with intricate animations, improved interactivity, and refined logic. Join us to elevate your Scratch skills and bring more ambitious ideas to life!",
       "take_aways": [
-        "Learn advanced HTML, CSS, and JavaScript",
-        "Understand responsive design principles",
-        "Work with web development frameworks",
-        "Introduction to back-end development",
-        "Create a complex web application"
+        ""
       ],
       "timetable": "1:00 pm - 4:00 pm",
       "age_requirement": "12+ years old",
@@ -145,7 +125,7 @@
         "A mouse (optional)",
         "A snack and a drink"
       ],
-      "prior_knowledge": "Basic understanding of HTML, CSS, and JavaScript required.",
+      "prior_knowledge": "Basic understanding of Python required. Ideal for students who have completed Scratch Beginner.",
       "start": "June 12, 2024 1:00 pm",
       "end": "June 16, 2024 4:00 pm",
       "address": "Blackheath High Senior School, Vanbrugh Park, London SE3 7AG",
@@ -157,15 +137,11 @@
     },
     {
       "id": 6,
-      "title": "Robotics with Python, Autumn Term (1st October - 5th October 2024) - PM",
+      "title": "Scratch Advanced, Autumn Term (1st October - 5th October 2024) - PM",
       "coverImage": "http://placehold.it/350x150",
-      "description": "The Robotics with Python course combines programming with hands-on robotics. Students will learn to control robots using Python, working with sensors and actuators to create autonomous systems. This course is perfect for students interested in both coding and robotics.",
+      "description": "Scratch Level 3 takes programming to new heights by focusing on both advanced concepts and enhanced functionality. Students will build on their existing knowledge to create complex, multi-level games with sophisticated features. The course covers advanced topics such as physics simulations, integrating external data, and implementing recursive functions and algorithms. Emphasis is placed on designing interactive, multi-sprite environments with more detailed animations and behaviors. In this level, students will also tackle collaborative projects, learning to work in teams to share and develop their creations. They will refine their debugging and optimization skills to ensure their projects run smoothly. By the end of Scratch Level 3, students will be adept at handling complex programming challenges, capable of creating highly interactive and polished projects. Join us to master advanced Scratch programming and bring your most creative and intricate ideas to life!",
       "take_aways": [
-        "Understand the basics of robotics",
-        "Learn to program robots using Python",
-        "Work with sensors and actuators",
-        "Create autonomous robotic systems",
-        "Develop problem-solving and critical thinking skills"
+        ""
       ],
       "timetable": "1:00 pm - 4:00 pm",
       "age_requirement": "12+ years old",
@@ -176,7 +152,7 @@
         "A mouse (optional)",
         "A snack and a drink"
       ],
-      "prior_knowledge": "Basic understanding of Python required.",
+      "prior_knowledge": "Advanced understanding of Scratch required. Ideal for students who have completed Scratch Intermediate.",
       "start": "October 1, 2024 1:00 pm",
       "end": "October 5, 2024 4:00 pm",
       "address": "Blackheath High Senior School, Vanbrugh Park, London SE3 7AG",
@@ -188,15 +164,11 @@
     },
     {
       "id": 7,
-      "title": "Introduction to Data Science with Python, Winter Term (15th December - 20th December 2024) - AM",
+      "title": "Minecraft Beginner, Winter Term (15th December - 20th December 2024) - AM",
       "coverImage": "http://placehold.it/350x150",
-      "description": "The Introduction to Data Science with Python course is designed for students interested in data analysis and machine learning. Students will learn to use Python libraries such as Pandas and Scikit-Learn to manipulate and analyze data, and build simple machine learning models.",
+      "description": "",
       "take_aways": [
-        "Learn data manipulation with Pandas",
-        "Understand data visualization techniques",
-        "Implement basic machine learning algorithms",
-        "Analyze and interpret data",
-        "Work on a data science project"
+        ""
       ],
       "timetable": "9:00 am - 12:00 pm",
       "age_requirement": "14+ years old",
@@ -219,15 +191,42 @@
     },
     {
       "id": 8,
-      "title": "Advanced Data Science with Python, Winter Term (15th December - 20th December 2024) - PM",
+      "title": "Minecraft Intermediate, Winter Term (15th December - 20th December 2024) - PM",
       "coverImage": "http://placehold.it/350x150",
-      "description": "The Advanced Data Science with Python course is for students who have a solid understanding of basic data science concepts and want to delve deeper into advanced techniques. This course covers topics such as deep learning, natural language processing, and complex data visualizations.",
+      "description": "",
       "take_aways": [
         "Implement advanced machine learning algorithms",
         "Learn deep learning with TensorFlow",
         "Understand natural language processing",
         "Create complex data visualizations",
         "Work on advanced data science projects"
+      ],
+      "timetable": "1:00 pm - 4:00 pm",
+      "age_requirement": "16+ years old",
+      "what_you_need": [
+        "A laptop (Windows, Mac or Chromebook) with Python installed",
+        "Zoom installed on your laptop",
+        "A charger",
+        "A mouse (optional)",
+        "A snack and a drink"
+      ],
+      "prior_knowledge": "Basic understanding of data science and Python required.",
+      "start": "December 15, 2024 1:00 pm",
+      "end": "December 20, 2024 4:00 pm",
+      "address": "Blackheath High Senior School, Vanbrugh Park, London SE3 7AG",
+      "location": "https://www.google.com/maps/place/51%C2%B028'38.9%22N+0%C2%B000'57.8%22E/@51.4774592,0.0134715,17z/data=!3m1!4b1!4m4!3m3!8m2!3d51.4774592!4d0.0160464?entry=ttu",
+      "price": 226.0,
+      "discount": 0.0,
+      "discounted_price": 226.0,
+      "availability": 10
+    },
+    {
+      "id": 9,
+      "title": "Minecraft Advanced, Winter Term (15th December - 20th December 2024) - PM",
+      "coverImage": "http://placehold.it/350x150",
+      "description": "",
+      "take_aways": [
+        ""
       ],
       "timetable": "1:00 pm - 4:00 pm",
       "age_requirement": "16+ years old",

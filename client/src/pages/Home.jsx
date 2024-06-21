@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import MailList from '../components/MailList';
 import Footer from '../components/Footer';
+import TutoringPopup from '@/components/TutoringPopup';
+import PartiesPopup from '@/components/PartiesPopup';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 import hero_image from '../assets/arif-riyanto-vJP-wZ6hGBg-unsplash.jpg';
@@ -163,6 +165,51 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ----------------- Offerings -------------- */}
+      <Offerings />
+
+      {/* ----------------- Testimonials -------------- */}
+      <Testimonials />
+
+      {/* ----------------- Call to Action -------------- */}
+      <section className="bg-c_primary-light text-center text-white py-12">
+        <h2 className="text-3xl sm:text-6xl">Ready to Get Started?</h2>
+        <p className="mt-6 mb-12 max-w-3xl mx-auto">
+          Join us and start your coding journey today!
+        </p>
+        <Link to="/programs">
+          <Button variant="outline" className="outline-button">
+            Book a Class
+          </Button>
+        </Link>
+      </section>
+
+      {/* ----------------- Footer -------------- */}
+      <Footer />
+    </main>
+  );
+}
+
+function Offerings() {
+  const [isTutoringPopupVisible, setTutoringPopupVisible] = useState(false);
+  const [isPartiesPopupVisible, setPartiesPopupVisible] = useState(false);
+
+  const handleTutoringClick = () => {
+    setTutoringPopupVisible(true);
+  };
+  const handlePartiesClick = () => {
+    setPartiesPopupVisible(true);
+  };
+
+  const handleCloseTutoringPopup = () => {
+    setTutoringPopupVisible(false);
+  };
+  const handleClosePartiesPopup = () => {
+    setPartiesPopupVisible(false);
+  };
+
+  return (
+    <>
       {/* Offerings */}
       <section className="relative">
         {/* Background Image and overlay */}
@@ -213,7 +260,11 @@ export default function Home() {
                 We work with your child individually to help them achieve more
                 through a targeted learning approach.
               </p>
-              <Button variant="outline" className="mt-8 outline-button">
+              <Button
+                onClick={handleTutoringClick}
+                variant="outline"
+                className="mt-8 min-w-full outline-button"
+              >
                 Book 1:1 Tutoring
               </Button>
             </div>
@@ -227,7 +278,12 @@ export default function Home() {
                 We help bring people together for fun parties with learning
                 opportunities.
               </p>
-              <Button variant="outline" className="mt-8 outline-button">
+
+              <Button
+                onClick={handlePartiesClick}
+                variant="outline"
+                className="mt-8 min-w-full outline-button"
+              >
                 Book Events & Parties
               </Button>
             </div>
@@ -235,25 +291,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ----------------- Testimonials -------------- */}
-      <Testimonials />
-
-      {/* ----------------- Call to Action -------------- */}
-      <section className="bg-c_primary-light text-center text-white py-12">
-        <h2 className="text-3xl sm:text-6xl">Ready to Get Started?</h2>
-        <p className="mt-6 mb-12 max-w-3xl mx-auto">
-          Join us and start your coding journey today!
-        </p>
-        <Link to="/programs">
-          <Button variant="outline" className="outline-button">
-            Book a Class
-          </Button>
-        </Link>
-      </section>
-
-      {/* ----------------- Footer -------------- */}
-      <Footer />
-    </main>
+      <TutoringPopup
+        isVisible={isTutoringPopupVisible}
+        onClose={handleCloseTutoringPopup}
+      />
+      <PartiesPopup
+        isVisible={isPartiesPopupVisible}
+        onClose={handleClosePartiesPopup}
+      />
+    </>
   );
 }
 

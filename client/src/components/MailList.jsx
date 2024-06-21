@@ -1,21 +1,67 @@
-import React from 'react';
-import { Button } from '@/components/ui/button';
+import React, { useState } from "react";
+import { Button } from "@/components/ui/button";
 
 function MailList() {
+  const [email, setEmail] = useState("");
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleInputChange = e => {
+    setEmail(e.target.value);
+  };
+
+  const handleSubmit = async e => {
+    e.preventDefault();
+    const formDatab = new FormData();
+    formDatab.append("email", email);
+
+    try {
+      const response = await fetch(
+        import.meta.env.VITE_MAILING_LIST_SCRIPT_URL,
+        {
+          method: "POST",
+          body: formDatab,
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+
+      setIsSubmitted(true);
+      setTimeout(() => {
+        setIsSubmitted(false);
+        setEmail(""); // Clear the email input after submission
+      }, 2000);
+    } catch (error) {
+      console.error("There was a problem with the submission:", error);
+    }
+  };
+
   return (
     <>
       <h3 className="font-heading mb-3">
         Join Our Mailing List for Course Updates
       </h3>
-      <form className="flex flex-col text-white">
-        <input
-          id="email"
-          type="email"
-          placeholder="Enter your email"
-          className="border-2 bg-transparent border-c_accent focus:outline-none p-2"
-        />
-        <Button className="default-button">Subscribe</Button>
-      </form>
+      {isSubmitted ? (
+        <div className="text-center text-green-500">
+          Subscription successful!
+        </div>
+      ) : (
+        <form onSubmit={handleSubmit} className="flex flex-col text-white">
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter your email"
+            value={email}
+            onChange={handleInputChange}
+            required
+            className="border-2 bg-transparent border-c_accent focus:outline-none p-2"
+          />
+          <Button type="submit" className="default-button">
+            Subscribe
+          </Button>
+        </form>
+      )}
     </>
   );
 }

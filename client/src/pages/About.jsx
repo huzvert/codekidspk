@@ -171,6 +171,7 @@ export default function About() {
             <h3 className="mt-4">Hussain Ashar Mehtab</h3>
             <p>Social Media Manager</p>
           </div>
+
           <div className="pb-4 border flex flex-col items-center">
             <img src={Samia_image} alt="Team Member" className="w-80" />
             <h3 className="mt-4">Haya Fareed</h3>

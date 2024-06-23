@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import { Button } from '@/components/ui/button';
-import SkeletonCard from '../components/SkeletonCard';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import SkeletonCard from "@/components/SkeletonCard";
+import AddToCart from "@/components/AddToCart";
+import { Link } from "react-router-dom";
 
 export default function ProgramDetails() {
   const [program, setProgram] = useState([]);
@@ -12,13 +13,13 @@ export default function ProgramDetails() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const data = await fetch('/src/content/programs.json');
+        const data = await fetch("/src/content/programs.json");
         const response = await data.json();
         const program = response.programs.find(program => program.id == id);
         setProgram(program);
 
         const courseIds = program?.courses || [];
-        const coursesData = await fetch('/src/content/courses.json');
+        const coursesData = await fetch("/src/content/courses.json");
         const coursesResponse = await coursesData.json();
         const courses = coursesResponse.courses.filter(course =>
           courseIds.includes(course.id)
@@ -26,7 +27,7 @@ export default function ProgramDetails() {
 
         setCourses(courses);
       } catch (error) {
-        console.error('Error fetching data:', error);
+        console.error("Error fetching data:", error);
       }
     };
 
@@ -99,11 +100,8 @@ function CourseCard({ course }) {
               View Details
             </Button>
           </Link>
-          <Link to={`/book/${course.id}`}>
-            <Button variant="outline" className="mt-10 outline-button">
-              Book Now
-            </Button>
-          </Link>
+
+          <AddToCart course={course} />
         </div>
       </div>
     </div>

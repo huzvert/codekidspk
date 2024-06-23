@@ -12,22 +12,23 @@ export default function Cart() {
     const itemToRemove = items.find(item => item.id === id);
     setCart({
       items: items.filter(item => item.id !== id),
-      total: total - itemToRemove.price * itemToRemove.quantity,
+      total: total - itemToRemove.price * itemToRemove.enrollments,
     });
   }
 
-  function handleQuantityChange(id, change) {
+  function handleEnrollmentsChange(id, change) {
     const updatedItems = items.map(item => {
       if (item.id === id) {
-        const newQuantity = Math.max(item.quantity + change, 1); // Ensure quantity doesn't go below 1
-        const priceDifference = (newQuantity - item.quantity) * item.price;
-        return { ...item, quantity: newQuantity, price: item.price };
+        const newEnrollments = Math.max(item.enrollments + change, 1); // Ensure enrollments doesn't go below 1
+        const priceDifference =
+          (newEnrollments - item.enrollments) * item.price;
+        return { ...item, enrollments: newEnrollments, price: item.price };
       }
       return item;
     });
 
     const newTotal = updatedItems.reduce(
-      (sum, item) => sum + item.price * item.quantity,
+      (sum, item) => sum + item.price * item.enrollments,
       0
     );
 
@@ -65,19 +66,19 @@ export default function Cart() {
             <h2 className="text-lg font-bold mt-2">{item.name}</h2>
             <p className="text-sm text-gray-600 mt-1">£{item.price}</p>
             <div className="flex items-center mt-1">
-              <p className="mr-2">Quantity: </p>
+              <p className="mr-2">Enrollments: </p>
               <Button
                 variant="link"
                 className="text-xl p-[4px] py-[2px] h-auto"
-                onClick={() => handleQuantityChange(item.id, -1)}
+                onClick={() => handleEnrollmentsChange(item.id, -1)}
               >
                 -
               </Button>
-              <p className="text-sm text-gray-600 mx-2">{item.quantity}</p>
+              <p className="text-sm text-gray-600 mx-2">{item.enrollments}</p>
               <Button
                 variant="link"
                 className="text-xl p-[4px] py-[2px] h-auto"
-                onClick={() => handleQuantityChange(item.id, 1)}
+                onClick={() => handleEnrollmentsChange(item.id, 1)}
               >
                 +
               </Button>

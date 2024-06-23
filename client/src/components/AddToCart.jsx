@@ -15,7 +15,7 @@ import { Label } from "@/components/ui/label";
 
 export default function AddToCart({ course }) {
   const { cart, setCart } = useContext(CartContext);
-  const [quantity, setQuantity] = useState(1);
+  const [enrollments, setEnrollments] = useState(1);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
   const handleAddToCart = () => {
@@ -25,10 +25,10 @@ export default function AddToCart({ course }) {
     let newItems;
 
     if (existingCourseIndex !== -1) {
-      // Course is already in the cart, increase its quantity
+      // Course is already in the cart, increase its enrollments
       newItems = cart.items.map((item, index) =>
         index === existingCourseIndex
-          ? { ...item, quantity: item.quantity + Number(quantity) }
+          ? { ...item, enrollments: item.enrollments + Number(enrollments) }
           : item
       );
     } else {
@@ -39,7 +39,7 @@ export default function AddToCart({ course }) {
           id: course.id,
           name: course.title,
           price: course.price,
-          quantity: Number(quantity),
+          enrollments: Number(enrollments),
           image: course.coverImage,
         },
       ];
@@ -47,7 +47,7 @@ export default function AddToCart({ course }) {
 
     setCart({
       items: newItems,
-      total: cart.total + Number(course.price) * Number(quantity),
+      total: cart.total + Number(course.price) * Number(enrollments),
     });
     setIsDialogOpen(false); // Close the dialog
   };
@@ -73,16 +73,16 @@ export default function AddToCart({ course }) {
         </DialogHeader>
 
         <div className="grid gap-4 py-4">
-          <Label htmlFor="quantity">Quantity</Label>
+          <Label htmlFor="enrollments">Enrollments</Label>
           <Input
             type="number"
-            id="quantity"
-            name="quantity"
-            placeholder="Enter quantity"
+            id="enrollments"
+            name="enrollments"
+            placeholder="Enter enrollments"
             min="1"
             required
-            value={quantity}
-            onChange={e => setQuantity(e.target.value)}
+            value={enrollments}
+            onChange={e => setEnrollments(e.target.value)}
           />
         </div>
 

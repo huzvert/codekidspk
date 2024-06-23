@@ -1,11 +1,11 @@
-import React from 'react';
-import hero_image from '../assets/thisisengineering-TeJZ3CGZXRw-unsplash.jpg';
-import stats_image from '../assets/robo-wunderkind-hLvQ4-QEBAE-unsplash.jpg';
-import Samia_image from '../assets/samia.png';
-import Naveed_image from '../assets/naveed.png';
-import Katherine_image from '../assets/katherine.png';
-import Footer from '../components/Footer';
-import { Separator } from '@/components/ui/separator';
+import React from "react";
+import hero_image from "../assets/thisisengineering-TeJZ3CGZXRw-unsplash.jpg";
+import stats_image from "../assets/robo-wunderkind-hLvQ4-QEBAE-unsplash.jpg";
+import Samia_image from "../assets/samia.png";
+import Naveed_image from "../assets/naveed.png";
+import Katherine_image from "../assets/katherine.png";
+import Footer from "../components/Footer";
+import { Separator } from "@/components/ui/separator";
 
 export default function About() {
   return (
@@ -144,7 +144,7 @@ export default function About() {
             <p>Coding Instructor</p>
           </div>
         </div>
-  
+
         <div className="flex flex-col md:flex-row gap-12 justify-center items-center mt-12">
           <div className="pb-4 border flex flex-col items-center">
             <img src={Samia_image} alt="Team Member" className="w-80" />

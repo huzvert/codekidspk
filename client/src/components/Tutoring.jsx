@@ -1,15 +1,16 @@
-import React, { useState } from 'react';
-import 'tailwindcss/tailwind.css';
+import React, { useState } from "react";
+import { Button } from "@/components/ui/button";
 
 export default function Tutoring({ onClose }) {
   const [formData, setFormData] = useState({
-    name: '',
-    age: '',
-    subject: '',
-    email: '',
-    additionalInfo: '',
+    name: "",
+    age: "",
+    subject: "",
+    email: "",
+    additionalInfo: "",
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false); // Add state for submitting
 
   const handleChange = e => {
     const { name, value } = e.target;
@@ -18,23 +19,26 @@ export default function Tutoring({ onClose }) {
 
   const handleSubmit = async e => {
     e.preventDefault();
+    setIsSubmitting(true); // Set submitting state to true
 
     const formDatab = new FormData(e.target);
 
     try {
       const response = await fetch(import.meta.env.VITE_TUTORING_SCRIPT_URL, {
-        method: 'POST',
+        method: "POST",
         body: formDatab,
       });
 
       if (!response.ok) {
-        throw new Error('Network response was not ok');
+        throw new Error("Network response was not ok");
       }
 
       setIsSubmitted(true);
-      setTimeout(onClose, 2000); // Close popup after 2 seconds
+      setTimeout(onClose, 3000); // Close popup after 3 seconds
     } catch (error) {
-      console.error('There was a problem with the submission:', error);
+      console.error("There was a problem with the submission:", error);
+    } finally {
+      setIsSubmitting(false); // Reset submitting state
     }
   };
 
@@ -109,12 +113,13 @@ export default function Tutoring({ onClose }) {
               />
             </label>
           </div>
-          <button
+          <Button
             type="submit"
-            className="w-full py-2 px-4 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            disabled={isSubmitting} // Disable the button when submitting
+            className="default-button w-full"
           >
-            Submit
-          </button>
+            {isSubmitting ? "Submitting..." : "Submit"}
+          </Button>
         </form>
       )}
     </div>

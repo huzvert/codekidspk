@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import MailList from '../components/MailList';
-import Footer from '../components/Footer';
-import TutoringPopup from '@/components/TutoringPopup';
-import PartiesPopup from '@/components/PartiesPopup';
-import { Button } from '@/components/ui/button';
-import { Separator } from '@/components/ui/separator';
-import hero_image from '../assets/arif-riyanto-vJP-wZ6hGBg-unsplash.jpg';
-import offering_image from '../assets/kelly-sikkema-37Gug7AWjoo-unsplash.jpg';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, { useState, useEffect } from "react";
+import MailList from "../components/MailList";
+import Footer from "../components/Footer";
+import TutoringPopup from "@/components/TutoringPopup";
+import PartiesPopup from "@/components/PartiesPopup";
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
+import hero_image from "../assets/arif-riyanto-vJP-wZ6hGBg-unsplash.jpg";
+import offering_image from "../assets/kelly-sikkema-37Gug7AWjoo-unsplash.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChalkboardTeacher,
   faCode,
@@ -16,16 +16,16 @@ import {
   faUserCog,
   faUserGroup,
   faUsers,
-} from '@fortawesome/free-solid-svg-icons';
+} from "@fortawesome/free-solid-svg-icons";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from '@/components/ui/carousel';
-import Autoplay from 'embla-carousel-autoplay';
-import { Link } from 'react-router-dom';
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -41,7 +41,7 @@ export default function Home() {
         </div>
 
         {/* Content */}
-        <div className="relative z-20 min-h-screen text-center text-white flex flex-col justify-items-center items-center">
+        <div className="relative z-20 min-h-screen text-center text-white flex flex-col justify-center sm:justify-normal items-center">
           <div className="max-w-2xl sm:mt-32">
             <h1 className="text-3xl sm:text-6xl">
               Empowering the Next Generation of Coders
@@ -54,7 +54,7 @@ export default function Home() {
           <Link to="/programs">
             <Button
               variant="outline"
-              className="mt-10 sm:mb-16 py-6 md:p-7 outline-button"
+              className="mt-10 mb-36 sm:mb-16 py-6 md:p-7 outline-button"
             >
               Explore Our Programs
             </Button>
@@ -70,7 +70,7 @@ export default function Home() {
       {/* ----------------- Mission & Vision -------------- editing */}
       <section className="relative p-0 grid md:grid-cols-[1fr_1.5fr] lg:grid-cols-2 shadow-md">
         <div className="p-4 grid place-content-center bg-gray-50">
-          <Separator className="bg-c_primary-light max-w-16 h-1.5 mb-6 ml-1" />
+          <Separator className="hidden sm:block bg-c_primary-light max-w-16 h-1.5 mb-6 ml-1" />
           <h2 className="text-2xl sm:text-5xl font-bold">
             <span className="text-c_primary-light">Mission</span> <br /> and
             Vision
@@ -307,7 +307,7 @@ function Testimonials() {
   const [testimonials, setTestimonials] = useState([]);
 
   useEffect(() => {
-    fetch('src/content/testimonials.json')
+    fetch("src/content/testimonials.json")
       .then(response => response.json())
       .then(data => setTestimonials(data.testimonials));
   }, []);

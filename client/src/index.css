@@ -76,7 +76,7 @@
 }
 
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   overflow-x: hidden;
 }
 
@@ -101,7 +101,7 @@ h6 {
   margin-right: 0;
   font-weight: bold;
   font-family: monospace, sans-serif;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .questrial-regular {
@@ -109,7 +109,7 @@ h6 {
 
 p {
   /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-  font-family: 'Questrial', sans-serif;
+  font-family: "Questrial", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: grey;
@@ -150,7 +150,7 @@ h6 {
 }
 
 .nav-link:before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -2px;

@@ -39,7 +39,7 @@ export default function Cart() {
     return (
       <main className="text-center">
         <h2 className="text-3xl">Your cart is empty</h2>
-        <Link to="/programs" className="default-button mt-4">
+        <Link to="/programs" className="default-button mt-4 p-5">
           Book Now
         </Link>
       </main>

@@ -45,7 +45,7 @@ export default function CourseDetails() {
       </section>
 
       <section className="mt-8 mx-auto max-w-4xl px-4">
-        <div className="bg-white shadow-lg rounded-lg overflow-hidden p-6">
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden px-2 py-6 sm:p-6">
           <h3 className="text-lg font-semibold text-gray-800 mb-2">
             Course Details
           </h3>

@@ -26,7 +26,7 @@ function Schedule({ title, schedule, theme = "dark" }) {
     theme === "light" ? "hover:bg-gray-100" : "hover:bg-gray-700";
 
   return (
-    <div className="container mx-auto my-8">
+    <div className="sm:container mx-auto my-8">
       <Card className={cardClass}>
         <CardHeader>
           <CardTitle className="text-c_secondary-light tracking-wider">

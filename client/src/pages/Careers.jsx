@@ -148,7 +148,7 @@ export default function Careers() {
                 </div>
                 <Button
                   type="submit"
-                  className="bg-c_secondary-light text-white mt-4"
+                  className="default-button mt-4"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? "Submitting..." : "Submit"}

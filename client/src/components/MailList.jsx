@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 function MailList() {
   const [email, setEmail] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleInputChange = e => {
     setEmail(e.target.value);
@@ -11,6 +12,7 @@ function MailList() {
 
   const handleSubmit = async e => {
     e.preventDefault();
+    setIsSubmitting(true);
     const formDatab = new FormData();
     formDatab.append("email", email);
 
@@ -31,9 +33,11 @@ function MailList() {
       setTimeout(() => {
         setIsSubmitted(false);
         setEmail(""); // Clear the email input after submission
-      }, 2000);
+      }, 3000);
     } catch (error) {
       console.error("There was a problem with the submission:", error);
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -43,7 +47,7 @@ function MailList() {
         Join Our Mailing List for Course Updates
       </h3>
       {isSubmitted ? (
-        <div className="text-center text-green-500">
+        <div className="text-center text-c_primary-light">
           Subscription successful!
         </div>
       ) : (
@@ -57,8 +61,12 @@ function MailList() {
             required
             className="border-2 bg-transparent border-c_accent focus:outline-none p-2"
           />
-          <Button type="submit" className="default-button">
-            Subscribe
+          <Button
+            type="submit"
+            className="default-button"
+            disabled={isSubmitting}
+          >
+            {isSubmitting ? "Submitting..." : "Subscribe"}
           </Button>
         </form>
       )}

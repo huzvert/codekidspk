@@ -9,10 +9,29 @@ export default function Cart() {
   const { items, total } = cart;
 
   function handleRemoveItem(id) {
+    const itemToRemove = items.find(item => item.id === id);
     setCart({
       items: items.filter(item => item.id !== id),
-      total: total - items.find(item => item.id === id).price,
+      total: total - itemToRemove.price * itemToRemove.quantity,
     });
+  }
+
+  function handleQuantityChange(id, change) {
+    const updatedItems = items.map(item => {
+      if (item.id === id) {
+        const newQuantity = Math.max(item.quantity + change, 1); // Ensure quantity doesn't go below 1
+        const priceDifference = (newQuantity - item.quantity) * item.price;
+        return { ...item, quantity: newQuantity, price: item.price };
+      }
+      return item;
+    });
+
+    const newTotal = updatedItems.reduce(
+      (sum, item) => sum + item.price * item.quantity,
+      0
+    );
+
+    setCart({ items: updatedItems, total: newTotal });
   }
 
   if (items.length === 0) {
@@ -45,9 +64,24 @@ export default function Cart() {
             />
             <h2 className="text-lg font-bold mt-2">{item.name}</h2>
             <p className="text-sm text-gray-600 mt-1">£{item.price}</p>
-            <p className="text-sm text-gray-600 mt-1">
-              Quantity: {item.quantity}
-            </p>
+            <div className="flex items-center mt-1">
+              <p className="mr-2">Quantity: </p>
+              <Button
+                variant="link"
+                className="text-xl p-[4px] py-[2px] h-auto"
+                onClick={() => handleQuantityChange(item.id, -1)}
+              >
+                -
+              </Button>
+              <p className="text-sm text-gray-600 mx-2">{item.quantity}</p>
+              <Button
+                variant="link"
+                className="text-xl p-[4px] py-[2px] h-auto"
+                onClick={() => handleQuantityChange(item.id, 1)}
+              >
+                +
+              </Button>
+            </div>
             <Button
               className="default-button mt-4"
               onClick={() => handleRemoveItem(item.id)}

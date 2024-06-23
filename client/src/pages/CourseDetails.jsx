@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { useParams, Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
+import { useParams } from "react-router-dom";
 import AddToCart from "@/components/AddToCart";
+import Schedule from "@/components/Schedule";
 
 export default function CourseDetails() {
   const [course, setCourse] = useState({});
@@ -50,39 +50,15 @@ export default function CourseDetails() {
             Course Details
           </h3>
           <p className="text-sm text-gray-600 mb-4">{course?.description}</p>
-          <div className="flex flex-wrap mb-4">
-            <div className="w-full sm:w-1/2">
-              <h4 className="text-gray-800 font-semibold">Timetable</h4>
-              <p className="text-gray-600">{course?.timetable}</p>
-            </div>
-            <div className="w-full sm:w-1/2">
-              <h4 className="text-gray-800 font-semibold">Age Requirement</h4>
-              <p className="text-gray-600">{course?.age_requirement}</p>
-            </div>
-          </div>
-          <div className="mb-4">
-            <h4 className="text-gray-800 font-semibold">What You Need</h4>
-            <ul className="list-disc list-inside text-gray-600">
-              {course?.what_you_need?.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-          </div>
-          <div className="mb-4">
-            <h4 className="text-gray-800 font-semibold">Prior Knowledge</h4>
-            <p className="text-gray-600">{course?.prior_knowledge}</p>
-          </div>
-          <div className="mb-4">
-            <h4 className="text-gray-800 font-semibold">Location</h4>
-            <a
-              href={course?.location}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 hover:underline"
-            >
-              {course?.address}
-            </a>
-          </div>
+
+          {
+            <Schedule
+              title={course?.title}
+              theme="light"
+              schedule={[course?.timetable]}
+            />
+          }
+
           <div className="mb-4">
             <h4 className="text-gray-800 font-semibold">Price</h4>
             <p className="text-gray-600">Original Price: ${course?.price}</p>

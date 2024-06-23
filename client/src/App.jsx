@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Programs from "./pages/Programs";
 import ProgramDetails from "./pages/ProgramDetails";
+import Schedules from "./pages/Schedules";
 import CourseDetails from "./pages/CourseDetails";
 import Cart from "./pages/Cart";
 import NoteFound from "./components/NotFound";
@@ -25,6 +26,7 @@ function App() {
               <Route path=":id" element={<ProgramDetails />} />
               <Route path="course/:id" element={<CourseDetails />} />
             </Route>
+            <Route path="/schedules" element={<Schedules />} />
             <Route path="/cart" element={<Cart />} />
           </Route>
 

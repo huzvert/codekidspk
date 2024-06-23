@@ -1,180 +1,46 @@
+
 {
   "programs": [
     {
       "id": 1,
       "title": "Python",
-      "description": "" ,
+      "description": "",
       "coverImage": "src/assets/program_python.jpg",
-      "details": {
-        "description": "",
-        "take_aways": [
-          
-        ],
-        "whatYouWillLearn": [
-          {
-            "title": "",
-            "description": ""
-          }
-        ],
-        "whatToBring": [
-          {
-            "title": "Lunch",
-            "description": "All students are expected to bring packed lunch for the day (nut-free and not to be shared)."
-          },
-          {
-            "title": "Water",
-            "description": "In a re-fillable water bottle. No glass or fizzy drinks please."
-          },
-          {
-            "title": "Ready to Learn",
-            "description": "We expect all children to come in with a great learning attitude."
-          }
-        ],
-        "whyChooseUs": [
-          {
-            "title": "SUITABLE FOR",
-            "details": [
-              "Aged 9 or above",
-              "No prior text coding necessary",
-              "Some basics of coding principles"
-            ]
-          },
-          {
-            "title": "COURSE",
-            "details": [
-              "8:1 student:teacher ratio",
-              "Lots of New Skills",
-              "State of the art facilities"
-            ]
-          },
-          {
-            "title": "TAKE HOME",
-            "details": [
-              "All your cheat sheets",
-              "Detailed Feedback",
-              "Code Kids Certificate"
-            ]
-          }
-        ]
-      },
-      "courses": [1, 2, 3]
+      "courses": [1, 2]
     },
+
     {
       "id": 2,
-      "title": "Scratch",
+      "title": "Web and App Development",
       "description": "",
       "coverImage": "src/assets/program_webdev.jpg",
-      "details": {
-        "description": "",
-        "take_aways": [
-          ""
-        ],
-        "whatYouWillLearn": [
-          {
-            "title": "",
-            "description": ""
-          }
-        ],
-        "whatToBring": [
-          {
-            "title": "Lunch",
-            "description": "All students are expected to bring packed lunch for the day (nut-free and not to be shared)."
-          },
-          {
-            "title": "Water",
-            "description": "In a re-fillable water bottle. No glass or fizzy drinks please."
-          },
-          {
-            "title": "Ready to Learn",
-            "description": "We expect all children to come in with a great learning attitude."
-          }
-        ],
-        "whyChooseUs": [
-          {
-            "title": "SUITABLE FOR",
-            "details": [
-              "Aged 10 or above",
-              "No prior coding experience necessary"
-            ]
-          },
-          {
-            "title": "COURSE",
-            "details": [
-              "8:1 student:teacher ratio",
-              "Hands-on projects",
-              "State of the art facilities"
-            ]
-          },
-          {
-            "title": "TAKE HOME",
-            "details": [
-              "Project files",
-              "Detailed Feedback",
-              "Web Developer Certificate"
-            ]
-          }
-        ]
-      },
-      "courses": [4, 5, 6]
+      "courses": [3, 4]
     },
+
     {
       "id": 3,
+      "title": "Scratch",
+      "description": "",
+      "coverImage": "src/assets/program_scratch.jpg",
+      "courses": [6, 7, 8]
+    },
+
+    {
+      "id": 4,
       "title": "Minecraft",
       "description": "",
-      "coverImage": "src/assets/program_robotics.jpg",
-      "details": {
-        "description": "",
-        "take_aways": [
-          ""
-        ],
-        "whatYouWillLearn": [
-          {
-            "title": "",
-            "description": ""
-          }
-        ],
-        "whatToBring": [
-          {
-            "title": "Lunch",
-            "description": "All students are expected to bring packed lunch for the day (nut-free and not to be shared)."
-          },
-          {
-            "title": "Water",
-            "description": "In a re-fillable water bottle. No glass or fizzy drinks please."
-          },
-          {
-            "title": "Ready to Learn",
-            "description": "We expect all children to come in with a great learning attitude."
-          }
-        ],
-        "whyChooseUs": [
-          {
-            "title": "SUITABLE FOR",
-            "details": [
-              "Aged 11 or above",
-              "No prior robotics experience necessary",
-              "Interest in electronics and programming"
-            ]
-          },
-          {
-            "title": "COURSE",
-            "details": [
-              "8:1 student:teacher ratio",
-              "Hands-on projects",
-              "State of the art facilities"
-            ]
-          },
-          {
-            "title": "TAKE HOME",
-            "details": [
-              "Project files",
-              "Detailed Feedback",
-              "Robotics Certificate"
-            ]
-          }
-        ]
-      },
-      "courses": [7, 8, 9]
+      "coverImage": "src/assets/program_minecraft.jpg",
+
+      "courses": [9, 10]
+    },
+
+    {
+      "id": 5,
+      "title": "Roblox Coding",
+      "description": "",
+      "coverImage": "src/assets/program_roblox-coding.jpg",
+
+      "courses": [5]
     }
   ]
 }

@@ -1,9 +1,6 @@
 import React from "react";
 import hero_image from "../assets/thisisengineering-TeJZ3CGZXRw-unsplash.jpg";
 import stats_image from "../assets/robo-wunderkind-hLvQ4-QEBAE-unsplash.jpg";
-import Samia_image from "../assets/samia.png";
-import Naveed_image from "../assets/naveed.png";
-import Katherine_image from "../assets/katherine.png";
 import Footer from "../components/Footer";
 import { Separator } from "@/components/ui/separator";
 
@@ -98,13 +95,21 @@ export default function About() {
 
         <div className="flex flex-col md:flex-row gap-12 justify-center items-center mt-12">
           <div className="pb-4 border flex flex-col items-center">
-            <img src={Samia_image} alt="Team Member" className="w-80" />
+            <img
+              src="src\assets\samia.png"
+              alt="Team Member"
+              className="w-80"
+            />
             <h3 className="mt-4">Mehrab Ahmad</h3>
             <p>CEO</p>
           </div>
 
           <div className="pb-4 border flex flex-col items-center">
-            <img src={Naveed_image} alt="Team Member" className="w-80" />
+            <img
+              src="src\assets\naveed.png"
+              alt="Team Member"
+              className="w-80"
+            />
             <h3 className="mt-4">Zammad Khan</h3>
             <p>Managing Director</p>
           </div>
@@ -112,34 +117,60 @@ export default function About() {
 
         <div className="flex flex-col md:flex-row gap-12 justify-center items-center mt-12">
           <div className="pb-4 border flex flex-col items-center">
-            <img src={Samia_image} alt="Team Member" className="w-80" />
+            <img
+              src="src\assets\male_ph.jpg"
+              alt="Team Member"
+              className="w-80"
+            />
             <h3 className="mt-4">Muhammad Bilal</h3>
             <p>Coding Instructor</p>
           </div>
 
           <div className="pb-4 border flex flex-col items-center">
-            <img src={Samia_image} alt="Team Member" className="w-80" />
+            <img
+              src="src\assets\male_ph.jpg"
+              alt="Team Member"
+              className="w-80"
+            />
             <h3 className="mt-4">Danish Athar</h3>
             <p>Coding Instructor</p>
           </div>
 
           <div className="pb-4 border flex flex-col items-center">
-            <img src={Naveed_image} alt="Team Member" className="w-80" />
+            <img
+              src="src\assets\male_ph.jpg"
+              alt="Team Member"
+              className="w-80"
+            />
             <h3 className="mt-4">Natiq Khan</h3>
             <p>Coding Instructor</p>
           </div>
+        </div>
+        <div className="flex flex-col md:flex-row gap-12 justify-center items-center mt-12">
           <div className="pb-4 border flex flex-col items-center">
-            <img src={Naveed_image} alt="Team Member" className="w-80" />
+            <img
+              src="src\assets\male_ph.jpg"
+              alt="Team Member"
+              className="w-80"
+            />
             <h3 className="mt-4">Abdul Samad</h3>
             <p>Coding Instructor</p>
           </div>
           <div className="pb-4 border flex flex-col items-center">
-            <img src={Naveed_image} alt="Team Member" className="w-80" />
+            <img
+              src="src\assets\female_ph.jpg"
+              alt="Team Member"
+              className="w-80"
+            />
             <h3 className="mt-4">Yusra Zainab</h3>
             <p>Coding Instructor</p>
           </div>
           <div className="pb-4 border flex flex-col items-center">
-            <img src={Samia_image} alt="Team Member" className="w-80" />
+            <img
+              src="src\assets\male_ph.jpg"
+              alt="Team Member"
+              className="w-80"
+            />
             <h3 className="mt-4">Yasjudan Akram</h3>
             <p>Coding Instructor</p>
           </div>
@@ -147,46 +178,81 @@ export default function About() {
 
         <div className="flex flex-col md:flex-row gap-12 justify-center items-center mt-12">
           <div className="pb-4 border flex flex-col items-center">
-            <img src={Samia_image} alt="Team Member" className="w-80" />
+            <img
+              src="src\assets\male_ph.jpg"
+              alt="Team Member"
+              className="w-80"
+            />
             <h3 className="mt-4">Muhammad Adil</h3>
             <p>Tech Lead</p>
           </div>
 
           <div className="pb-4 border flex flex-col items-center">
-            <img src={Naveed_image} alt="Team Member" className="w-80" />
+            <img
+              src="src\assets\male_ph.jpg"
+              alt="Team Member"
+              className="w-80"
+            />
             <h3 className="mt-4">Abdul Rauf</h3>
             <p>Technical Assistant</p>
           </div>
           <div className="pb-4 border flex flex-col items-center">
-            <img src={Naveed_image} alt="Team Member" className="w-80" />
+            <img
+              src="src\assets\female_ph.jpg"
+              alt="Team Member"
+              className="w-80"
+            />
             <h3 className="mt-4">Maira Ali</h3>
             <p>HR Associate</p>
-          </div>
-          <div className="pb-4 border flex flex-col items-center">
-            <img src={Naveed_image} alt="Team Member" className="w-80" />
-            <h3 className="mt-4">Hussain Ashar Mehtab</h3>
-            <p>Social Media Manager</p>
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-12 justify-center items-center mt-12">
           <div className="pb-4 border flex flex-col items-center">
-            <img src={Samia_image} alt="Team Member" className="w-80" />
+            <img
+              src="src\assets\male_ph.jpg"
+              alt="Team Member"
+              className="w-80"
+            />
+            <h3 className="mt-4">Hussain Ashar Mehtab</h3>
+            <p>Social Media Manager</p>
+          </div>
+
+          <div className="pb-4 border flex flex-col items-center">
+            <img
+              src="src\assets\female_ph.jpg"
+              alt="Team Member"
+              className="w-80"
+            />
             <h3 className="mt-4">Haya Fareed</h3>
             <p>Cirriculum Development Intern</p>
           </div>
 
           <div className="pb-4 border flex flex-col items-center">
-            <img src={Naveed_image} alt="Team Member" className="w-80" />
+            <img
+              src="src\assets\male_ph.jpg"
+              alt="Team Member"
+              className="w-80"
+            />
             <h3 className="mt-4">Mohib Ahmad</h3>
             <p>Marketing And Affiliations Intern</p>
           </div>
+        </div>
+        <div className="flex flex-col md:flex-row gap-12 justify-center items-center mt-12">
           <div className="pb-4 border flex flex-col items-center">
-            <img src={Naveed_image} alt="Team Member" className="w-80" />
+            <img
+              src="src\assets\female_ph.jpg"
+              alt="Team Member"
+              className="w-80"
+            />
             <h3 className="mt-4">Arfa Abdul Naseer</h3>
             <p>HR Intern</p>
           </div>
           <div className="pb-4 border flex flex-col items-center">
-            <img src={Naveed_image} alt="Team Member" className="w-80" />
+            <img
+              src="src\assets\male_ph.jpg"
+              alt="Team Member"
+              className="w-80"
+            />
             <h3 className="mt-4">Abdullah Farooq</h3>
             <p>Web Development Intern</p>
           </div>

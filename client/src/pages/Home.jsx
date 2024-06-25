@@ -68,35 +68,20 @@ export default function Home() {
       </section>
 
       {/* ----------------- Mission & Vision -------------- editing */}
-      <section className="relative p-0 grid md:grid-cols-[1fr_1.5fr] lg:grid-cols-2 shadow-md">
-        <div className="p-4 grid place-content-center bg-gray-50">
-          <Separator className="hidden sm:block bg-c_primary-light max-w-16 h-1.5 mb-6 ml-1" />
-          <h2 className="text-2xl sm:text-5xl font-bold">
-            <span className="text-c_primary-light">Mission</span> <br /> and
-            Vision
-          </h2>
-        </div>
+      <section className="relative p-0 grid md:grid-cols-[1fr_1.5fr] lg:grid-cols-1 shadow-md">
 
         <div className="py-16 md:py-32 px-6 md:px-12 self-stretch bg-[#1B1B2F]">
           <div className="flex flex-col gap-16 max-w-md mx-auto h-full justify-center items-center">
             <div className="flex gap-8">
-              <h3 className="text-[#FBD33C]">Mission</h3>
+              <h1 className="text-[#FBD33C]">Mission</h1>
+            </div>
+            <div className="flex gap-8">
               <p className="text-white max-w-md">
-                At CodeKids, we aim to nurture young minds with the skills and
-                knowledge needed to thrive in a digital world.
+              At Code Kids PK, we are dedicated to transforming the learners of today into the disrupters of tomorrow. Our mission is to spark a lifelong passion for innovation and curiosity in each student. We create an environment where exploration, experimentation, and collaboration are not just encouraged but celebrated, fostering a sense of inclusion and support. Our educational approach goes beyond the traditional, emphasizing hands-on learning that cultivates critical thinking, problem-solving skills, and a deep reverence for STEM disciplines. We are committed to inspiring young minds to embrace technology, encouraging them to see themselves as future innovators, changemakers, and leaders. By empowering the leaders of tomorrow, we are laying the groundwork for a brighter, more innovative future for all.
               </p>
             </div>
 
             <Separator className="bg-[#FBD33C] max-w-[80%] mx-auto" />
-
-            <div className="flex gap-8">
-              <h3 className="text-[#FBD33C]">Vision</h3>
-              <p className="text-white max-w-md">
-                Our vision is to create a fun, engaging, and educational
-                environment where kids can learn to code and develop critical
-                thinking skills.
-              </p>
-            </div>
           </div>
         </div>
       </section>

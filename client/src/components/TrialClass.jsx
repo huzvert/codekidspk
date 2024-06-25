@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 
-export default function Tutoring({ onClose }) {
+export default function TrialClass({ onClose }) {
   const [formData, setFormData] = useState({
     parentName: "",
     childName: "",
@@ -35,7 +35,7 @@ export default function Tutoring({ onClose }) {
     const formDatab = new FormData(e.target);
 
     try {
-      const response = await fetch(import.meta.env.VITE_TUTORING_SCRIPT_URL, {
+      const response = await fetch(import.meta.env.VITE_TRAILCLASS_SCRIPT_URL, {
         method: "POST",
         body: formDatab,
       });

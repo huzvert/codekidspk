@@ -1,9 +1,9 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
-import Tutoring from "./Tutoring";
+import TrialClass from "./TrialClass";
 
-export default function TutoringPopup({ isVisible, onClose }) {
+export default function TrialClassPopup({ isVisible, onClose }) {
   if (!isVisible) return null;
 
   return (
@@ -17,10 +17,10 @@ export default function TutoringPopup({ isVisible, onClose }) {
         </button>
         <div className="space-y-7">
           <h2 className="text-2xl font-semibold text-c_accent">
-            Book 1:1 Tutoring
+            Book a Trial Class
           </h2>
           <div className="overflow-y-auto max-h-full">
-            <Tutoring onClose={onClose} />
+            <TrialClass onClose={onClose} />
           </div>
         </div>
       </div>

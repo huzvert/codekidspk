@@ -13,7 +13,8 @@
       "price": 126.0,
       "discount": 0.0,
       "discounted_price": 126.0,
-      "availability": 10
+      "availability": 10,
+      "one_to_one_tutoring": true
     },
     {
       "id": 2,
@@ -28,7 +29,8 @@
       "price": 156.0,
       "discount": 0.0,
       "discounted_price": 156.0,
-      "availability": 15
+      "availability": 15,
+      "one_to_one_tutoring": true
     },
 
     {
@@ -44,7 +46,8 @@
       "price": 186.0,
       "discount": 0.0,
       "discounted_price": 186.0,
-      "availability": 12
+      "availability": 12,
+      "one_to_one_tutoring": true
     },
 
     {
@@ -60,7 +63,8 @@
       "price": 206.0,
       "discount": 0.0,
       "discounted_price": 206.0,
-      "availability": 10
+      "availability": 10,
+      "one_to_one_tutoring": true
     },
 
     {
@@ -76,7 +80,8 @@
       "price": 226.0,
       "discount": 0.0,
       "discounted_price": 226.0,
-      "availability": 10
+      "availability": 10,
+      "one_to_one_tutoring": true
     },
 
     {
@@ -88,7 +93,8 @@
       "price": 126.0,
       "discount": 0.0,
       "discounted_price": 126.0,
-      "availability": 10
+      "availability": 10,
+      "one_to_one_tutoring": true
     },
     {
       "id": 7,
@@ -99,7 +105,8 @@
       "price": 156.0,
       "discount": 0.0,
       "discounted_price": 156.0,
-      "availability": 15
+      "availability": 15,
+      "one_to_one_tutoring": true
     },
     {
       "id": 8,
@@ -110,7 +117,8 @@
       "price": 186.0,
       "discount": 0.0,
       "discounted_price": 186.0,
-      "availability": 12
+      "availability": 12,
+      "one_to_one_tutoring": true
     },
 
     {
@@ -126,7 +134,8 @@
       "price": 206.0,
       "discount": 0.0,
       "discounted_price": 206.0,
-      "availability": 10
+      "availability": 10,
+      "one_to_one_tutoring": true
     },
     {
       "id": 10,
@@ -141,7 +150,8 @@
       "price": 226.0,
       "discount": 0.0,
       "discounted_price": 226.0,
-      "availability": 10
+      "availability": 10,
+      "one_to_one_tutoring": true
     }
   ]
 }

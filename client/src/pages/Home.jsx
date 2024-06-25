@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import MailList from "../components/MailList";
 import Footer from "../components/Footer";
 import TutoringPopup from "@/components/TutoringPopup";
-import PartiesPopup from "@/components/PartiesPopup";
+import ServicesPopup from "@/components/ServicesPopup";
+import TrialClassPopup from "@/components/TrialClassPopup";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import hero_image from "../assets/arif-riyanto-vJP-wZ6hGBg-unsplash.jpg";
@@ -24,6 +25,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { Card, CardContent } from "@/components/ui/card";
 import Autoplay from "embla-carousel-autoplay";
 import { Link } from "react-router-dom";
 
@@ -69,7 +71,6 @@ export default function Home() {
 
       {/* ----------------- Mission & Vision -------------- editing */}
       <section className="relative p-0 grid md:grid-cols-[1fr_1.5fr] lg:grid-cols-1 shadow-md">
-
         <div className="py-16 md:py-32 px-6 md:px-12 self-stretch bg-[#1B1B2F]">
           <div className="flex flex-col gap-16 max-w-md mx-auto h-full justify-center items-center">
             <div className="flex gap-8">
@@ -77,7 +78,20 @@ export default function Home() {
             </div>
             <div className="flex gap-8">
               <p className="text-white max-w-md">
-              At Code Kids PK, we are dedicated to transforming the learners of today into the disrupters of tomorrow. Our mission is to spark a lifelong passion for innovation and curiosity in each student. We create an environment where exploration, experimentation, and collaboration are not just encouraged but celebrated, fostering a sense of inclusion and support. Our educational approach goes beyond the traditional, emphasizing hands-on learning that cultivates critical thinking, problem-solving skills, and a deep reverence for STEM disciplines. We are committed to inspiring young minds to embrace technology, encouraging them to see themselves as future innovators, changemakers, and leaders. By empowering the leaders of tomorrow, we are laying the groundwork for a brighter, more innovative future for all.
+                At Code Kids PK, we are dedicated to transforming the learners
+                of today into the disrupters of tomorrow. Our mission is to
+                spark a lifelong passion for innovation and curiosity in each
+                student. We create an environment where exploration,
+                experimentation, and collaboration are not just encouraged but
+                celebrated, fostering a sense of inclusion and support. Our
+                educational approach goes beyond the traditional, emphasizing
+                hands-on learning that cultivates critical thinking,
+                problem-solving skills, and a deep reverence for STEM
+                disciplines. We are committed to inspiring young minds to
+                embrace technology, encouraging them to see themselves as future
+                innovators, changemakers, and leaders. By empowering the leaders
+                of tomorrow, we are laying the groundwork for a brighter, more
+                innovative future for all.
               </p>
             </div>
 
@@ -157,18 +171,7 @@ export default function Home() {
       <Testimonials />
 
       {/* ----------------- Call to Action -------------- */}
-      <section className="bg-c_primary-light text-center text-white py-12">
-        <h2 className="text-3xl sm:text-6xl">Ready to Get Started?</h2>
-        <p className="mt-6 mb-12 max-w-3xl mx-auto">
-          Join us and start your coding journey today!
-        </p>
-        <Link to="/programs">
-          <Button variant="outline" className="outline-button">
-            Book a Class
-          </Button>
-        </Link>
-      </section>
-
+      <TrialClass />
       {/* ----------------- Footer -------------- */}
       <Footer />
     </main>
@@ -177,20 +180,20 @@ export default function Home() {
 
 function Offerings() {
   const [isTutoringPopupVisible, setTutoringPopupVisible] = useState(false);
-  const [isPartiesPopupVisible, setPartiesPopupVisible] = useState(false);
+  const [isServicesPopupVisible, setServicesPopupVisible] = useState(false);
 
   const handleTutoringClick = () => {
     setTutoringPopupVisible(true);
   };
-  const handlePartiesClick = () => {
-    setPartiesPopupVisible(true);
+  const handleServicesClick = () => {
+    setServicesPopupVisible(true);
   };
 
   const handleCloseTutoringPopup = () => {
     setTutoringPopupVisible(false);
   };
-  const handleClosePartiesPopup = () => {
-    setPartiesPopupVisible(false);
+  const handleCloseServicesPopup = () => {
+    setServicesPopupVisible(false);
   };
 
   return (
@@ -258,18 +261,18 @@ function Offerings() {
               <div className="mb-4 self-center text-white w-24 h-24 rounded-full p-2 flex justify-center items-center">
                 <FontAwesomeIcon size="3x" icon={faGift} />
               </div>
-              <h3 className="">Parties</h3>
+              <h3 className="">Services</h3>
               <p className="text-white flex-grow">
-                We help bring people together for fun parties with learning
-                opportunities.
+                We offer a range of services including birthday parties, school
+                workshops, and corporate events.
               </p>
 
               <Button
-                onClick={handlePartiesClick}
+                onClick={handleServicesClick}
                 variant="outline"
                 className="mt-8 min-w-full outline-button"
               >
-                Book Events & Parties
+                Book Other Services
               </Button>
             </div>
           </div>
@@ -280,9 +283,45 @@ function Offerings() {
         isVisible={isTutoringPopupVisible}
         onClose={handleCloseTutoringPopup}
       />
-      <PartiesPopup
-        isVisible={isPartiesPopupVisible}
-        onClose={handleClosePartiesPopup}
+      <ServicesPopup
+        isVisible={isServicesPopupVisible}
+        onClose={handleCloseServicesPopup}
+      />
+    </>
+  );
+}
+
+function TrialClass() {
+  const [isTrialClassPopupVisible, setTrialClassPopupVisible] = useState(false);
+
+  function handleTrialClassClick() {
+    setTrialClassPopupVisible(true);
+  }
+
+  function handleCloseTrialClassPopup() {
+    setTrialClassPopupVisible(false);
+  }
+
+  return (
+    <>
+      <section className="bg-c_primary-light text-center text-white py-12">
+        <h2 className="text-3xl sm:text-6xl">Ready to Get Started?</h2>
+        <p className="mt-6 mb-12 max-w-3xl mx-auto">
+          Join us and start your coding journey today!
+        </p>
+
+        <Button
+          onClick={handleTrialClassClick}
+          variant="outline"
+          className="outline-button"
+        >
+          Book a Trial Class
+        </Button>
+      </section>
+
+      <TrialClassPopup
+        isVisible={isTrialClassPopupVisible}
+        onClose={handleCloseTrialClassPopup}
       />
     </>
   );
@@ -310,13 +349,26 @@ function Testimonials() {
       >
         <CarouselContent>
           {testimonials.map(testimonial => (
-            <CarouselItem key={testimonial.id}>
-              <div className="space-y-12 p-12 flex flex-col rounded-lg border-2 border-c_primary-light">
-                <p className="text-xl">{testimonial.testimonial}</p>
-                <h3 className="text-c_secondary-light/70 uppercase">
-                  {testimonial.name} | {testimonial.title}
-                </h3>
-              </div>
+            <CarouselItem
+              key={testimonial.id}
+              className="md:basis-1/3 flex items-stretch"
+            >
+              <Card className="flex-1">
+                <CardContent className="space-y-12 p-12 flex flex-col rounded-lg border-2 border-c_primary-light h-full">
+                  <p className="text-xl flex-1">
+                    <span className="text-c_primary-light text-3xl font-black pr-1">
+                      &ldquo;
+                    </span>
+                    {testimonial.testimonial}
+                    <span className="text-c_primary-light text-3xl font-black pl-1">
+                      &rdquo;
+                    </span>
+                  </p>
+                  <h3 className="text-c_secondary-light/70 uppercase">
+                    {testimonial.name} | {testimonial.title}
+                  </h3>
+                </CardContent>
+              </Card>
             </CarouselItem>
           ))}
         </CarouselContent>

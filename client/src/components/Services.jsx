@@ -1,16 +1,23 @@
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 
-export default function Parties({ onClose }) {
+export default function Services({ onClose }) {
   const [formData, setFormData] = useState({
-    name: "",
-    age: "",
-    subject: "",
+    parentName: "",
+    contactNumber: "",
     email: "",
-    additionalInfo: "",
+    service: "",
+    description: "",
   });
+
+  const services = [
+    "Parties",
+    "Educational Workshops",
+    "Stalls at Events",
+    "Website Development for Startups and Small Businesses",
+  ];
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [isSubmitting, setIsSubmitting] = useState(false); // Add state for submitting
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = e => {
     const { name, value } = e.target;
@@ -19,14 +26,17 @@ export default function Parties({ onClose }) {
 
   const handleSubmit = async e => {
     e.preventDefault();
-    setIsSubmitting(true); // Set submitting state to true
+    setIsSubmitting(true);
     const formDatab = new FormData(e.target);
 
     try {
-      const response = await fetch(import.meta.env.VITE_PARTIES_SCRIPT_URL, {
-        method: "POST",
-        body: formDatab,
-      });
+      const response = await fetch(
+        import.meta.env.VITE_OTHER_SERVICES_SCRIPT_URL,
+        {
+          method: "POST",
+          body: formDatab,
+        }
+      );
 
       if (!response.ok) {
         throw new Error("Network response was not ok");
@@ -37,7 +47,7 @@ export default function Parties({ onClose }) {
     } catch (error) {
       console.error("There was a problem with the submission:", error);
     } finally {
-      setIsSubmitting(false); // Reset submitting state
+      setIsSubmitting(false);
     }
   };
 
@@ -51,11 +61,11 @@ export default function Parties({ onClose }) {
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label className="block text-gray-700">
-              Name:
+              Parent Name:
               <input
                 type="text"
-                name="name"
-                value={formData.name}
+                name="parentName"
+                value={formData.parentName}
                 onChange={handleChange}
                 required
                 className="mt-1 p-2 block w-full border border-gray-300 rounded-md"
@@ -64,24 +74,11 @@ export default function Parties({ onClose }) {
           </div>
           <div>
             <label className="block text-gray-700">
-              Age:
+              Contact Number:
               <input
-                type="number"
-                name="age"
-                value={formData.age}
-                onChange={handleChange}
-                required
-                className="mt-1 p-2 block w-full border border-gray-300 rounded-md"
-              />
-            </label>
-          </div>
-          <div>
-            <label className="block text-gray-700">
-              Subject:
-              <input
-                type="text"
-                name="subject"
-                value={formData.subject}
+                type="tel"
+                name="contactNumber"
+                value={formData.contactNumber}
                 onChange={handleChange}
                 required
                 className="mt-1 p-2 block w-full border border-gray-300 rounded-md"
@@ -103,7 +100,28 @@ export default function Parties({ onClose }) {
           </div>
           <div>
             <label className="block text-gray-700">
-              Additional Info:
+              Service:
+              <select
+                name="service"
+                value={formData.service}
+                onChange={handleChange}
+                required
+                className="mt-1 p-2 block w-full border border-gray-300 rounded-md"
+              >
+                <option disabled value="">
+                  Select a service
+                </option>
+                {services.map(service => (
+                  <option key={service} value={service}>
+                    {service}
+                  </option>
+                ))}
+              </select>
+            </label>
+          </div>
+          <div>
+            <label className="block text-gray-700">
+              Service Description:
               <textarea
                 name="additionalInfo"
                 value={formData.additionalInfo}
@@ -112,9 +130,10 @@ export default function Parties({ onClose }) {
               />
             </label>
           </div>
+
           <Button
             type="submit"
-            disabled={isSubmitting} // Disable the button when submitting
+            disabled={isSubmitting}
             className="w-full default-button"
           >
             {isSubmitting ? "Submitting..." : "Submit"}

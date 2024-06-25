@@ -1,9 +1,9 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
-import Parties from './Parties';
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
+import Services from "./Services";
 
-export default function PartiesPopup({ isVisible, onClose }) {
+export default function ServicesPopup({ isVisible, onClose }) {
   if (!isVisible) return null;
 
   return (
@@ -17,9 +17,9 @@ export default function PartiesPopup({ isVisible, onClose }) {
         </button>
         <div className="space-y-7">
           <h2 className="text-2xl font-semibold text-c_accent">
-            Book Events & Parties
+            Book Services
           </h2>
-          <Parties onClose={onClose} />
+          <Services onClose={onClose} />
         </div>
       </div>
     </div>

@@ -9,6 +9,7 @@ import {
   faHome,
   faPhone,
 } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faInstagram, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 export default function Footer() {
   return (
@@ -25,38 +26,42 @@ export default function Footer() {
       </div>
 
       <div className="space-y-3">
-        <div className="flex gap-3">
-          <FontAwesomeIcon icon={faHome} />
-          <ul className="space-y-1">
-            <li className="uppercase font-bold">Locations</li>
-            <li>Blackheath</li>
-            <li>Greenwich</li>
-            <li>Hampstead</li>
-            <li>Sevenoaks</li>
-            <li>Wimbledon</li>
-          </ul>
-        </div>
+        
 
         <div className="flex items-center gap-3">
           <FontAwesomeIcon icon={faPhone} />
-          <p>0800-010-6912</p>
+          <p>+92 300 868 1023</p>
+        </div>
+
+        <div className="flex items-center gap-3">
+          <FontAwesomeIcon icon={faWhatsapp} />
+          <p>
+          <a href = "https://api.whatsapp.com/send?phone=923008681023" target="_blank" >+92 300 868 1023</a>
+          </p>
         </div>
 
         <div className="flex items-center gap-3">
           <FontAwesomeIcon icon={faEnvelope} />
-          <a href="mailto:info@codekids.org.uk" className="hover:underline">
-            info@codekids.org.uk
+          <a href="mailto:codekidspakistan@gmail.com" target="_blank" className="hover:underline">
+          codekidspakistan@gmail.com
           </a>
         </div>
 
+        
+
         <div className="flex items-center gap-3">
-          <FontAwesomeIcon icon={faClock} />
-          <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+          <FontAwesomeIcon icon={faLinkedin} />
+          <p><a href="https://www.linkedin.com/company/codekidspk/?originalSubdomain=pk" target="_blank">Code Kids PK</a></p>
         </div>
 
         <div className="flex items-center gap-3">
-          <FontAwesomeIcon icon={faClock} />
-          <p>Saturday - Sunday: 9:00 AM - 12:00 PM</p>
+          <FontAwesomeIcon icon={faInstagram} />
+          <p><a href="https://www.instagram.com/codekidspk/" target="_blank">codekidspk</a></p>
+        </div>
+
+        <div className="flex items-center gap-3">
+          <FontAwesomeIcon icon={faFacebook} />
+          <p><a href="https://www.facebook.com/codekidspk/" target="_blank">Code Kids PK</a></p>
         </div>
       </div>
     </footer>

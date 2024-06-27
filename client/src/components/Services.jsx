@@ -76,7 +76,7 @@ export default function Services({ onClose }) {
             <label className="block text-gray-700">
               Contact Number:
               <input
-                type="tel"
+                type="number"
                 name="contactNumber"
                 value={formData.contactNumber}
                 onChange={handleChange}

@@ -104,7 +104,7 @@ export default function TrialClass({ onClose }) {
             <label className="block text-gray-700">
               Contact Number:
               <input
-                type="tel"
+                type="number"
                 name="contactNumber"
                 value={formData.contactNumber}
                 onChange={handleChange}
@@ -144,6 +144,7 @@ export default function TrialClass({ onClose }) {
                 name="subject"
                 value={formData.subject}
                 onChange={handleChange}
+                required
                 className="mt-1 p-2 block w-full border border-gray-300 rounded-md"
               >
                 <option disabled value="">

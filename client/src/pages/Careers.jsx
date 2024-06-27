@@ -112,7 +112,7 @@ export default function Careers() {
                   <Input
                     id="phone"
                     name="phone"
-                    type="tel"
+                    type="number"
                     value={formData.phone}
                     onChange={handleChange}
                     required

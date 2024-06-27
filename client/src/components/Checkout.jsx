@@ -124,7 +124,7 @@ export default function Checkout() {
                 <div>
                   <Label htmlFor="contactNumber">Contact Number</Label>
                   <Input
-                    type="tel"
+                    type="number"
                     id="contactNumber"
                     name="contactNumber"
                     placeholder="Enter your contact number"

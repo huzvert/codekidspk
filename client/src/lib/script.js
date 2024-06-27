@@ -8,7 +8,7 @@ function doPost(e) {
   let data = e.parameter;
   let date = new Date();
   sheet.appendRow([
-    data.name,
+    data.name, // data.name is the name attribute of the input field in the form
     data.age,
     data.email,
     data.subject,
@@ -20,60 +20,78 @@ function doPost(e) {
   );
 }
 
-/* 
+// // 1:1 Tutoring
+// const sheets = SpreadsheetApp.openByUrl(
+//   'https://docs.google.com/spreadsheets/d/1u9idxLRvSlHCnPbd2Os_wlFUgzOj6VNYPIiNGDpfsdY/edit?gid=0#gid=0' // Add your Google sheet URL here
+// );
+// const sheet = sheets.getSheetByName('Sheet1');
 
-// 1:1 Tutoring
-const sheets = SpreadsheetApp.openByUrl(
-  'https://docs.google.com/spreadsheets/d/1u9idxLRvSlHCnPbd2Os_wlFUgzOj6VNYPIiNGDpfsdY/edit?gid=0#gid=0' // Add your Google sheet URL here
-);
-const sheet = sheets.getSheetByName('Sheet1');
+// function doPost(e) {
+//   let data = e.parameter;
+//   let date = new Date();
 
-function doPost(e) {
-  let data = e.parameter;
-  let date = new Date();
+//   sheet.appendRow([
+//     data.parentName,
+//     data.childName,
+//     data.childAge,
+//     data.contactNumber,
+//     data.email,
+//     data.additionalInfo,
+//     data.subject,
+//     date,
+//   ]);
 
-  sheet.appendRow([
-    data.parentName,
-    data.childName,
-    data.childAge,
-    data.contactNumber,
-    data.email,
-    data.additionalInfo,
-    data.subject,
-    date,
-  ]);
+//   return ContentService.createTextOutput(
+//     'Your message was successfully sent to the Google Sheet database!'
+//   );
+// }
 
-  return ContentService.createTextOutput(
-    'Your message was successfully sent to the Google Sheet database!'
-  );
-}
+// // Other Services
+// const sheets = SpreadsheetApp.openByUrl(
+//   'https://docs.google.com/spreadsheets/d/1mf8shRFzHRmHZ987axd-AA-s_YaI-UbmDLfeu6_ubOc/edit?gid=0#gid=0' // Add your Google sheet URL here
+// );
+// const sheet = sheets.getSheetByName('Sheet1');
 
-*/
+// function doPost(e) {
+//   let data = e.parameter;
+//   let date = new Date();
 
-/* 
+//   sheet.appendRow([
+//     data.parentName,
+//     data.contactNumber,
+//     data.email,
+//     data.service,
+//     data.description,
+//     date,
+//   ]);
 
-// Other Services
-const sheets = SpreadsheetApp.openByUrl(
-  'https://docs.google.com/spreadsheets/d/1mf8shRFzHRmHZ987axd-AA-s_YaI-UbmDLfeu6_ubOc/edit?gid=0#gid=0' // Add your Google sheet URL here
-);
-const sheet = sheets.getSheetByName('Sheet1');
+//   return ContentService.createTextOutput(
+//     'Your message was successfully sent to the Google Sheet database!'
+//   );
+// }
 
-function doPost(e) {
-  let data = e.parameter;
-  let date = new Date();
+// // Trial Class
+// const sheets = SpreadsheetApp.openByUrl(
+//   'https://docs.google.com/spreadsheets/d/1QhiHzGAWgF2BrggHVMemmUXdjkMVP_AGcA6TIZlVuyY/edit?gid=0#gid=0' // Add your Google sheet URL here
+// );
+// const sheet = sheets.getSheetByName('Sheet1');
 
-  sheet.appendRow([
-    data.parentName,
-    data.contactNumber,
-    data.email,
-    data.service,
-    data.description,
-    date,
-  ]);
+// function doPost(e) {
+//   let data = e.parameter;
+//   let date = new Date();
 
-  return ContentService.createTextOutput(
-    'Your message was successfully sent to the Google Sheet database!'
-  );
-}
+//   sheet.appendRow([
+//     data.parentName,
+//     data.childName,
+//     data.childAge,
+//     data.contactNumber,
+//     data.email,
+//     data.additionalInfo,
+//     data.subject,
+//     date,
+//   ]);
 
-*/
+//   return ContentService.createTextOutput(
+//     'Your message was successfully sent to the Google Sheet database!'
+//   );
+// }

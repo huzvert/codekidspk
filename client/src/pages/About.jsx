@@ -1,7 +1,6 @@
 import React from "react";
 import hero_image from "../assets/thisisengineering-TeJZ3CGZXRw-unsplash.jpg";
 import stats_image from "../assets/robo-wunderkind-hLvQ4-QEBAE-unsplash.jpg";
-import Footer from "../components/Footer";
 import { Separator } from "@/components/ui/separator";
 
 export default function About() {
@@ -258,8 +257,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
-      <Footer />
     </main>
   );
 }

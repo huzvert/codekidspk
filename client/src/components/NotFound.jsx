@@ -1,5 +1,5 @@
-import React from 'react';
-import 'tailwindcss/tailwind.css';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const NoteFound = () => {
   return (
@@ -16,6 +16,10 @@ const NoteFound = () => {
           }
         }
       `}</style>
+
+      <Link to="/" className="mt-4 text-c_accent hover:underline">
+        Go back home
+      </Link>
     </div>
   );
 };

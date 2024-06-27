@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import MailList from "../components/MailList";
-import Footer from "../components/Footer";
 import TutoringPopup from "@/components/TutoringPopup";
 import ServicesPopup from "@/components/ServicesPopup";
 import TrialClassPopup from "@/components/TrialClassPopup";
@@ -27,7 +27,6 @@ import {
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
 import Autoplay from "embla-carousel-autoplay";
-import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -172,8 +171,6 @@ export default function Home() {
 
       {/* ----------------- Call to Action -------------- */}
       <TrialClass />
-      {/* ----------------- Footer -------------- */}
-      <Footer />
     </main>
   );
 }

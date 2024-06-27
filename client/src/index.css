@@ -80,7 +80,8 @@ body {
   overflow-x: hidden !important;
 }
 
-body main > * {
+body main > *,
+footer {
   padding: 5rem 1rem;
   overflow-x: hidden !important;
 }

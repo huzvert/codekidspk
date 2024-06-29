@@ -205,3 +205,10 @@ footer * {
 footer a:hover {
   @apply text-c_accent !important;
 }
+
+.AccordionChevron {
+  transition: transform 300ms;
+}
+.AccordionTrigger[data-state="open"] > .AccordionChevron {
+  transform: rotate(180deg);
+}

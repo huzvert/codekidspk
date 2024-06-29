@@ -1,0 +1,24 @@
+{
+  "faqs": [
+    {
+      "question": "What is the Code Kids Platform?",
+      "answer": "The Code Kids Platform is an online educational platform designed to teach coding and computer science to children. It offers interactive courses, projects, and resources that make learning programming languages like Python, Scratch, and JavaScript fun and engaging."
+    },
+    {
+      "question": "Who is the Code Kids Platform for?",
+      "answer": "The Code Kids Platform is ideal for children aged 7-14 who are interested in learning how to code. Our courses cater to beginners and intermediate learners, providing a supportive environment to develop essential STEM skills."
+    },
+    {
+      "question": "What courses are available on the Code Kids Platform?",
+      "answer": "The Code Kids Platform offers a variety of courses covering topics such as game development, web design, robotics, and more. Each course is carefully crafted to introduce coding concepts in a hands-on and accessible manner."
+    },
+    {
+      "question": "Can parents track their child's progress on the Code Kids Platform?",
+      "answer": "Yes, parents have access to a dashboard where they can monitor their child's progress, view completed activities, and track learning milestones. This helps parents stay informed about their child's coding journey."
+    },
+    {
+      "question": "Is the Code Kids Platform safe for children?",
+      "answer": "Yes, safety is our top priority. The Code Kids Platform is designed with strict privacy measures and parental controls to ensure a safe online learning experience. All content is age-appropriate and moderated."
+    }
+  ]
+}

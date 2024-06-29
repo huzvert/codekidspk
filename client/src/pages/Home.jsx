@@ -25,6 +25,13 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { ChevronDown } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import Autoplay from "embla-carousel-autoplay";
 
@@ -168,6 +175,9 @@ export default function Home() {
 
       {/* ----------------- Testimonials -------------- */}
       <Testimonials />
+
+      {/* ----------------- FAQs -------------- */}
+      <FAQs />
 
       {/* ----------------- Call to Action -------------- */}
       <TrialClass />
@@ -372,6 +382,48 @@ function Testimonials() {
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>
+    </section>
+  );
+}
+
+function FAQs() {
+  const [faqs, setFaqs] = useState([]);
+
+  useEffect(() => {
+    fetch("src/content/faqs.json")
+      .then(response => response.json())
+      .then(data => setFaqs(data.faqs));
+  }, []);
+
+  return (
+    <section className="text-center space-y-12 mx-auto max-w-screen-lg">
+      <h2 className="relative inline-block text-3xl sm:text-6xl">
+        Frequently Asked Questions
+        <span className="absolute left-1/2 transform -translate-x-1/2 bottom-[-10px] w-3/4 h-0.5 bg-c_accent"></span>
+      </h2>
+
+      <Accordion type="single" collapsible className="container">
+        {faqs.map((faq, index) => (
+          <AccordionItem
+            key={index}
+            value={`$item-${index}`}
+            className="shadow-md rounded-lg px-4 mb-4 sm:mb-6"
+          >
+            <AccordionTrigger className="gap-4 flex items-center hover:no-underline">
+              <span className="text-start font-bold hover:text-c_primary-light flex-1">
+                {faq.question}
+              </span>
+              <ChevronDown
+                className="AccordionChevron bg-c_primary-light rounded-full flex items-center justify-center w-6 h-6 sm:w-[30px] sm:h-[30px]"
+                aria-hidden
+              />
+            </AccordionTrigger>
+            <AccordionContent className="text-start text-base">
+              {faq.answer}
+            </AccordionContent>
+          </AccordionItem>
+        ))}
+      </Accordion>
     </section>
   );
 }

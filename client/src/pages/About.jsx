@@ -95,7 +95,7 @@ export default function About() {
         <div className="flex flex-col md:flex-row gap-12 justify-center items-center mt-12">
           <div className="pb-4 border flex flex-col items-center">
             <img
-              src="src\assets\samia.png"
+              src="src\assets\mehrab.png"
               alt="Team Member"
               className="w-80"
             />
@@ -105,7 +105,7 @@ export default function About() {
 
           <div className="pb-4 border flex flex-col items-center">
             <img
-              src="src\assets\naveed.png"
+              src="src\assets\zammad.png"
               alt="Team Member"
               className="w-80"
             />
@@ -117,7 +117,7 @@ export default function About() {
         <div className="flex flex-col md:flex-row gap-12 justify-center items-center mt-12">
           <div className="pb-4 border flex flex-col items-center">
             <img
-              src="src\assets\male_ph.jpg"
+              src="src\assets\bilal.png"
               alt="Team Member"
               className="w-80"
             />
@@ -127,7 +127,7 @@ export default function About() {
 
           <div className="pb-4 border flex flex-col items-center">
             <img
-              src="src\assets\male_ph.jpg"
+              src="src\assets\Danish.jpg"
               alt="Team Member"
               className="w-80"
             />
@@ -137,7 +137,7 @@ export default function About() {
 
           <div className="pb-4 border flex flex-col items-center">
             <img
-              src="src\assets\male_ph.jpg"
+              src="src\assets\Natiq.jpg"
               alt="Team Member"
               className="w-80"
             />
@@ -148,7 +148,7 @@ export default function About() {
         <div className="flex flex-col md:flex-row gap-12 justify-center items-center mt-12">
           <div className="pb-4 border flex flex-col items-center">
             <img
-              src="src\assets\male_ph.jpg"
+              src="src\assets\Samad.jpg"
               alt="Team Member"
               className="w-80"
             />
@@ -157,7 +157,7 @@ export default function About() {
           </div>
           <div className="pb-4 border flex flex-col items-center">
             <img
-              src="src\assets\female_ph.jpg"
+              src="src\assets\Yusra.jpg"
               alt="Team Member"
               className="w-80"
             />
@@ -166,7 +166,7 @@ export default function About() {
           </div>
           <div className="pb-4 border flex flex-col items-center">
             <img
-              src="src\assets\male_ph.jpg"
+              src="src\assets\Yasjudan.jpeg"
               alt="Team Member"
               className="w-80"
             />
@@ -178,7 +178,7 @@ export default function About() {
         <div className="flex flex-col md:flex-row gap-12 justify-center items-center mt-12">
           <div className="pb-4 border flex flex-col items-center">
             <img
-              src="src\assets\male_ph.jpg"
+              src="src\assets\Adil.jpg"
               alt="Team Member"
               className="w-80"
             />
@@ -188,7 +188,7 @@ export default function About() {
 
           <div className="pb-4 border flex flex-col items-center">
             <img
-              src="src\assets\male_ph.jpg"
+              src="src\assets\Rauf.png"
               alt="Team Member"
               className="w-80"
             />
@@ -197,18 +197,18 @@ export default function About() {
           </div>
           <div className="pb-4 border flex flex-col items-center">
             <img
-              src="src\assets\female_ph.jpg"
+              src="src\assets\Myra.jpeg"
               alt="Team Member"
               className="w-80"
             />
-            <h3 className="mt-4">Maira Ali</h3>
+            <h3 className="mt-4">Myra Ali</h3>
             <p>HR Associate</p>
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-12 justify-center items-center mt-12">
           <div className="pb-4 border flex flex-col items-center">
             <img
-              src="src\assets\male_ph.jpg"
+              src="src\assets\Hussain.jpg"
               alt="Team Member"
               className="w-80"
             />
@@ -218,12 +218,12 @@ export default function About() {
 
           <div className="pb-4 border flex flex-col items-center">
             <img
-              src="src\assets\female_ph.jpg"
+              src="src\assets\Munzira.jpg"
               alt="Team Member"
               className="w-80"
             />
-            <h3 className="mt-4">Haya Fareed</h3>
-            <p>Cirriculum Development Intern</p>
+            <h3 className="mt-4">Munzira Ali</h3>
+            <p>Teaching Assistant</p>
           </div>
 
           <div className="pb-4 border flex flex-col items-center">
@@ -239,7 +239,7 @@ export default function About() {
         <div className="flex flex-col md:flex-row gap-12 justify-center items-center mt-12">
           <div className="pb-4 border flex flex-col items-center">
             <img
-              src="src\assets\female_ph.jpg"
+              src="src\assets\Arfa.jpg"
               alt="Team Member"
               className="w-80"
             />
@@ -248,12 +248,22 @@ export default function About() {
           </div>
           <div className="pb-4 border flex flex-col items-center">
             <img
-              src="src\assets\male_ph.jpg"
+              src="src\assets\Abdullah.jpg"
               alt="Team Member"
               className="w-80"
             />
             <h3 className="mt-4">Abdullah Farooq</h3>
             <p>Web Development Intern</p>
+          </div>
+          
+          <div className="pb-4 border flex flex-col items-center">
+            <img
+              src="src\assets\Haya.jpeg"
+              alt="Team Member"
+              className="w-80"
+            />
+            <h3 className="mt-4">Haya Fareed</h3>
+            <p>Cirriculum Development Intern</p>
           </div>
         </div>
       </section>

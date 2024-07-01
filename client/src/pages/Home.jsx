@@ -77,34 +77,26 @@ export default function Home() {
 
       {/* ----------------- Mission & Vision -------------- editing */}
       <section className="relative p-0 grid md:grid-cols-[1fr_1.5fr] lg:grid-cols-1 shadow-md">
-        <div className="py-16 md:py-32 px-6 md:px-12 self-stretch bg-[#1B1B2F]">
-          <div className="flex flex-col gap-16 max-w-md mx-auto h-full justify-center items-center">
+
+        <div className="relative py-16 md:py-32 px-6 md:px-12 self-stretch bg-[#000000] -mx-4 bg-center z-0">
+          <div
+            className="absolute inset-0 bg-cover bg-center z-0 opacity-50"
+            style={{ backgroundImage: `url(${offering_image})` }}
+          ></div>
+          <div className="relative flex flex-col gap-16 w-full mx-auto h-full justify-center items-center z-10">
             <div className="flex gap-8">
-              <h1 className="text-[#FBD33C]">Mission</h1>
+              <h1 className="text-[#FBD33C] sm:text-6xl">Mission</h1>
             </div>
             <div className="flex gap-8">
-              <p className="text-white max-w-md">
-                At Code Kids PK, we are dedicated to transforming the learners
-                of today into the disrupters of tomorrow. Our mission is to
-                spark a lifelong passion for innovation and curiosity in each
-                student. We create an environment where exploration,
-                experimentation, and collaboration are not just encouraged but
-                celebrated, fostering a sense of inclusion and support. Our
-                educational approach goes beyond the traditional, emphasizing
-                hands-on learning that cultivates critical thinking,
-                problem-solving skills, and a deep reverence for STEM
-                disciplines. We are committed to inspiring young minds to
-                embrace technology, encouraging them to see themselves as future
-                innovators, changemakers, and leaders. By empowering the leaders
-                of tomorrow, we are laying the groundwork for a brighter, more
-                innovative future for all.
+              <p className="text-white text-center">
+                At Code Kids PK, we are dedicated to transforming the learners of today into the disrupters of tomorrow. Our mission is to spark a lifelong passion for innovation and curiosity in each student. We create an environment where exploration, experimentation, and collaboration are not just encouraged but celebrated, fostering a sense of inclusion and support. Our educational approach goes beyond the traditional, emphasizing hands-on learning that cultivates critical thinking, problem-solving skills, and a deep reverence for STEM disciplines. We are committed to inspiring young minds to embrace technology, encouraging them to see themselves as future innovators, changemakers, and leaders. By empowering the leaders of tomorrow, we are laying the groundwork for a brighter, more innovative future for all.
               </p>
             </div>
-
-            <Separator className="bg-[#FBD33C] max-w-[80%] mx-auto" />
-          </div>
+        <Separator className="bg-[#FBD33C] max-w-[80%] mx-auto" />
         </div>
-      </section>
+        </div>
+
+        </section>
 
       {/* ----------------- Core Values -------------- */}
       <section className="text-center">

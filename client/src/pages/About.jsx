@@ -84,45 +84,30 @@ export default function About() {
           Our Affiliations
           <span className="absolute left-1/2 transform -translate-x-1/2 bottom-[-10px] w-3/4 h-0.5 bg-c_accent"></span>
         </h2>
-        <div className='mb-96'>
-            <div className="relative w-full p-16  overflowx-hidden">
-                <div className="flex absolute left-0 animate-marquee-infinite">
-                    <div className='flex w-96 justify-around'>
-                        <img src={stats_image} alt="q" />
-                        <img src={hero_image} alt="q" />
-                        <img src={stats_image} alt="q" />
-                        <img src={hero_image} alt="q" />
-                        <img src={stats_image} alt="q" />
-                        <img src={hero_image} alt="q" />
-                        <img src={stats_image} alt="q" />
-                        <img src={hero_image} alt="q" />
-                        <img src={stats_image} alt="q" />
-                        <img src={hero_image} alt="q" />
-                        <img src={stats_image} alt="q" />
-                        <img src={hero_image} alt="q" />
-                        <img src={stats_image} alt="q" />
-                        <img src={hero_image} alt="q" />
-                    </div>
-                    <div className='flex w-96 justify-around'>
-                    <img src={hero_image} alt="" />
-                        <img src={stats_image} alt="q" />
-                        <img src={hero_image} alt="q" />
-                        <img src={stats_image} alt="q" />
-                        <img src={hero_image} alt="q" />
-                        <img src={stats_image} alt="q" />
-                        <img src={hero_image} alt="q" />
-                        <img src={stats_image} alt="q" />
-                        <img src={hero_image} alt="q" />
-                        <img src={stats_image} alt="q" />
-                        <img src={hero_image} alt="q" />
-                        <img src={stats_image} alt="q" />
-                        <img src={hero_image} alt="q" />
-                        <img src={stats_image} alt="q" />
-                        <img src={hero_image} alt="q" />
+                <div className="overflow-hidden">
+                    <div className='flex -mx-4 animate-img-ticker space-x-8 w-[200%]'>
+                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\kickstart.png" alt="" />
+                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\leos.png" alt="" />
+                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\mashion.png" alt="" />
+                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\scarsdale.jpeg" alt="" />
+                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\tns2.jpg" alt="" />
+
+                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\kickstart.png" alt="" />
+                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\leos.png" alt="" />
+                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\mashion.png" alt="" />
+                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\scarsdale.jpeg" alt="" />
+                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\tns2.jpg" alt="" />
+
+                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\kickstart.png" alt="" />
+                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\leos.png" alt="" />
+                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\mashion.png" alt="" />
+                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\scarsdale.jpeg" alt="" />
+                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\tns2.jpg" alt="" />
+                     
                     </div>
                 </div>
-            </div>
-        </div>
+
+
       </section>
 
       {/* Our Team */}

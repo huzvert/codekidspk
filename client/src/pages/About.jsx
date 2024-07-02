@@ -2,7 +2,6 @@ import React from "react";
 import hero_image from "../assets/thisisengineering-TeJZ3CGZXRw-unsplash.jpg";
 import stats_image from "../assets/robo-wunderkind-hLvQ4-QEBAE-unsplash.jpg";
 import { Separator } from "@/components/ui/separator";
-
 export default function About() {
   return (
     <main>
@@ -76,6 +75,53 @@ export default function About() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+      {/* Our Affiliations */}
+
+      <section className="text-center">
+        <h2 className="relative inline-block text-3xl sm:text-6xl">
+          Our Affiliations
+          <span className="absolute left-1/2 transform -translate-x-1/2 bottom-[-10px] w-3/4 h-0.5 bg-c_accent"></span>
+        </h2>
+        <div className='mb-96'>
+            <div className="relative w-full p-16  overflowx-hidden">
+                <div className="flex absolute left-0 animate-marquee-infinite">
+                    <div className='flex w-96 justify-around'>
+                        <img src={stats_image} alt="q" />
+                        <img src={hero_image} alt="q" />
+                        <img src={stats_image} alt="q" />
+                        <img src={hero_image} alt="q" />
+                        <img src={stats_image} alt="q" />
+                        <img src={hero_image} alt="q" />
+                        <img src={stats_image} alt="q" />
+                        <img src={hero_image} alt="q" />
+                        <img src={stats_image} alt="q" />
+                        <img src={hero_image} alt="q" />
+                        <img src={stats_image} alt="q" />
+                        <img src={hero_image} alt="q" />
+                        <img src={stats_image} alt="q" />
+                        <img src={hero_image} alt="q" />
+                    </div>
+                    <div className='flex w-96 justify-around'>
+                    <img src={hero_image} alt="" />
+                        <img src={stats_image} alt="q" />
+                        <img src={hero_image} alt="q" />
+                        <img src={stats_image} alt="q" />
+                        <img src={hero_image} alt="q" />
+                        <img src={stats_image} alt="q" />
+                        <img src={hero_image} alt="q" />
+                        <img src={stats_image} alt="q" />
+                        <img src={hero_image} alt="q" />
+                        <img src={stats_image} alt="q" />
+                        <img src={hero_image} alt="q" />
+                        <img src={stats_image} alt="q" />
+                        <img src={hero_image} alt="q" />
+                        <img src={stats_image} alt="q" />
+                        <img src={hero_image} alt="q" />
+                    </div>
+                </div>
+            </div>
         </div>
       </section>
 

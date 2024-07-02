@@ -64,7 +64,7 @@ export default function Cart() {
               className="w-full h-40 object-cover"
             />
             <h2 className="text-lg font-bold mt-2">{item.name}</h2>
-            <p className="text-sm text-gray-600 mt-1">£{item.price}</p>
+            <p className="text-sm text-gray-600 mt-1">PKR {item.price}/- </p>
             <div className="flex items-center mt-1">
               <p className="mr-2">Enrollments: </p>
               <Button
@@ -94,7 +94,7 @@ export default function Cart() {
       </section>
 
       <section className="text-center mt-8">
-        <h2 className="text-2xl mb-4">Total: £{total}</h2>
+        <h2 className="text-2xl mb-4">Total:PKR {total}/-</h2>
 
         <Checkout />
       </section>

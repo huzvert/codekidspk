@@ -68,7 +68,7 @@ export default function AddToCart({ course }) {
         <DialogHeader>
           <DialogTitle>{course.title}</DialogTitle>
           <DialogDescription>
-            Price: <span className="text-c_accent">£{course.price}</span>
+            Price: <span className="text-c_accent">PKR {course.price}/-</span>
           </DialogDescription>
         </DialogHeader>
 

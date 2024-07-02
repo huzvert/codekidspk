@@ -2,33 +2,33 @@
   "testimonials": [
     {
       "id": 1,
-      "name": "Jane Doe",
+      "name": "Shah Bano Rao",
       "title": "Parent",
-      "testimonial": "CodeKids has been an incredible experience for my child. The instructors are knowledgeable and engaging, and my child has learned so much about coding and problem-solving."
+      "testimonial": "Code Kids has been the most enjoyable experience for my child. The pace of learning and the method of teaching is excellent!"
     },
     {
       "id": 2,
-      "name": "John Smith",
-      "title": "Student",
-      "testimonial": "I love the projects we work on at CodeKids! They're fun and challenging, and I've learned a lot about different coding languages and how to think like a programmer."
+      "name": "Muhammad Haroon",
+      "title": "Parent",
+      "testimonial": "Our daughter who is eight years old, took her first coding session with Code Kids. She was really engaged in the session and she looked forward to her next lesson."
     },
     {
       "id": 3,
-      "name": "Sarah Johnson",
-      "title": "Teacher",
-      "testimonial": "The curriculum at CodeKids is top-notch. It's well-structured and provides a great balance of theory and hands-on practice. The students are always excited to learn and create new things."
+      "name": "Fouzia Akram",
+      "title": "Parent",
+      "testimonial": "The word coding was making me confused that how a little kid can do coding but the affordable fee plan encourages me to enroll my daughter for the the basic course , and I must say it's worth trying."
     },
     {
       "id": 4,
-      "name": "Michael Brown",
+      "name": "Alyna Baig",
       "title": "Parent",
-      "testimonial": "My daughter has gained so much confidence since joining CodeKids. She loves the supportive environment and the chance to work on real coding projects with her peers."
+      "testimonial": "This was my son's first time taking online coding class and it really exceeded my expectations. The flexibility and constant communication were what helped my son to continue."
     },
     {
       "id": 5,
-      "name": "Emily Wilson",
-      "title": "Student",
-      "testimonial": "CodeKids is amazing! The teachers are really helpful, and I've learned so many cool things about coding. I can't wait to come back for more classes."
+      "name": "Aqsa Tahir",
+      "title": "Parent",
+      "testimonial": "It's amazing platform for kids to learn coding instead of wasting time on useless activities kids must learn such activities that will help them to grow in future."
     }
   ]
 }

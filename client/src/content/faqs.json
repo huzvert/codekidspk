@@ -1,24 +1,40 @@
 {
   "faqs": [
     {
-      "question": "What is the Code Kids Platform?",
-      "answer": "The Code Kids Platform is an online educational platform designed to teach coding and computer science to children. It offers interactive courses, projects, and resources that make learning programming languages like Python, Scratch, and JavaScript fun and engaging."
+      "question": "Is there an end of program recognition?",
+      "answer": "Yes! All students received an end of program signed Code Kids certificate that can be used for official purposes."
     },
     {
-      "question": "Who is the Code Kids Platform for?",
-      "answer": "The Code Kids Platform is ideal for children aged 7-14 who are interested in learning how to code. Our courses cater to beginners and intermediate learners, providing a supportive environment to develop essential STEM skills."
+      "question": "What is the age group of children that you cater to?",
+      "answer": "We start with students as young as 7 years of age and go up to students aged 16."
     },
     {
-      "question": "What courses are available on the Code Kids Platform?",
-      "answer": "The Code Kids Platform offers a variety of courses covering topics such as game development, web design, robotics, and more. Each course is carefully crafted to introduce coding concepts in a hands-on and accessible manner."
+      "question": "What is the duration of your courses?",
+      "answer": "Duration depends on the time of the year, usually every course has 10 lessons and classes are weekly or bi-weekly during the school term and four or five times a week during holiday camps."
     },
     {
-      "question": "Can parents track their child's progress on the Code Kids Platform?",
-      "answer": "Yes, parents have access to a dashboard where they can monitor their child's progress, view completed activities, and track learning milestones. This helps parents stay informed about their child's coding journey."
+      "question": "Are your courses online or in person?",
+      "answer": "We offer both online and in-person courses to accommodate different learning preferences and schedules."
     },
     {
-      "question": "Is the Code Kids Platform safe for children?",
-      "answer": "Yes, safety is our top priority. The Code Kids Platform is designed with strict privacy measures and parental controls to ensure a safe online learning experience. All content is age-appropriate and moderated."
+      "question": "What are enrollment requirements?",
+      "answer": "Admission requirements vary by program. Generally, we look for a strong interest in coding and problem-solving skills. Some advanced courses may require prior knowledge or experience in programming."
+    },
+    {
+      "question": "When do classes start?",
+      "answer": "We have multiple start dates throughout the year. Check out the schedules page on our website for the next available start date for your desired course."
+    },
+    {
+      "question": "Who are the instructors?",
+      "answer": "Our instructors are experienced professionals with extensive backgrounds in their respective fields. They are passionate about teaching and committed to helping you succeed."
+    },
+    {
+      "question": "What if I need to miss a class?",
+      "answer": "All of our online lectures are recorded and our instructors are available for help outside class hours as well to keep all students on track."
+    },
+    {
+      "question": "What is your location?",
+      "answer": "We don’t have any fixed location but we offer camps at co-working spaces such as Daftarkhwan, Kickstart and NASTP in Lahore and Islamabad. Do make sure to check the schedules page to see locations of upcoming programs."
     }
   ]
 }

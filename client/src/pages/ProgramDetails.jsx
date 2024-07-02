@@ -91,7 +91,7 @@ function CourseCard({ course }) {
         </div>
 
         <div className="font-bold mt-3 underline">
-          Price: <span className="text-c_accent">£{course.price}</span>
+          Price: <span className="text-c_accent"> PKR {course.price}/- </span>
         </div>
 
         <div className="mt-auto space-x-5">

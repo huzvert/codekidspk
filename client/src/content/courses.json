@@ -10,9 +10,9 @@
         "dates": "July 1 - 12 (Mon - Fri)",
         "timings": "11AM - 12PM"
       },
-      "price": 126.0,
+      "price": 10000,
       "discount": 0.0,
-      "discounted_price": 126.0,
+      "discounted_price": 10000,
       "availability": 10,
       "one_to_one_tutoring": true
     },
@@ -26,9 +26,9 @@
         "dates": "July 1 - 12 (Mon - Fri)",
         "timings": "11AM - 12PM"
       },
-      "price": 156.0,
+      "price": 10000,
       "discount": 0.0,
-      "discounted_price": 156.0,
+      "discounted_price": 10000,
       "availability": 15,
       "one_to_one_tutoring": true
     },
@@ -43,9 +43,9 @@
         "dates": "July 1 - 12 (Mon - Fri)",
         "timings": "1PM - 2PM"
       },
-      "price": 186.0,
+      "price": 10000,
       "discount": 0.0,
-      "discounted_price": 186.0,
+      "discounted_price": 10000,
       "availability": 12,
       "one_to_one_tutoring": true
     },
@@ -60,9 +60,9 @@
         "dates": "July 22 - 26 (Mon - Fri)",
         "timings": "11AM - 12PM"
       },
-      "price": 206.0,
+      "price": 10000,
       "discount": 0.0,
-      "discounted_price": 206.0,
+      "discounted_price": 10000,
       "availability": 10,
       "one_to_one_tutoring": true
     },
@@ -77,9 +77,9 @@
         "dates": "July 15 - 19 (Mon - Fri)",
         "timings": "11AM - 12PM"
       },
-      "price": 226.0,
+      "price": 10000,
       "discount": 0.0,
-      "discounted_price": 226.0,
+      "discounted_price": 10000,
       "availability": 10,
       "one_to_one_tutoring": true
     },
@@ -90,9 +90,9 @@
       "coverImage": "src/assets/scratch_beg.jpg",
       "description": "Our Scratch Level 1 course introduces young learners to the basics of programming through fun and interactive activities. Starting with simple tasks, students learn what programming is and how to make the Scratch cat perform basic actions. They will become familiar with different blocks and movements, gradually building their confidence in coding. The course also covers sound and looks blocks, allowing students to enhance their projects with audio effects and visual changes. As the course progresses, students will explore essential programming concepts such as animations, loops, and conditional statements. They'll learn to use variables to keep track of scores and understand the principles of broadcasting and receiving messages. By the end of the course, students will have a solid foundation in Scratch programming, enabling them to create their own interactive projects and games. Join us to embark on a fun-filled coding adventure with Scratch!",
       "timetable": {},
-      "price": 126.0,
+      "price": 10000,
       "discount": 0.0,
-      "discounted_price": 126.0,
+      "discounted_price": 10000,
       "availability": 10,
       "one_to_one_tutoring": true
     },
@@ -102,9 +102,9 @@
       "coverImage": "src/assets/scratch_int.png",
       "description": "Building on the fundamentals from Scratch Level 1, our Scratch Level 2 course expands both the concepts and functionality of student projects. Learners will delve into more advanced motion and control blocks, custom blocks for modular coding, and lists for managing collections of data. This course encourages the creation of dynamic and interactive projects, with increased complexity and more sophisticated game mechanics. Students will also explore cloning to create multiple sprite instances, advanced variables for enhanced data handling, and complex conditional statements for refined decision-making. The introduction of event handling techniques will enable students to develop more interactive and responsive programs. By the end of Scratch Level 2, students will be proficient in creating multi-faceted projects with intricate animations, improved interactivity, and refined logic. Join us to elevate your Scratch skills and bring more ambitious ideas to life!",
       "timetable": {},
-      "price": 156.0,
+      "price": 10000,
       "discount": 0.0,
-      "discounted_price": 156.0,
+      "discounted_price": 10000,
       "availability": 15,
       "one_to_one_tutoring": true
     },
@@ -114,9 +114,9 @@
       "coverImage": "src/assets/scratch_adv.jpeg",
       "description": "Scratch Level 3 takes programming to new heights by focusing on both advanced concepts and enhanced functionality. Students will build on their existing knowledge to create complex, multi-level games with sophisticated features. The course covers advanced topics such as physics simulations, integrating external data, and implementing recursive functions and algorithms. Emphasis is placed on designing interactive, multi-sprite environments with more detailed animations and behaviors. In this level, students will also tackle collaborative projects, learning to work in teams to share and develop their creations. They will refine their debugging and optimization skills to ensure their projects run smoothly. By the end of Scratch Level 3, students will be adept at handling complex programming challenges, capable of creating highly interactive and polished projects. Join us to master advanced Scratch programming and bring your most creative and intricate ideas to life!",
       "timetable": {},
-      "price": 186.0,
+      "price": 10000,
       "discount": 0.0,
-      "discounted_price": 186.0,
+      "discounted_price": 10000,
       "availability": 12,
       "one_to_one_tutoring": true
     },
@@ -131,9 +131,9 @@
         "dates": "July 1 - 12 (Mon - Fri)",
         "timings": "1PM - 2PM"
       },
-      "price": 206.0,
+      "price": 10000,
       "discount": 0.0,
-      "discounted_price": 206.0,
+      "discounted_price": 10000,
       "availability": 10,
       "one_to_one_tutoring": true
     },
@@ -147,9 +147,9 @@
         "dates": "July 22 - Aug 2 (Mon - Fri)",
         "timings": "10AM - 11AM"
       },
-      "price": 226.0,
+      "price": 10000,
       "discount": 0.0,
-      "discounted_price": 226.0,
+      "discounted_price": 10000,
       "availability": 10,
       "one_to_one_tutoring": true
     }

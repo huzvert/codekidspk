@@ -30,7 +30,7 @@ export default function CourseDetails() {
         {/* Background Image and overlay*/}
         <div
           className="absolute inset-0 -mx-4 bg-cover bg-center z-0"
-          style={{ backgroundImage: `url(/${course?.coverImage})` }}
+          style={{ backgroundImage: `url(/ {course?.coverImage}$)` }}
         >
           <div className="absolute inset-0 bg-black opacity-70 z-10"></div>
         </div>
@@ -61,12 +61,12 @@ export default function CourseDetails() {
 
           <div className="mb-4">
             <h4 className="text-gray-800 font-semibold">Price</h4>
-            <p className="text-gray-600">Original Price: ${course?.price}</p>
+            <p className="text-gray-600">Original Price: PKR {course?.price}/- </p>
             {course?.discount > 0 && (
               <p className="text-gray-600">Discount: {course?.discount}%</p>
             )}
             <p className="text-gray-600">
-              Discounted Price: ${course?.discounted_price}
+              Discounted Price: PKR {course?.discounted_price}/-
             </p>
           </div>
           <div>

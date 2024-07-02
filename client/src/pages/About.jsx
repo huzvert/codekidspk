@@ -2,7 +2,6 @@ import React from "react";
 import hero_image from "../assets/thisisengineering-TeJZ3CGZXRw-unsplash.jpg";
 import stats_image from "../assets/robo-wunderkind-hLvQ4-QEBAE-unsplash.jpg";
 import { Separator } from "@/components/ui/separator";
-
 export default function About() {
   return (
     <main>
@@ -78,6 +77,53 @@ export default function About() {
           </div>
         </div>
       </section>
+      {/* Our Affiliations */}
+
+      <section className="text-center">
+        <h2 className="relative inline-block text-3xl sm:text-6xl">
+          Our Affiliations
+          <span className="absolute left-1/2 transform -translate-x-1/2 bottom-[-10px] w-3/4 h-0.5 bg-c_accent"></span>
+        </h2>
+        <div className='mb-96'>
+            <div className="relative w-full p-16  overflowx-hidden">
+                <div className="flex absolute left-0 animate-marquee-infinite">
+                    <div className='flex w-96 justify-around'>
+                        <img src={stats_image} alt="q" />
+                        <img src={hero_image} alt="q" />
+                        <img src={stats_image} alt="q" />
+                        <img src={hero_image} alt="q" />
+                        <img src={stats_image} alt="q" />
+                        <img src={hero_image} alt="q" />
+                        <img src={stats_image} alt="q" />
+                        <img src={hero_image} alt="q" />
+                        <img src={stats_image} alt="q" />
+                        <img src={hero_image} alt="q" />
+                        <img src={stats_image} alt="q" />
+                        <img src={hero_image} alt="q" />
+                        <img src={stats_image} alt="q" />
+                        <img src={hero_image} alt="q" />
+                    </div>
+                    <div className='flex w-96 justify-around'>
+                    <img src={hero_image} alt="" />
+                        <img src={stats_image} alt="q" />
+                        <img src={hero_image} alt="q" />
+                        <img src={stats_image} alt="q" />
+                        <img src={hero_image} alt="q" />
+                        <img src={stats_image} alt="q" />
+                        <img src={hero_image} alt="q" />
+                        <img src={stats_image} alt="q" />
+                        <img src={hero_image} alt="q" />
+                        <img src={stats_image} alt="q" />
+                        <img src={hero_image} alt="q" />
+                        <img src={stats_image} alt="q" />
+                        <img src={hero_image} alt="q" />
+                        <img src={stats_image} alt="q" />
+                        <img src={hero_image} alt="q" />
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
 
       {/* Our Team */}
       <section className="text-center">
@@ -95,7 +141,7 @@ export default function About() {
         <div className="flex flex-col md:flex-row gap-12 justify-center items-center mt-12">
           <div className="pb-4 border flex flex-col items-center">
             <img
-              src="src\assets\samia.png"
+              src="src\assets\mehrab.png"
               alt="Team Member"
               className="w-80"
             />
@@ -105,7 +151,7 @@ export default function About() {
 
           <div className="pb-4 border flex flex-col items-center">
             <img
-              src="src\assets\naveed.png"
+              src="src\assets\zammad.png"
               alt="Team Member"
               className="w-80"
             />
@@ -117,7 +163,7 @@ export default function About() {
         <div className="flex flex-col md:flex-row gap-12 justify-center items-center mt-12">
           <div className="pb-4 border flex flex-col items-center">
             <img
-              src="src\assets\male_ph.jpg"
+              src="src\assets\bilal.png"
               alt="Team Member"
               className="w-80"
             />
@@ -127,7 +173,7 @@ export default function About() {
 
           <div className="pb-4 border flex flex-col items-center">
             <img
-              src="src\assets\male_ph.jpg"
+              src="src\assets\Danish.jpg"
               alt="Team Member"
               className="w-80"
             />
@@ -137,7 +183,7 @@ export default function About() {
 
           <div className="pb-4 border flex flex-col items-center">
             <img
-              src="src\assets\male_ph.jpg"
+              src="src\assets\Natiq.jpg"
               alt="Team Member"
               className="w-80"
             />
@@ -148,7 +194,7 @@ export default function About() {
         <div className="flex flex-col md:flex-row gap-12 justify-center items-center mt-12">
           <div className="pb-4 border flex flex-col items-center">
             <img
-              src="src\assets\male_ph.jpg"
+              src="src\assets\Samad.jpg"
               alt="Team Member"
               className="w-80"
             />
@@ -157,7 +203,7 @@ export default function About() {
           </div>
           <div className="pb-4 border flex flex-col items-center">
             <img
-              src="src\assets\female_ph.jpg"
+              src="src\assets\Yusra.jpg"
               alt="Team Member"
               className="w-80"
             />
@@ -166,7 +212,7 @@ export default function About() {
           </div>
           <div className="pb-4 border flex flex-col items-center">
             <img
-              src="src\assets\male_ph.jpg"
+              src="src\assets\Yasjudan.jpeg"
               alt="Team Member"
               className="w-80"
             />
@@ -178,7 +224,7 @@ export default function About() {
         <div className="flex flex-col md:flex-row gap-12 justify-center items-center mt-12">
           <div className="pb-4 border flex flex-col items-center">
             <img
-              src="src\assets\male_ph.jpg"
+              src="src\assets\Adil.jpg"
               alt="Team Member"
               className="w-80"
             />
@@ -188,7 +234,7 @@ export default function About() {
 
           <div className="pb-4 border flex flex-col items-center">
             <img
-              src="src\assets\male_ph.jpg"
+              src="src\assets\Rauf.png"
               alt="Team Member"
               className="w-80"
             />
@@ -197,18 +243,18 @@ export default function About() {
           </div>
           <div className="pb-4 border flex flex-col items-center">
             <img
-              src="src\assets\female_ph.jpg"
+              src="src\assets\Myra.jpeg"
               alt="Team Member"
               className="w-80"
             />
-            <h3 className="mt-4">Maira Ali</h3>
+            <h3 className="mt-4">Myra Ali</h3>
             <p>HR Associate</p>
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-12 justify-center items-center mt-12">
           <div className="pb-4 border flex flex-col items-center">
             <img
-              src="src\assets\male_ph.jpg"
+              src="src\assets\Hussain.jpg"
               alt="Team Member"
               className="w-80"
             />
@@ -218,12 +264,12 @@ export default function About() {
 
           <div className="pb-4 border flex flex-col items-center">
             <img
-              src="src\assets\female_ph.jpg"
+              src="src\assets\Munzira.jpg"
               alt="Team Member"
               className="w-80"
             />
-            <h3 className="mt-4">Haya Fareed</h3>
-            <p>Cirriculum Development Intern</p>
+            <h3 className="mt-4">Munzira Ali</h3>
+            <p>Teaching Assistant</p>
           </div>
 
           <div className="pb-4 border flex flex-col items-center">
@@ -239,7 +285,7 @@ export default function About() {
         <div className="flex flex-col md:flex-row gap-12 justify-center items-center mt-12">
           <div className="pb-4 border flex flex-col items-center">
             <img
-              src="src\assets\female_ph.jpg"
+              src="src\assets\Arfa.jpg"
               alt="Team Member"
               className="w-80"
             />
@@ -248,12 +294,22 @@ export default function About() {
           </div>
           <div className="pb-4 border flex flex-col items-center">
             <img
-              src="src\assets\male_ph.jpg"
+              src="src\assets\Abdullah.jpg"
               alt="Team Member"
               className="w-80"
             />
             <h3 className="mt-4">Abdullah Farooq</h3>
             <p>Web Development Intern</p>
+          </div>
+          
+          <div className="pb-4 border flex flex-col items-center">
+            <img
+              src="src\assets\Haya.jpeg"
+              alt="Team Member"
+              className="w-80"
+            />
+            <h3 className="mt-4">Haya Fareed</h3>
+            <p>Cirriculum Development Intern</p>
           </div>
         </div>
       </section>

@@ -126,7 +126,7 @@ export default function About() {
 
           <div className="pb-4 border flex flex-col items-center">
             <img
-              src="src\assets\zammad.png"
+              src="src\assets\zammad.jpg"
               alt="Team Member"
               className="w-80"
             />

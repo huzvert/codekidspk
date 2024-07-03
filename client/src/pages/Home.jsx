@@ -11,13 +11,13 @@ import offering_image from "../assets/kelly-sikkema-37Gug7AWjoo-unsplash.jpg";
 import mission_image from "../assets/kidonIPAD.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faBookOpen,
   faChalkboardTeacher,
-  faCode,
   faGift,
-  faLightbulb,
-  faUserCog,
+  faHandshake,
+  faList,
+  faRoad,
   faUserGroup,
-  faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   Carousel,
@@ -103,7 +103,7 @@ export default function Home() {
       {/* ----------------- Core Values -------------- */}
       <section className="text-center">
         <h2 className="relative inline-block text-3xl sm:text-6xl">
-          Our Core Values
+        Our Unique Offerings
           <span className="absolute left-1/2 transform -translate-x-1/2 bottom-[-10px] w-3/4 h-0.5 bg-c_accent"></span>
         </h2>
         <p className="mt-6 mb-12 max-w-3xl mx-auto">
@@ -117,48 +117,50 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
           <div className="p-3 flex flex-col bg-c_primary-light/10 rounded-md shadow-md">
             <div className="mb-4 self-center text-white w-24 h-24 rounded-full p-2 bg-c_primary-light flex justify-center items-center">
-              <FontAwesomeIcon size="3x" icon={faUserCog} />
+              <FontAwesomeIcon size="3x" icon={faRoad} />
             </div>
-            <h3 className="">Passion for Purpose</h3>
+            <h3 className="">Progressive Learning Path</h3>
             <p>
-              Our students have a goal based approach, where the pursue their
-              passions with a purpose in mind. It’s not coding for the sake of
-              coding!
+            Start your child’s journey with fundamental basics in coding, 
+            laying a strong groundwork and later delve into advanced concepts
+            and cutting-edge skills that prepare for the future of technology and innovation.
             </p>
           </div>
 
           <div className="p-3 flex flex-col bg-[#AA0F6F]/10 rounded-md shadow-md">
             <div className="mb-4 self-center text-white w-24 h-24 rounded-full p-2 bg-[#AA0F6F] flex justify-center items-center">
-              <FontAwesomeIcon size="3x" icon={faUsers} />
+              <FontAwesomeIcon size="3x" icon={faHandshake} />
             </div>
-            <h3 className="">Collaboration with Peers</h3>
+            <h3 className="">Bridging Generational Disconnect</h3>
             <p>
-              Real working environments are collaborative, and peer support is
-              essential in any successful project. We encourage collaborative
-              thinking!
+            Our instructors, who are Gen Z university students themselves, 
+            bring a fresh perspective to teaching. 
+            They bring fresh perspectives, current industry insights, 
+            and relatable teaching styles that resonate with young learners.
             </p>
           </div>
 
           <div className="p-3 flex flex-col bg-c_secondary-light/10 rounded-md shadow-md">
             <div className="mb-4 self-center text-white w-24 h-24 rounded-full p-2 bg-c_secondary-light flex justify-center items-center">
-              <FontAwesomeIcon size="3x" icon={faCode} />
+              <FontAwesomeIcon size="3x" icon={faBookOpen} />
             </div>
-            <h3 className="">Project Based Learning</h3>
+            <h3 className="">Innovative Curriculum</h3>
             <p>
-              We are constantly developing new courses and introducing cutting
-              edge technologies, taught as discrete projects
+            Our curriculum begins with essential foundational skills, ensuring a thorough understanding. 
+            As students move forward, they'll explore advanced concepts and future-ready skills, 
+            equipping them to thrive in the rapidly evolving tech landscape.
             </p>
           </div>
 
           <div className="p-3 flex flex-col bg-[#7EBF38]/10 rounded-md shadow-md">
             <div className="mb-4 self-center text-white w-24 h-24 rounded-full p-2 bg-[#7EBF38] flex justify-center items-center">
-              <FontAwesomeIcon size="3x" icon={faLightbulb} />
+              <FontAwesomeIcon size="3x" icon={faList} />
             </div>
-            <h3 className="">Play and Test</h3>
+            <h3 className="">Flexible Learning Options</h3>
             <p>
-              We allow time for students to enjoy their creations and test them
-              out. Only with constant stress-testing can they come up with new
-              ideas to improve their work!
+            Choose from diverse formats including full-time, 
+            part-time, and online courses, allowing your child to study at 
+            their own pace and balance learning with other commitments.
             </p>
           </div>
         </div>
@@ -216,8 +218,8 @@ function Offerings() {
             <span className="absolute left-1/2 transform -translate-x-1/2 bottom-[-10px] w-3/4 h-0.5 bg-c_accent"></span>
           </h2>
           <p className="text-white mt-6 mb-12 max-w-3xl mx-auto">
-            We Make Learning to Code Fun. Our courses are designed to teach
-            crucial coding skills to the next generation of innovators.
+                Step into a vibrant learning environment where we make coding accessible and enjoyable, 
+                equipping young learners with skills crucial for future innovation.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -227,8 +229,8 @@ function Offerings() {
               </div>
               <h3>Camps and Classes</h3>
               <p className="text-white flex-grow">
-                Immersive, project-based learning through full-day holiday camps
-                and after school/weekend term time classes!
+                Engage in immersive, project-based learning through holiday camps and after-school/weekend 
+                classes during the school year!
               </p>
               <Link to="/programs">
                 <Button
@@ -246,8 +248,8 @@ function Offerings() {
               </div>
               <h3>1:1 Tutoring</h3>
               <p className="text-white flex-grow">
-                We work with your child individually to help them achieve more
-                through a targeted learning approach.
+                    Experience our personalized tutoring sessions designed to cater to your child's unique needs, 
+                    helping them excel through focused, individualized learning.
               </p>
               <Button
                 onClick={handleTutoringClick}
@@ -264,8 +266,8 @@ function Offerings() {
               </div>
               <h3 className="">Services</h3>
               <p className="text-white flex-grow">
-                We offer a range of services including birthday parties, school
-                workshops, and corporate events.
+                  We provide a variety of services, 
+                  from birthday parties and school workshops to corporate events and tech-focused offerings.
               </p>
 
               <Button

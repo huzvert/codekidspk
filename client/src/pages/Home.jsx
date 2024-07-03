@@ -56,8 +56,8 @@ export default function Home() {
               Empowering the Next Generation of Coders
             </h1>
             <p className="text-white text-lg sm:text-2xl">
-              Join <span className="text-c_accent">Code Kids PK</span> and embark on
-              a journey of coding and creativity.
+              Join <span className="text-c_accent">Code Kids PK</span> and
+              embark on a journey of coding and creativity.
             </p>
           </div>
           <Link to="/programs">
@@ -77,28 +77,38 @@ export default function Home() {
       </section>
 
       {/* ----------------- Mission & Vision -------------- editing */}
-      <section className="relative p-0 grid md:grid-cols-[1fr_1.5fr] lg:grid-cols-1 shadow-md">
-
+      <section className="relative p-0 grid lg:grid-cols-1 shadow-md">
         <div className="relative py-16 md:py-32 px-6 md:px-12 self-stretch bg-[#000000] -mx-4 bg-center z-0">
           <div
             className="absolute inset-0 bg-cover bg-center z-0 opacity-50"
             style={{ backgroundImage: `url(${mission_image})` }}
           ></div>
           <div className="relative flex flex-col gap-16 w-full mx-auto h-full justify-center items-center z-10">
-              <h2 className="relative text-white inline-block text-3xl sm:text-6xl">
+            <h2 className="relative text-white inline-block text-3xl sm:text-6xl">
               Mission
               <span className="absolute left-1/2 transform -translate-x-1/2 bottom-[-10px] w-3/4 h-0.5 bg-c_accent"></span>
             </h2>
             <div className="flex gap-8">
-              <p className="text-white text-center">
-                At Code Kids PK, we are dedicated to transforming the learners of today into the disrupters of tomorrow. Our mission is to spark a lifelong passion for innovation and curiosity in each student. We create an environment where exploration, experimentation, and collaboration are not just encouraged but celebrated, fostering a sense of inclusion and support. Our educational approach goes beyond the traditional, emphasizing hands-on learning that cultivates critical thinking, problem-solving skills, and a deep reverence for STEM disciplines. We are committed to inspiring young minds to embrace technology, encouraging them to see themselves as future innovators, changemakers, and leaders. By empowering the leaders of tomorrow, we are laying the groundwork for a brighter, more innovative future for all.
+              <p className="text-white text-center max-w-prose lg:max-w-screen-lg">
+                At Code Kids PK, we are dedicated to transforming the learners
+                of today into the disrupters of tomorrow. Our mission is to
+                spark a lifelong passion for innovation and curiosity in each
+                student. We create an environment where exploration,
+                experimentation, and collaboration are not just encouraged but
+                celebrated, fostering a sense of inclusion and support. Our
+                educational approach goes beyond the traditional, emphasizing
+                hands-on learning that cultivates critical thinking,
+                problem-solving skills, and a deep reverence for STEM
+                disciplines. We are committed to inspiring young minds to
+                embrace technology, encouraging them to see themselves as future
+                innovators, changemakers, and leaders. By empowering the leaders
+                of tomorrow, we are laying the groundwork for a brighter, more
+                innovative future for all.
               </p>
             </div>
-        
+          </div>
         </div>
-        </div>
-
-        </section>
+      </section>
 
       {/* ----------------- Core Values -------------- */}
       <section className="text-center">
@@ -373,8 +383,8 @@ function Testimonials() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className="md:m-4 bg-c_primary-light" />
+        <CarouselNext className="md:m-4 bg-c_primary-light" />
       </Carousel>
     </section>
   );

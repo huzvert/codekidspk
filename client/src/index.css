@@ -75,9 +75,20 @@
   }
 }
 
-body {
+body,
+#root {
+  min-height: 100vh;
   font-family: "Courier New", Courier, monospace;
   overflow-x: hidden !important;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
 }
 
 body main > *,
@@ -89,6 +100,14 @@ footer {
 @media screen and (min-width: 768px) {
   body main > * {
     padding: 5rem 2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body main > * > *:not(:first-child),
+  footer > * {
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }
 

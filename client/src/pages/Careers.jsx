@@ -135,7 +135,7 @@ export default function Careers() {
                 </div>
                 <div>
                   <Label htmlFor="coverLetter" className="text-white">
-                    Cover Letter
+                    Why do you want to join Code Kids PK?
                   </Label>
                   <Textarea
                     id="coverLetter"

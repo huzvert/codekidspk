@@ -18,12 +18,15 @@ export default function Checkout() {
   const { cart, setCart } = useContext(CartContext);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    contactNumber: "",
+    parentName: "",
+    parentEmail: "",
+    parentContact: "",
+    studentNames: "",
+    studentAges: "",
+    priorExperience: "",
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [isSubmitting, setIsSubmitting] = useState(false); // New state for submitting state
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleInputChange = e => {
     const { name, value } = e.target;
@@ -35,13 +38,9 @@ export default function Checkout() {
 
   const handleSubmit = async e => {
     e.preventDefault();
-    setIsSubmitting(true); // Set submitting state to true
+    setIsSubmitting(true);
 
-    const formDatab = new FormData();
-
-    formDatab.append("name", formData.name);
-    formDatab.append("email", formData.email);
-    formDatab.append("contactNumber", formData.contactNumber);
+    const formDatab = new FormData(e.target);
     formDatab.append("items", JSON.stringify(cart.items));
     formDatab.append("total", cart.total);
 
@@ -57,14 +56,14 @@ export default function Checkout() {
 
       setIsSubmitted(true);
       setTimeout(() => {
-        setIsDialogOpen(false); // Close the dialog
-        setIsSubmitted(false); // Reset the submission state
-        setCart({ items: [], total: 0 }); // Clear the cart
-        setIsSubmitting(false); // Reset submitting state
+        setIsDialogOpen(false);
+        setIsSubmitted(false);
+        setCart({ items: [], total: 0 });
+        setIsSubmitting(false);
       }, 5000);
     } catch (error) {
       console.error("There was a problem with the submission:", error);
-      setIsSubmitting(false); // Reset submitting state on error
+      setIsSubmitting(false);
     }
   };
 
@@ -80,7 +79,7 @@ export default function Checkout() {
           </Button>
         </DialogTrigger>
 
-        <DialogContent className="sm:max-w-[425px]">
+        <DialogContent className="sm:max-w-[425px] max-h-screen overflow-y-auto">
           {isSubmitted ? (
             <div className="text-center text-green-500">
               Your order details are submitted successfully! You will be
@@ -96,41 +95,81 @@ export default function Checkout() {
               </DialogHeader>
               <form onSubmit={handleSubmit} className="grid gap-4 py-4">
                 <div>
-                  <Label htmlFor="name">Name</Label>
+                  <Label htmlFor="parentName">Parent Name</Label>
                   <Input
                     type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Enter your name"
-                    value={formData.name}
+                    id="parentName"
+                    name="parentName"
+                    placeholder="Enter parent's name"
+                    value={formData.parentName}
                     onChange={handleInputChange}
                     required
                   />
                 </div>
 
                 <div>
-                  <Label htmlFor="email">Email</Label>
+                  <Label htmlFor="parentEmail">Parent Email</Label>
                   <Input
                     type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Enter your email"
-                    value={formData.email}
+                    id="parentEmail"
+                    name="parentEmail"
+                    placeholder="Enter parent's email"
+                    value={formData.parentEmail}
                     onChange={handleInputChange}
                     required
                   />
                 </div>
 
                 <div>
-                  <Label htmlFor="contactNumber">Contact Number</Label>
+                  <Label htmlFor="parentContact">Parent Contact Number</Label>
                   <Input
-                    type="number"
-                    id="contactNumber"
-                    name="contactNumber"
-                    placeholder="Enter your contact number"
-                    value={formData.contactNumber}
+                    type="text"
+                    id="parentContact"
+                    name="parentContact"
+                    placeholder="Enter parent's contact number"
+                    value={formData.parentContact}
                     onChange={handleInputChange}
                     required
+                  />
+                </div>
+
+                <div>
+                  <Label htmlFor="studentNames">Student Name(s)</Label>
+                  <Input
+                    type="text"
+                    id="studentNames"
+                    name="studentNames"
+                    placeholder="Enter student name(s) separated by commas"
+                    value={formData.studentNames}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </div>
+
+                <div>
+                  <Label htmlFor="studentAges">Student Age(s)</Label>
+                  <Input
+                    type="text"
+                    id="studentAges"
+                    name="studentAges"
+                    placeholder="Enter student age(s) separated by commas"
+                    value={formData.studentAges}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </div>
+
+                <div>
+                  <Label htmlFor="priorExperience">
+                    Prior Coding Experience
+                  </Label>
+                  <Input
+                    type="text"
+                    id="priorExperience"
+                    name="priorExperience"
+                    placeholder="Enter prior coding experience (if any)"
+                    value={formData.priorExperience}
+                    onChange={handleInputChange}
                   />
                 </div>
 

@@ -16,6 +16,7 @@ import { Label } from "@/components/ui/label";
 export default function AddToCart({ course }) {
   const { cart, setCart } = useContext(CartContext);
   const [enrollments, setEnrollments] = useState(1);
+  const [date, setDate] = useState(course?.timetables[0] || "");
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
   const handleAddToCart = () => {
@@ -40,6 +41,7 @@ export default function AddToCart({ course }) {
           name: course.title,
           price: course.price,
           enrollments: Number(enrollments),
+          date: date,
           image: course.coverImage,
         },
       ];
@@ -80,10 +82,30 @@ export default function AddToCart({ course }) {
             name="enrollments"
             placeholder="Enter enrollments"
             min="1"
+            max={course.availability} // Maximum enrollments
             required
             value={enrollments}
             onChange={e => setEnrollments(e.target.value)}
           />
+        </div>
+
+        <div className="grid gap-4 py-4">
+          <Label htmlFor="date">Pick a date</Label>
+          <select
+            id="date"
+            name="date"
+            className="input bg-white border border-gray-300 rounded-md p-2 w-full focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
+            onChange={e => setDate(course.timetables[e.target.value])}
+          >
+            <option disabled value="">
+              Select a date
+            </option>
+            {course.timetables?.map((timetable, index) => (
+              <option key={index} value={index}>
+                {timetable.dates} - {timetable.timings}
+              </option>
+            ))}
+          </select>
         </div>
 
         <DialogFooter>

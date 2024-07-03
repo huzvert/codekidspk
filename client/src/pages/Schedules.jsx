@@ -7,21 +7,21 @@ const Schedules = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const programsResponse = await fetch("/src/content/programs.json");
         const coursesResponse = await fetch("/src/content/courses.json");
-
-        const programs = await programsResponse.json();
         const courses = await coursesResponse.json();
 
         // Extract schedule data from courses, excluding empty timetables
         const scheduleData = courses.courses
-          .filter(course => Object.keys(course.timetable).length > 0)
-          .map(course => ({
-            location: course.timetable.location,
-            dates: course.timetable.dates,
-            timings: course.timetable.timings,
-            course: course.title,
-          }));
+          .filter(course => course.timetables.length > 0)
+          .map(course =>
+            course.timetables.map(timetable => ({
+              location: timetable.location,
+              dates: timetable.dates,
+              timings: timetable.timings,
+              course: course.title,
+            }))
+          )
+          .flat();
 
         setSchedules(scheduleData);
       } catch (error) {

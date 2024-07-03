@@ -10,7 +10,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 
-function Schedule({ title, schedule, theme = "dark" }) {
+function Schedule({ title, schedule = [], theme = "dark" }) {
   // Determine which columns should be displayed based on the presence of data
   const hasLocation = schedule.some(item => item?.location);
   const hasDates = schedule.some(item => item?.dates);

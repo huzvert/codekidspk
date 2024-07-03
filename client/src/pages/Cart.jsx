@@ -37,7 +37,7 @@ export default function Cart() {
 
   if (items.length === 0) {
     return (
-      <main className="text-center">
+      <main className="text-center p-16">
         <h2 className="text-3xl">Your cart is empty</h2>
         <Link to="/programs" className="default-button mt-4 p-5">
           Book Now
@@ -55,9 +55,12 @@ export default function Cart() {
         </h2>
       </section>
 
-      <section className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <section className="grid grid-cols-1 md:grid-cols-3 gap-4 2xl:max-w-[1440px] 2xl:mx-auto">
         {items.map(item => (
-          <div key={item.id} className="bg-white p-4 shadow-md">
+          <div
+            key={item.id}
+            className="bg-white p-4 shadow-md max-w-sm mx-auto"
+          >
             <img
               src={item.image}
               alt={item.name}
@@ -94,7 +97,9 @@ export default function Cart() {
       </section>
 
       <section className="text-center mt-8">
-        <h2 className="text-2xl mb-4">Total:PKR {total}/-</h2>
+        <h2 className="text-2xl mb-4">
+          Total: PKR {Number(total).toLocaleString()}/-
+        </h2>
 
         <Checkout />
       </section>

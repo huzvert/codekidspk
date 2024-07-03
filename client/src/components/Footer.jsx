@@ -17,12 +17,13 @@ export default function Footer() {
       <div className="grid gap-y-5">
         <img src={logo} alt="logo" />
         <p className="max-w-prose">
-          Robotics and coding classes and holiday tech camps for kids aged 7+ We
-          provide code clubs and in-school enrichment workshops.
+        Offering both in-person and online coding classes for students aged 7 and above, 
+        along with in-school enrichment workshops.
+
         </p>
-        <Link to="/about">
+        <a href="https://www.instagram.com/codekidspk/">
           <Button className="default-button">Learn More</Button>
-        </Link>
+        </a>
       </div>
 
       <div className="space-y-3">

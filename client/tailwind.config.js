@@ -83,13 +83,13 @@ module.exports = {
         },
         'ticker': {
           '0%': { transform: 'translate3d(0, 0, 0)' },
-          '100%': { transform: 'translate3d(-116%, 0, 0)' },
+          '100%': { transform: 'translate3d(-140%, 0, 0)' },
         },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
-        'img-ticker': 'ticker 18s linear infinite',
+        'img-ticker': 'ticker 24s linear infinite',
       },
     },
   },

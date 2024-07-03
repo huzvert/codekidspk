@@ -21,7 +21,7 @@ export default function Footer() {
         along with in-school enrichment workshops.
 
         </p>
-        <a href="https://www.instagram.com/codekidspk/">
+        <a href="https://www.instagram.com/codekidspk/" target="_blank">
           <Button className="default-button">Learn More</Button>
         </a>
       </div>

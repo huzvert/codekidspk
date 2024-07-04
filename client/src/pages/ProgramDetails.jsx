@@ -57,7 +57,7 @@ export default function ProgramDetails() {
         </div>
       </section>
 
-      <section className="space-y-5">
+      <section className="space-y-5 2xl:max-w-[1440px] 2xl:mx-auto">
         {courses.length === 0 ? (
           <>
             <SkeletonCard />

@@ -50,7 +50,7 @@ export default function Home() {
         </div>
 
         {/* Content */}
-        <div className="relative z-20 min-h-screen text-center text-white flex flex-col justify-center sm:justify-normal items-center">
+        <div className="relative z-20 min-h-screen xl:min-h-max text-center text-white flex flex-col xl:gap-y-96 justify-center sm:justify-normal items-center 2xl:max-w-[1440px] 2xl:mx-auto">
           <div className="max-w-2xl sm:mt-32">
             <h1 className="text-3xl sm:text-6xl">
               Empowering the Next Generation of Coders
@@ -59,18 +59,18 @@ export default function Home() {
               Join <span className="text-c_accent">Code Kids PK</span> and
               embark on a journey of coding and creativity.
             </p>
+            <Link to="/programs">
+              <Button
+                variant="outline"
+                className="mt-10 mb-36 sm:mb-16 py-6 md:p-7 outline-button"
+              >
+                Explore Our Programs
+              </Button>
+            </Link>
           </div>
-          <Link to="/programs">
-            <Button
-              variant="outline"
-              className="mt-10 mb-36 sm:mb-16 py-6 md:p-7 outline-button"
-            >
-              Explore Our Programs
-            </Button>
-          </Link>
 
           {/* Mailing List Subscription */}
-          <div className="absolute bottom-3 sm:right-0 text-white z-30">
+          <div className="absolute xl:relative xl:self-end bottom-3 sm:right-0 text-white z-30">
             <MailList />
           </div>
         </div>
@@ -111,7 +111,7 @@ export default function Home() {
       </section>
 
       {/* ----------------- Core Values -------------- */}
-      <section className="text-center">
+      <section className="text-center 2xl:max-w-[1440px] 2xl:mx-auto">
         <h2 className="relative inline-block text-3xl sm:text-6xl">
           Our Unique Offerings
           <span className="absolute left-1/2 transform -translate-x-1/2 bottom-[-10px] w-3/4 h-0.5 bg-c_accent"></span>
@@ -124,7 +124,7 @@ export default function Home() {
         </p>
 
         {/* Values */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
           <div className="p-3 flex flex-col bg-c_primary-light/10 rounded-md shadow-md">
             <div className="mb-4 self-center text-white w-24 h-24 rounded-full p-2 bg-c_primary-light flex justify-center items-center">
               <FontAwesomeIcon size="3x" icon={faRoad} />

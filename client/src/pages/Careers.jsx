@@ -62,7 +62,7 @@ export default function Careers() {
   };
 
   return (
-    <div className="container mx-auto my-8">
+    <section className="container mx-auto my-8">
       <div className="max-w-lg mx-auto">
         <Card className="bg-gray-800">
           <CardHeader>
@@ -158,6 +158,6 @@ export default function Careers() {
           </CardContent>
         </Card>
       </div>
-    </div>
+    </section>
   );
 }

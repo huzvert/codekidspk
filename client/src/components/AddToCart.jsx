@@ -16,7 +16,7 @@ import { Label } from "@/components/ui/label";
 export default function AddToCart({ course }) {
   const { cart, setCart } = useContext(CartContext);
   const [enrollments, setEnrollments] = useState(1);
-  const [date, setDate] = useState(course?.timetables[0] || "");
+  const [date, setDate] = useState("");
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
   const handleAddToCart = () => {
@@ -97,9 +97,6 @@ export default function AddToCart({ course }) {
             className="input bg-white border border-gray-300 rounded-md p-2 w-full focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
             onChange={e => setDate(course.timetables[e.target.value])}
           >
-            <option disabled value="">
-              Select a date
-            </option>
             {course.timetables?.map((timetable, index) => (
               <option key={index} value={index}>
                 {timetable.dates} - {timetable.timings}

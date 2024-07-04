@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import { Button } from '@/components/ui/button';
-import SkeletonCard from '../components/SkeletonCard';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import { Button } from "@/components/ui/button";
+import SkeletonCard from "../components/SkeletonCard";
+import { Link } from "react-router-dom";
 
 export default function Programs() {
   const [programs, setPrograms] = useState([]);
 
   useEffect(() => {
-    fetch('src/content/programs.json')
+    fetch("src/content/programs.json")
       .then(response => response.json())
       .then(data => setPrograms(data.programs));
   }, []);
@@ -20,14 +20,15 @@ export default function Programs() {
           <span className="absolute left-1/2 transform -translate-x-1/2 bottom-[-10px] w-3/4 h-0.5 bg-c_accent"></span>
         </h2>
         <p className="text-white mt-6 mb-12 max-w-3xl mx-auto">
-        We offer engaging in-person and online coding classes for students aged 7+, 
-        alongside holiday camps and after school clubs in-house to foster creativity and technical skills. 
-        Our programs are continuously updated to keep up with industry trends, 
-        ensuring that students gain relevant and up-to-date skills in a rapidly evolving field.
+          We offer engaging in-person and online coding classes for students
+          aged 7+, alongside holiday camps and after school clubs in-house to
+          foster creativity and technical skills. Our programs are continuously
+          updated to keep up with industry trends, ensuring that students gain
+          relevant and up-to-date skills in a rapidly evolving field.
         </p>
       </section>
 
-      <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 2xl:max-w-[1440px] 2xl:mx-auto">
         {programs.length === 0 ? (
           <>
             <SkeletonCard />

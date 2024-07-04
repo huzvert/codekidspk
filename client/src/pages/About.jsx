@@ -4,26 +4,30 @@ import { Separator } from "@/components/ui/separator";
 export default function About() {
   return (
     <main>
-      <section className="p-0 bg-black relative z-20 min-h-screen flex gap-12 flex-col lg:flex-row justify-items-center">
-        <div className="px-[1rem] pt-20 space-y-12">
-          <h1 className="text-white">About Us</h1>
-          <Separator className="max-w-[15%] h-[0.1px] bg-gray-400" />
-          <p className="text-white max-w-prose">
-          Code Kids PK is an innovative educational platform dedicated to making programming fun and accessible for children. 
-          Our engaging courses cover a variety of fundamental programming topics, 
-          tailored specifically for different age groups and skill levels. 
-          We prioritize interactive learning experiences, 
-          ensuring that every child can progress at their own pace while enjoying the journey of learning to code. 
-          Whether a beginner or an advanced learner, 
-          every child can find the right course to match their abilities and interests. 
-          Join us at Code Kids, where the future of coding starts with a smile!
-          </p>
+      <section className="p-0 bg-black">
+        <div className="relative z-20 min-h-screen lg:min-h-max flex gap-12 flex-col lg:flex-row lg:justify-between 2xl:max-w-[1440px] 2xl:mx-auto">
+          <div className="px-[1rem] lg:px-8 py-20 space-y-12">
+            <h1 className="text-white">About Us</h1>
+            <Separator className="max-w-[15%] h-[0.1px] bg-gray-400" />
+            <p className="text-white max-w-prose">
+              Code Kids PK is an innovative educational platform dedicated to
+              making programming fun and accessible for children. Our engaging
+              courses cover a variety of fundamental programming topics,
+              tailored specifically for different age groups and skill levels.
+              We prioritize interactive learning experiences, ensuring that
+              every child can progress at their own pace while enjoying the
+              journey of learning to code. Whether a beginner or an advanced
+              learner, every child can find the right course to match their
+              abilities and interests. Join us at Code Kids, where the future of
+              coding starts with a smile!
+            </p>
+          </div>
+          <img
+            src="src\assets\fb.jpg"
+            className="w-full lg:w-[500px] xl:w-[700px] aspect-square object-cover"
+            alt="About Us"
+          />
         </div>
-        <img
-          src="src\assets\fb.jpg"
-          className="lg:max-w-screen-md object-cover"
-          alt="About Us"
-        />
       </section>
 
       {/* Stats */}
@@ -59,47 +63,114 @@ export default function About() {
                 <p className="text-white">Satisfaction Rated By Parents</p>
               </div>
             </div>
-
-            
           </div>
         </div>
       </section>
       {/* Our Affiliations */}
-            <section className="text-center">
-                <h2 className="relative inline-block text-3xl sm:text-6xl">
-                  Our Affiliations
-                  <span className="absolute left-1/2 transform -translate-x-1/2 bottom-[-10px] w-3/4 h-0.5 bg-c_accent"></span>
-                </h2>
-             </section>
-            <section className="text-center">
-                <div className="overflow-hidden">
-                    <div className='flex -mx-4 animate-img-ticker space-x-8 w-[200%]'>
-                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\kickstart.png" alt="" />
-                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\leos.png" alt="" />
-                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\mashion.png" alt="" />
-                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\scarsdale.jpeg" alt="" />
-                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\tns2.jpg" alt="" />
-                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\LCF.png" alt="" />
+      <section className="text-center">
+        <h2 className="relative inline-block text-3xl sm:text-6xl">
+          Our Affiliations
+          <span className="absolute left-1/2 transform -translate-x-1/2 bottom-[-10px] w-3/4 h-0.5 bg-c_accent"></span>
+        </h2>
+      </section>
+      <section className="text-center">
+        <div className="overflow-hidden">
+          <div className="flex -mx-4 animate-img-ticker space-x-8 w-[200%]">
+            <img
+              className="w-64 mx-4 self-start flex-none"
+              src="src\assets\kickstart.png"
+              alt=""
+            />
+            <img
+              className="w-64 mx-4 self-start flex-none"
+              src="src\assets\leos.png"
+              alt=""
+            />
+            <img
+              className="w-64 mx-4 self-start flex-none"
+              src="src\assets\mashion.png"
+              alt=""
+            />
+            <img
+              className="w-64 mx-4 self-start flex-none"
+              src="src\assets\scarsdale.jpeg"
+              alt=""
+            />
+            <img
+              className="w-64 mx-4 self-start flex-none"
+              src="src\assets\tns2.jpg"
+              alt=""
+            />
+            <img
+              className="w-64 mx-4 self-start flex-none"
+              src="src\assets\LCF.png"
+              alt=""
+            />
 
-                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\kickstart.png" alt="" />
-                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\leos.png" alt="" />
-                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\mashion.png" alt="" />
-                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\scarsdale.jpeg" alt="" />
-                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\tns2.jpg" alt="" />
-                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\LCF.png" alt="" />
+            <img
+              className="w-64 mx-4 self-start flex-none"
+              src="src\assets\kickstart.png"
+              alt=""
+            />
+            <img
+              className="w-64 mx-4 self-start flex-none"
+              src="src\assets\leos.png"
+              alt=""
+            />
+            <img
+              className="w-64 mx-4 self-start flex-none"
+              src="src\assets\mashion.png"
+              alt=""
+            />
+            <img
+              className="w-64 mx-4 self-start flex-none"
+              src="src\assets\scarsdale.jpeg"
+              alt=""
+            />
+            <img
+              className="w-64 mx-4 self-start flex-none"
+              src="src\assets\tns2.jpg"
+              alt=""
+            />
+            <img
+              className="w-64 mx-4 self-start flex-none"
+              src="src\assets\LCF.png"
+              alt=""
+            />
 
-                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\kickstart.png" alt="" />
-                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\leos.png" alt="" />
-                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\mashion.png" alt="" />
-                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\scarsdale.jpeg" alt="" />
-                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\tns2.jpg" alt="" />
-                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\LCF.png" alt="" />
-                     
-                    </div>
-                </div>
-
-
-            </section>
+            <img
+              className="w-64 mx-4 self-start flex-none"
+              src="src\assets\kickstart.png"
+              alt=""
+            />
+            <img
+              className="w-64 mx-4 self-start flex-none"
+              src="src\assets\leos.png"
+              alt=""
+            />
+            <img
+              className="w-64 mx-4 self-start flex-none"
+              src="src\assets\mashion.png"
+              alt=""
+            />
+            <img
+              className="w-64 mx-4 self-start flex-none"
+              src="src\assets\scarsdale.jpeg"
+              alt=""
+            />
+            <img
+              className="w-64 mx-4 self-start flex-none"
+              src="src\assets\tns2.jpg"
+              alt=""
+            />
+            <img
+              className="w-64 mx-4 self-start flex-none"
+              src="src\assets\LCF.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
       {/* Our Team */}
       <section className="text-center">
         <h2 className="relative inline-block text-3xl sm:text-6xl">
@@ -198,21 +269,13 @@ export default function About() {
 
         <div className="flex flex-col md:flex-row gap-12 justify-center items-center mt-12">
           <div className="pb-4 border flex flex-col items-center">
-            <img
-              src="src\assets\Adil.jpg"
-              alt="Team Member"
-              className="w-80"
-            />
+            <img src="src\assets\Adil.jpg" alt="Team Member" className="w-80" />
             <h3 className="mt-4">Muhammad Adil</h3>
             <p>Tech Lead</p>
           </div>
 
           <div className="pb-4 border flex flex-col items-center">
-            <img
-              src="src\assets\Rauf.png"
-              alt="Team Member"
-              className="w-80"
-            />
+            <img src="src\assets\Rauf.png" alt="Team Member" className="w-80" />
             <h3 className="mt-4">Abdul Rauf</h3>
             <p>Technical Assistant</p>
           </div>
@@ -259,11 +322,7 @@ export default function About() {
         </div>
         <div className="flex flex-col md:flex-row gap-12 justify-center items-center mt-12">
           <div className="pb-4 border flex flex-col items-center">
-            <img
-              src="src\assets\Arfa.jpg"
-              alt="Team Member"
-              className="w-80"
-            />
+            <img src="src\assets\Arfa.jpg" alt="Team Member" className="w-80" />
             <h3 className="mt-4">Arfa Abdul Naseer</h3>
             <p>HR Intern</p>
           </div>
@@ -276,7 +335,7 @@ export default function About() {
             <h3 className="mt-4">Abdullah Farooq</h3>
             <p>Web Development Intern</p>
           </div>
-          
+
           <div className="pb-4 border flex flex-col items-center">
             <img
               src="src\assets\Haya.jpeg"

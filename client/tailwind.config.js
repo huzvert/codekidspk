@@ -1,8 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  // corePlugins: {
-  //   preflight: false,
-  // },
   mode: 'jit',
   darkMode: ['class'],
   content: [
@@ -84,22 +81,15 @@ module.exports = {
           from: { height: 'var(--radix-accordion-content-height)' },
           to: { height: '0' },
         },
-        'marquee': {
-          '0%': { transform: 'translateX(0%)' },
-          '100%': { transform: 'translateX(-100%)' },
-        },
-        'marquee2': {
-          '0%': { transform: 'translateX(100%)' },
-          '100%': { transform: 'translateX(0%)' },
+        'ticker': {
+          '0%': { transform: 'translate3d(0, 0, 0)' },
+          '100%': { transform: 'translate3d(-140%, 0, 0)' },
         },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
-        'spin-slow-30': 'spin 30s linear infinite',
-        'spin-slow-25': 'spin 25s linear infinite',
-        'spin-slow-10': 'spin 10s linear infinite',
-        'marquee-infinite' : 'marquee 25s linear infinite',
+        'img-ticker': 'ticker 24s linear infinite',
       },
     },
   },

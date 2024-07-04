@@ -16,12 +16,14 @@ export default function Programs() {
     <main>
       <section className="text-center bg-black text-white">
         <h2 className="relative inline-block text-3xl sm:text-6xl">
-          Our Offerings
+          Our Programs
           <span className="absolute left-1/2 transform -translate-x-1/2 bottom-[-10px] w-3/4 h-0.5 bg-c_accent"></span>
         </h2>
         <p className="text-white mt-6 mb-12 max-w-3xl mx-auto">
-          We Make Learning to Code Fun. Our courses are designed to teach
-          crucial coding skills to the next generation of innovators.
+        We offer engaging in-person and online coding classes for students aged 7+, 
+        alongside holiday camps and after school clubs in-house to foster creativity and technical skills. 
+        Our programs are continuously updated to keep up with industry trends, 
+        ensuring that students gain relevant and up-to-date skills in a rapidly evolving field.
         </p>
       </section>
 

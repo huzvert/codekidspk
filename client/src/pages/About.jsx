@@ -1,5 +1,4 @@
 import React from "react";
-import hero_image from "../assets/thisisengineering-TeJZ3CGZXRw-unsplash.jpg";
 import stats_image from "../assets/robo-wunderkind-hLvQ4-QEBAE-unsplash.jpg";
 import { Separator } from "@/components/ui/separator";
 export default function About() {
@@ -10,16 +9,18 @@ export default function About() {
           <h1 className="text-white">About Us</h1>
           <Separator className="max-w-[15%] h-[0.1px] bg-gray-400" />
           <p className="text-white max-w-prose">
-            Code Kids is an educational platform that provides courses in basic
-            programming related topics to kids. Our platform is designed to make
-            learning to code a fun and interactive experience for children. We
-            offer a wide range of courses that cater to different age groups and
-            skill levels, ensuring that every child can learn at their own pace
-            and level of understanding.
+          Code Kids PK is an innovative educational platform dedicated to making programming fun and accessible for children. 
+          Our engaging courses cover a variety of fundamental programming topics, 
+          tailored specifically for different age groups and skill levels. 
+          We prioritize interactive learning experiences, 
+          ensuring that every child can progress at their own pace while enjoying the journey of learning to code. 
+          Whether a beginner or an advanced learner, 
+          every child can find the right course to match their abilities and interests. 
+          Join us at Code Kids, where the future of coding starts with a smile!
           </p>
         </div>
         <img
-          src={hero_image}
+          src="src\assets\fb.jpg"
           className="lg:max-w-screen-md object-cover"
           alt="About Us"
         />
@@ -36,95 +37,69 @@ export default function About() {
         </div>
 
         {/* Content */}
-        <div className="relative z-20">
+        <div className="relative z-20 text-center">
           <h2 className="text-white">Empowering Kids Through Coding</h2>
 
-          <div className="mt-12 flex flex-col sm:flex-row gap-10 sm:gap-20 sm:items-center">
+          <div className="mt-12 flex flex-col sm:flex-row gap-10 sm:gap-20 justify-center">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-20">
               <div>
                 <p className="text-c_accent text-2xl sm:text-5xl">20+</p>
                 <p className="text-white">Engaging Coding Modules</p>
               </div>
               <div>
-                <p className="text-c_accent text-2xl sm:text-5xl">30+</p>
+                <p className="text-c_accent text-2xl sm:text-5xl">10+</p>
                 <p className="text-white">Experienced Coding Instructors</p>
               </div>
               <div>
-                <p className="text-c_accent text-2xl sm:text-5xl">500+</p>
+                <p className="text-c_accent text-2xl sm:text-5xl">300+</p>
                 <p className="text-white">Happy Coding Graduates</p>
               </div>
               <div>
                 <p className="text-c_accent text-2xl sm:text-5xl">100%</p>
-                <p className="text-white">Statisfaction Rated By Parents</p>
+                <p className="text-white">Satisfaction Rated By Parents</p>
               </div>
             </div>
 
-            <div className="space-y-6">
-              <Separator className="max-w-[15%] h-[0.3px] bg-gray-400" />
-              <p className="text-white max-w-prose">
-                At Code Kids, we believe that every child should have the
-                opportunity to learn how to code. Our platform is designed to
-                make learning to code fun and interactive for kids of all ages.
-                We offer a wide range of courses that cater to different age
-                groups and skill levels, ensuring that every child can learn at
-                their own pace and level of understanding. Our courses cover a
-                variety of topics, including programming languages, web
-                development, game design, and more. Whether your child is a
-                beginner or an experienced coder, we have a course that will
-                help them develop their skills and reach their full potential.
-              </p>
-            </div>
+            
           </div>
         </div>
       </section>
       {/* Our Affiliations */}
+            <section className="text-center">
+                <h2 className="relative inline-block text-3xl sm:text-6xl">
+                  Our Affiliations
+                  <span className="absolute left-1/2 transform -translate-x-1/2 bottom-[-10px] w-3/4 h-0.5 bg-c_accent"></span>
+                </h2>
+             </section>
+            <section className="text-center">
+                <div className="overflow-hidden">
+                    <div className='flex -mx-4 animate-img-ticker space-x-8 w-[200%]'>
+                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\kickstart.png" alt="" />
+                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\leos.png" alt="" />
+                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\mashion.png" alt="" />
+                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\scarsdale.jpeg" alt="" />
+                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\tns2.jpg" alt="" />
+                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\LCF.png" alt="" />
 
-      <section className="text-center">
-        <h2 className="relative inline-block text-3xl sm:text-6xl">
-          Our Affiliations
-          <span className="absolute left-1/2 transform -translate-x-1/2 bottom-[-10px] w-3/4 h-0.5 bg-c_accent"></span>
-        </h2>
-        <div className='mb-96'>
-            <div className="relative w-full p-16  overflowx-hidden">
-                <div className="flex absolute left-0 animate-marquee-infinite">
-                    <div className='flex w-96 justify-around'>
-                        <img src={stats_image} alt="q" />
-                        <img src={hero_image} alt="q" />
-                        <img src={stats_image} alt="q" />
-                        <img src={hero_image} alt="q" />
-                        <img src={stats_image} alt="q" />
-                        <img src={hero_image} alt="q" />
-                        <img src={stats_image} alt="q" />
-                        <img src={hero_image} alt="q" />
-                        <img src={stats_image} alt="q" />
-                        <img src={hero_image} alt="q" />
-                        <img src={stats_image} alt="q" />
-                        <img src={hero_image} alt="q" />
-                        <img src={stats_image} alt="q" />
-                        <img src={hero_image} alt="q" />
-                    </div>
-                    <div className='flex w-96 justify-around'>
-                    <img src={hero_image} alt="" />
-                        <img src={stats_image} alt="q" />
-                        <img src={hero_image} alt="q" />
-                        <img src={stats_image} alt="q" />
-                        <img src={hero_image} alt="q" />
-                        <img src={stats_image} alt="q" />
-                        <img src={hero_image} alt="q" />
-                        <img src={stats_image} alt="q" />
-                        <img src={hero_image} alt="q" />
-                        <img src={stats_image} alt="q" />
-                        <img src={hero_image} alt="q" />
-                        <img src={stats_image} alt="q" />
-                        <img src={hero_image} alt="q" />
-                        <img src={stats_image} alt="q" />
-                        <img src={hero_image} alt="q" />
+                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\kickstart.png" alt="" />
+                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\leos.png" alt="" />
+                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\mashion.png" alt="" />
+                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\scarsdale.jpeg" alt="" />
+                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\tns2.jpg" alt="" />
+                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\LCF.png" alt="" />
+
+                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\kickstart.png" alt="" />
+                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\leos.png" alt="" />
+                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\mashion.png" alt="" />
+                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\scarsdale.jpeg" alt="" />
+                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\tns2.jpg" alt="" />
+                        <img className="w-64 mx-4 self-start flex-none" src="src\assets\LCF.png" alt="" />
+                     
                     </div>
                 </div>
-            </div>
-        </div>
-      </section>
 
+
+            </section>
       {/* Our Team */}
       <section className="text-center">
         <h2 className="relative inline-block text-3xl sm:text-6xl">
@@ -151,7 +126,7 @@ export default function About() {
 
           <div className="pb-4 border flex flex-col items-center">
             <img
-              src="src\assets\zammad.png"
+              src="src\assets\zammad.jpg"
               alt="Team Member"
               className="w-80"
             />
@@ -308,7 +283,7 @@ export default function About() {
               alt="Team Member"
               className="w-80"
             />
-            <h3 className="mt-4">Haya Fareed</h3>
+            <h3 className="mt-4">Haya Farid</h3>
             <p>Cirriculum Development Intern</p>
           </div>
         </div>

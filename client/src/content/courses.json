@@ -53,7 +53,7 @@
     {
       "id": 4,
       "title": "App Development with Thunkable",
-      "coverImage": "src/assets/appdev.jpg",
+      "coverImage": "src/assets/thunkable.png",
       "description": "Our App Development course introduces students to the world of mobile app development using Thunkable, a visual programming platform. Students will learn to create apps for Android and iOS devices, exploring the design and development process from start to finish. They'll build interactive user interfaces, add functionality with blocks, and test their apps on real devices. The course covers essential app components such as buttons, text inputs, and images, enabling students to create engaging and user-friendly interfaces. Students will also learn to integrate APIs, databases, and external services into their apps, expanding the functionality and capabilities of their projects. By the end of the course, students will have developed their own mobile apps, ready to share with friends and family. Join us to dive into the exciting world of app development and bring your creative ideas to life!",
       "timetable": {
         "location": "NSTP Cantt",
@@ -140,7 +140,39 @@
     {
       "id": 10,
       "title": "Minecraft(with Python), Thunkable",
-      "coverImage": "src/assets/minecraft2.jpg",
+      "coverImage": "src/assets/thunkable.png",
+      "description": "",
+      "timetable": {
+        "location": "Leo's Workshop Gulberg",
+        "dates": "July 22 - Aug 2 (Mon - Fri)",
+        "timings": "10AM - 11AM"
+      },
+      "price": 10000,
+      "discount": 0.0,
+      "discounted_price": 10000,
+      "availability": 10,
+      "one_to_one_tutoring": true
+    },
+    {
+      "id": 11,
+      "title": "Introduction to Data Science",
+      "coverImage": "src/assets/ds.jpg",
+      "description": "",
+      "timetable": {
+        "location": "Leo's Workshop Gulberg",
+        "dates": "July 22 - Aug 2 (Mon - Fri)",
+        "timings": "10AM - 11AM"
+      },
+      "price": 10000,
+      "discount": 0.0,
+      "discounted_price": 10000,
+      "availability": 10,
+      "one_to_one_tutoring": true
+    },
+    {
+      "id": 12,
+      "title": "Introduction to C++",
+      "coverImage": "src/assets/cpp.png",
       "description": "",
       "timetable": {
         "location": "Leo's Workshop Gulberg",

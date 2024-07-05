@@ -28,7 +28,7 @@ export default function Programs() {
         </p>
       </section>
 
-      <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 2xl:max-w-[1440px] 2xl:mx-auto">
+      <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-center">
         {programs.length === 0 ? (
           <>
             <SkeletonCard />
@@ -41,7 +41,7 @@ export default function Programs() {
               key={program.id}
               id={program.id}
               title={program.title}
-              description={program.description}
+              requirements={program.requirements}
               img={program.coverImage}
             />
           ))
@@ -51,14 +51,14 @@ export default function Programs() {
   );
 }
 
-function ProgramCard({ id, title, description, img }) {
+function ProgramCard({ id, title, requirements, img }) {
   return (
     <div className="h-full border flex flex-col">
       <img src={img} alt={title} className="w-full" />
       <div className="flex flex-col flex-grow p-3">
         <div className="flex-grow">
           <p className="text-3xl text-black mb-3">{title}</p>
-          <p>{description}</p>
+          <p>{requirements.age}</p>
         </div>
         <div className="mt-auto">
           <Link to={`${id}`}>

@@ -21,7 +21,7 @@ export default function Tutoring({ onClose }) {
   };
 
   useEffect(() => {
-    fetch("src/content/courses.json")
+    fetch("/content/courses.json")
       .then(response => response.json())
       .then(data =>
         setCourses(data.courses.filter(course => course.one_to_one_tutoring))

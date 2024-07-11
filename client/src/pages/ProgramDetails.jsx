@@ -13,13 +13,13 @@ export default function ProgramDetails() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const data = await fetch("/src/content/programs.json");
+        const data = await fetch("/content/programs.json");
         const response = await data.json();
         const program = response.programs.find(program => program.id == id);
         setProgram(program);
 
         const courseIds = program?.courses || [];
-        const coursesData = await fetch("/src/content/courses.json");
+        const coursesData = await fetch("/content/courses.json");
         const coursesResponse = await coursesData.json();
         const courses = coursesResponse.courses.filter(course =>
           courseIds.includes(course.id)
@@ -40,7 +40,7 @@ export default function ProgramDetails() {
         {/* Background Image and overlay*/}
         <div
           className="absolute inset-0 -mx-4 bg-cover bg-center z-0"
-          style={{ backgroundImage: `url(/${program.coverImage})` }}
+          style={{ backgroundImage: `url(${program.coverImage})` }}
         >
           <div className="absolute inset-0 bg-black opacity-70 z-10"></div>
         </div>
@@ -76,7 +76,7 @@ function CourseCard({ course }) {
   return (
     <div className="border flex flex-col sm:flex-row">
       <img
-        src={`/${course.coverImage}`}
+        src={course.coverImage}
         alt={course.title}
         className="object-cover sm:w-[300px] sm:h-[200px]"
       />

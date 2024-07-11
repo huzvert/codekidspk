@@ -7,7 +7,7 @@ export default function Programs() {
   const [programs, setPrograms] = useState([]);
 
   useEffect(() => {
-    fetch("src/content/programs.json")
+    fetch("/content/programs.json")
       .then(response => response.json())
       .then(data => setPrograms(data.programs));
   }, []);

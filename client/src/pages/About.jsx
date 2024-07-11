@@ -1,5 +1,4 @@
-import React from "react";
-import stats_image from "../assets/robo-wunderkind-hLvQ4-QEBAE-unsplash.jpg";
+import stats_image from "/assets/robo-wunderkind-hLvQ4-QEBAE-unsplash.jpg";
 import { Separator } from "@/components/ui/separator";
 export default function About() {
   return (
@@ -23,7 +22,7 @@ export default function About() {
             </p>
           </div>
           <img
-            src="src\assets\fb.jpg"
+            src="\assets\fb.jpg"
             className="w-full lg:w-[500px] xl:w-[700px] aspect-square object-cover"
             alt="About Us"
           />
@@ -78,94 +77,94 @@ export default function About() {
           <div className="flex -mx-4 animate-img-ticker space-x-8 w-[200%]">
             <img
               className="w-64 mx-4 self-start flex-none"
-              src="src\assets\kickstart.png"
+              src="\assets\kickstart.png"
               alt=""
             />
             <img
               className="w-64 mx-4 self-start flex-none"
-              src="src\assets\leos.png"
+              src="\assets\leos.png"
               alt=""
             />
             <img
               className="w-64 mx-4 self-start flex-none"
-              src="src\assets\mashion.png"
+              src="\assets\mashion.png"
               alt=""
             />
             <img
               className="w-64 mx-4 self-start flex-none"
-              src="src\assets\scarsdale.jpeg"
+              src="\assets\scarsdale.jpeg"
               alt=""
             />
             <img
               className="w-64 mx-4 self-start flex-none"
-              src="src\assets\tns2.jpg"
+              src="\assets\tns2.jpg"
               alt=""
             />
             <img
               className="w-64 mx-4 self-start flex-none"
-              src="src\assets\LCF.png"
-              alt=""
-            />
-
-            <img
-              className="w-64 mx-4 self-start flex-none"
-              src="src\assets\kickstart.png"
-              alt=""
-            />
-            <img
-              className="w-64 mx-4 self-start flex-none"
-              src="src\assets\leos.png"
-              alt=""
-            />
-            <img
-              className="w-64 mx-4 self-start flex-none"
-              src="src\assets\mashion.png"
-              alt=""
-            />
-            <img
-              className="w-64 mx-4 self-start flex-none"
-              src="src\assets\scarsdale.jpeg"
-              alt=""
-            />
-            <img
-              className="w-64 mx-4 self-start flex-none"
-              src="src\assets\tns2.jpg"
-              alt=""
-            />
-            <img
-              className="w-64 mx-4 self-start flex-none"
-              src="src\assets\LCF.png"
+              src="\assets\LCF.png"
               alt=""
             />
 
             <img
               className="w-64 mx-4 self-start flex-none"
-              src="src\assets\kickstart.png"
+              src="\assets\kickstart.png"
               alt=""
             />
             <img
               className="w-64 mx-4 self-start flex-none"
-              src="src\assets\leos.png"
+              src="\assets\leos.png"
               alt=""
             />
             <img
               className="w-64 mx-4 self-start flex-none"
-              src="src\assets\mashion.png"
+              src="\assets\mashion.png"
               alt=""
             />
             <img
               className="w-64 mx-4 self-start flex-none"
-              src="src\assets\scarsdale.jpeg"
+              src="\assets\scarsdale.jpeg"
               alt=""
             />
             <img
               className="w-64 mx-4 self-start flex-none"
-              src="src\assets\tns2.jpg"
+              src="\assets\tns2.jpg"
               alt=""
             />
             <img
               className="w-64 mx-4 self-start flex-none"
-              src="src\assets\LCF.png"
+              src="\assets\LCF.png"
+              alt=""
+            />
+
+            <img
+              className="w-64 mx-4 self-start flex-none"
+              src="\assets\kickstart.png"
+              alt=""
+            />
+            <img
+              className="w-64 mx-4 self-start flex-none"
+              src="\assets\leos.png"
+              alt=""
+            />
+            <img
+              className="w-64 mx-4 self-start flex-none"
+              src="\assets\mashion.png"
+              alt=""
+            />
+            <img
+              className="w-64 mx-4 self-start flex-none"
+              src="\assets\scarsdale.jpeg"
+              alt=""
+            />
+            <img
+              className="w-64 mx-4 self-start flex-none"
+              src="\assets\tns2.jpg"
+              alt=""
+            />
+            <img
+              className="w-64 mx-4 self-start flex-none"
+              src="\assets\LCF.png"
               alt=""
             />
           </div>
@@ -186,21 +185,13 @@ export default function About() {
 
         <div className="flex flex-col md:flex-row gap-12 justify-center items-center mt-12">
           <div className="pb-4 border flex flex-col items-center">
-            <img
-              src="src\assets\mehrab.png"
-              alt="Team Member"
-              className="w-80"
-            />
+            <img src="\assets\mehrab.png" alt="Team Member" className="w-80" />
             <h3 className="mt-4">Mehrab Ahmad</h3>
             <p>CEO</p>
           </div>
 
           <div className="pb-4 border flex flex-col items-center">
-            <img
-              src="src\assets\zammad.jpg"
-              alt="Team Member"
-              className="w-80"
-            />
+            <img src="\assets\zammad.jpg" alt="Team Member" className="w-80" />
             <h3 className="mt-4">Zammad Khan</h3>
             <p>Managing Director</p>
           </div>
@@ -208,57 +199,37 @@ export default function About() {
 
         <div className="flex flex-col md:flex-row gap-12 justify-center items-center mt-12">
           <div className="pb-4 border flex flex-col items-center">
-            <img
-              src="src\assets\bilal.png"
-              alt="Team Member"
-              className="w-80"
-            />
+            <img src="\assets\bilal.png" alt="Team Member" className="w-80" />
             <h3 className="mt-4">Muhammad Bilal</h3>
             <p>Coding Instructor</p>
           </div>
 
           <div className="pb-4 border flex flex-col items-center">
-            <img
-              src="src\assets\Danish.jpg"
-              alt="Team Member"
-              className="w-80"
-            />
+            <img src="\assets\Danish.jpg" alt="Team Member" className="w-80" />
             <h3 className="mt-4">Danish Athar</h3>
             <p>Coding Instructor</p>
           </div>
 
           <div className="pb-4 border flex flex-col items-center">
-            <img
-              src="src\assets\Natiq.jpg"
-              alt="Team Member"
-              className="w-80"
-            />
+            <img src="\assets\Natiq.jpg" alt="Team Member" className="w-80" />
             <h3 className="mt-4">Natiq Khan</h3>
             <p>Coding Instructor</p>
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-12 justify-center items-center mt-12">
           <div className="pb-4 border flex flex-col items-center">
-            <img
-              src="src\assets\Samad.jpg"
-              alt="Team Member"
-              className="w-80"
-            />
+            <img src="\assets\Samad.jpg" alt="Team Member" className="w-80" />
             <h3 className="mt-4">Abdul Samad</h3>
             <p>Coding Instructor</p>
           </div>
           <div className="pb-4 border flex flex-col items-center">
-            <img
-              src="src\assets\Yusra.jpg"
-              alt="Team Member"
-              className="w-80"
-            />
+            <img src="\assets\Yusra.jpg" alt="Team Member" className="w-80" />
             <h3 className="mt-4">Yusra Zainab</h3>
             <p>Coding Instructor</p>
           </div>
           <div className="pb-4 border flex flex-col items-center">
             <img
-              src="src\assets\Yasjudan.jpeg"
+              src="\assets\Yasjudan.jpeg"
               alt="Team Member"
               className="w-80"
             />
@@ -269,66 +240,50 @@ export default function About() {
 
         <div className="flex flex-col md:flex-row gap-12 justify-center items-center mt-12">
           <div className="pb-4 border flex flex-col items-center">
-            <img src="src\assets\Adil.jpg" alt="Team Member" className="w-80" />
+            <img src="\assets\Adil.jpg" alt="Team Member" className="w-80" />
             <h3 className="mt-4">Muhammad Adil</h3>
             <p>Tech Lead</p>
           </div>
 
           <div className="pb-4 border flex flex-col items-center">
-            <img src="src\assets\Rauf.png" alt="Team Member" className="w-80" />
+            <img src="\assets\Rauf.png" alt="Team Member" className="w-80" />
             <h3 className="mt-4">Abdul Rauf</h3>
             <p>Technical Assistant</p>
           </div>
           <div className="pb-4 border flex flex-col items-center">
-            <img
-              src="src\assets\Myra.jpeg"
-              alt="Team Member"
-              className="w-80"
-            />
+            <img src="\assets\Myra.jpeg" alt="Team Member" className="w-80" />
             <h3 className="mt-4">Myra Ali</h3>
             <p>HR Associate</p>
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-12 justify-center items-center mt-12">
           <div className="pb-4 border flex flex-col items-center">
-            <img
-              src="src\assets\Hussain.jpg"
-              alt="Team Member"
-              className="w-80"
-            />
+            <img src="\assets\Hussain.jpg" alt="Team Member" className="w-80" />
             <h3 className="mt-4">Hussain Ashar Mehtab</h3>
             <p>Social Media Manager</p>
           </div>
 
           <div className="pb-4 border flex flex-col items-center">
-            <img
-              src="src\assets\Munzira.jpg"
-              alt="Team Member"
-              className="w-80"
-            />
+            <img src="\assets\Munzira.jpg" alt="Team Member" className="w-80" />
             <h3 className="mt-4">Munzira Ali</h3>
             <p>Teaching Assistant</p>
           </div>
 
           <div className="pb-4 border flex flex-col items-center">
-            <img
-              src="src\assets\male_ph.jpg"
-              alt="Team Member"
-              className="w-80"
-            />
+            <img src="\assets\male_ph.jpg" alt="Team Member" className="w-80" />
             <h3 className="mt-4">Mohib Ahmad</h3>
             <p>Marketing And Affiliations Intern</p>
           </div>
         </div>
         <div className="flex flex-col md:flex-row gap-12 justify-center items-center mt-12">
           <div className="pb-4 border flex flex-col items-center">
-            <img src="src\assets\Arfa.jpg" alt="Team Member" className="w-80" />
+            <img src="\assets\Arfa.jpg" alt="Team Member" className="w-80" />
             <h3 className="mt-4">Arfa Abdul Naseer</h3>
             <p>HR Intern</p>
           </div>
           <div className="pb-4 border flex flex-col items-center">
             <img
-              src="src\assets\Abdullah.jpg"
+              src="\assets\Abdullah.jpg"
               alt="Team Member"
               className="w-80"
             />
@@ -337,11 +292,7 @@ export default function About() {
           </div>
 
           <div className="pb-4 border flex flex-col items-center">
-            <img
-              src="src\assets\Haya.jpeg"
-              alt="Team Member"
-              className="w-80"
-            />
+            <img src="\assets\Haya.jpeg" alt="Team Member" className="w-80" />
             <h3 className="mt-4">Haya Farid</h3>
             <p>Cirriculum Development Intern</p>
           </div>

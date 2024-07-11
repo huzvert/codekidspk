@@ -1,0 +1,40 @@
+{
+  "faqs": [
+    {
+      "question": "Is there an end of program recognition?",
+      "answer": "Yes! All students received an end of program signed Code Kids certificate that can be used for official purposes."
+    },
+    {
+      "question": "What is the age group of children that you cater to?",
+      "answer": "We start with students as young as 7 years of age and go up to students aged 16."
+    },
+    {
+      "question": "What is the duration of your courses?",
+      "answer": "Duration depends on the time of the year, usually every course has 10 lessons and classes are weekly or bi-weekly during the school term and four or five times a week during holiday camps."
+    },
+    {
+      "question": "Are your courses online or in person?",
+      "answer": "We offer both online and in-person courses to accommodate different learning preferences and schedules."
+    },
+    {
+      "question": "What are enrollment requirements?",
+      "answer": "Admission requirements vary by program. Generally, we look for a strong interest in coding and problem-solving skills. Some advanced courses may require prior knowledge or experience in programming."
+    },
+    {
+      "question": "When do classes start?",
+      "answer": "We have multiple start dates throughout the year. Check out the schedules page on our website for the next available start date for your desired course."
+    },
+    {
+      "question": "Who are the instructors?",
+      "answer": "Our instructors are experienced professionals with extensive backgrounds in their respective fields. They are passionate about teaching and committed to helping you succeed."
+    },
+    {
+      "question": "What if I need to miss a class?",
+      "answer": "All of our online lectures are recorded and our instructors are available for help outside class hours as well to keep all students on track."
+    },
+    {
+      "question": "What is your location?",
+      "answer": "We don’t have any fixed location but we offer camps at co-working spaces such as Daftarkhwan, Kickstart and NASTP in Lahore and Islamabad. Do make sure to check the schedules page to see locations of upcoming programs."
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "Introduction to Python",
+      "coverImage": "/assets/python_intro.png",
+      "description": "Embark on your programming journey with our comprehensive Python Level 1 course, perfect for beginners. This course introduces you to Python, covering the essentials from setting up your environment to writing your first script. You'll dive into core topics such as handling user input, understanding data types, and utilizing conditionals to make decisions in your code. Explore the power of loops with for, while, and nested loops, enabling you to handle repetitive tasks efficiently. You'll also learn to work with lists, dictionaries, and tuples, mastering common operations and understanding their applications. By the end of the course, you'll be proficient in writing functions, creating reusable and modular code, and ready to tackle more advanced Python programming challenges. Join us to build a solid foundation in Python and start coding confidently!",
+      "timetables": [
+        {
+          "location": "Online",
+          "dates": "July 1 - 12 (Mon - Fri)",
+          "timings": "11AM - 12PM"
+        }
+      ],
+      "price": 10000,
+      "discount": 0.0,
+      "discounted_price": 10000,
+      "availability": 10,
+      "one_to_one_tutoring": true,
+      "mode": "online",
+      "sessions": 1
+    },
+    {
+      "id": 2,
+      "title": "Python Level 2",
+      "coverImage": "/assets/python_adv.png",
+      "description": "Our Python Level 2 course builds upon foundational skills with a focus on advanced concepts and practical applications. Students will explore a variety of libraries such as time, random, and turtle, learning to implement real-time functionalities, graphical shapes, and interactive games. They'll deepen their understanding of conditional statements through advanced projects and tackle error handling with try and except blocks. The course introduces students to APIs for fetching and using real-world data, and covers essential skills such as generating PDF files, QR codes, and working with fundamental data structures like stacks and queues. With a focus on GUI development using Tkinter, students will create engaging applications including games and utility tools like a GUI calculator. By the end of Python Level 2, students will have expanded their programming repertoire, equipped with the skills to develop more complex projects and solve real-world problems with Python.",
+      "timetables": [
+        {
+          "location": "Online",
+          "dates": "July 1 - 12 (Mon - Fri)",
+          "timings": "11AM - 12PM"
+        }
+      ],
+      "price": 10000,
+      "discount": 0.0,
+      "discounted_price": 10000,
+      "availability": 15,
+      "one_to_one_tutoring": true,
+      "mode": "online",
+      "sessions": 1
+    },
+
+    {
+      "id": 3,
+      "title": "Introduction to Web Development",
+      "coverImage": "/assets/webdev_intro.png",
+      "description": "Our Web Development course is designed to introduce students to the world of web development, covering the basics of HTML, CSS, and JavaScript. Students will learn to create and style web pages using HTML tags and CSS properties, gaining a solid foundation in front-end development. They'll explore the fundamentals of JavaScript, including variables, data types, and operators, and learn to manipulate the DOM to create interactive web content. The course also covers responsive design principles, enabling students to build websites that adapt to different screen sizes and devices. By the end of the course, students will have created their own portfolio website, showcasing their projects and skills. Join us to kickstart your journey into web development and learn to build dynamic and engaging websites!",
+      "timetables": [
+        {
+          "location": "Online",
+          "dates": "July 1 - 12 (Mon - Fri)",
+          "timings": "1PM - 2PM"
+        }
+      ],
+      "price": 10000,
+      "discount": 0.0,
+      "discounted_price": 10000,
+      "availability": 12,
+      "one_to_one_tutoring": true,
+      "mode": "online",
+      "sessions": 1
+    },
+
+    {
+      "id": 4,
+      "title": "App Development with Thunkable",
+      "coverImage": "/assets/thunkable.png",
+      "description": "Our App Development course introduces students to the world of mobile app development using Thunkable, a visual programming platform. Students will learn to create apps for Android and iOS devices, exploring the design and development process from start to finish. They'll build interactive user interfaces, add functionality with blocks, and test their apps on real devices. The course covers essential app components such as buttons, text inputs, and images, enabling students to create engaging and user-friendly interfaces. Students will also learn to integrate APIs, databases, and external services into their apps, expanding the functionality and capabilities of their projects. By the end of the course, students will have developed their own mobile apps, ready to share with friends and family. Join us to dive into the exciting world of app development and bring your creative ideas to life!",
+      "timetables": [
+        {
+          "location": "NSTP Cantt",
+          "dates": "July 22 - 26 (Mon - Fri)",
+          "timings": "11AM - 12PM"
+        }
+      ],
+      "price": 10000,
+      "discount": 0.0,
+      "discounted_price": 10000,
+      "availability": 10,
+      "one_to_one_tutoring": true,
+      "mode": "online",
+      "sessions": 1
+    },
+
+    {
+      "id": 5,
+      "title": "Roblox Studio Coding",
+      "coverImage": "/assets/roblox.jpg",
+      "description": "Our Roblox Studio Coding course is designed to introduce students to the world of game development using Roblox Studio. Students will learn to create their own games, design interactive environments, and program game mechanics using Lua, a powerful scripting language. They'll explore the basics of Lua programming, including variables, functions, and loops, and learn to manipulate objects in the game world. The course covers essential game development concepts such as player controls, game physics, and user interfaces, enabling students to create engaging and immersive gaming experiences. Students will also learn to publish and share their games with the Roblox community, showcasing their creativity and skills. By the end of the course, students will have developed their own Roblox games, ready to play and share with friends. Join us to unleash your creativity and build exciting games with Roblox Studio!",
+      "timetables": [
+        {
+          "location": "NSTP Cantt",
+          "dates": "July 15 - 19 (Mon - Fri)",
+          "timings": "11AM - 12PM"
+        }
+      ],
+      "price": 10000,
+      "discount": 0.0,
+      "discounted_price": 10000,
+      "availability": 10,
+      "one_to_one_tutoring": true,
+      "mode": "online",
+      "sessions": 1
+    },
+
+    {
+      "id": 6,
+      "title": "Scratch Beginner",
+      "coverImage": "/assets/scratch_beg.jpg",
+      "description": "Our Scratch Level 1 course introduces young learners to the basics of programming through fun and interactive activities. Starting with simple tasks, students learn what programming is and how to make the Scratch cat perform basic actions. They will become familiar with different blocks and movements, gradually building their confidence in coding. The course also covers sound and looks blocks, allowing students to enhance their projects with audio effects and visual changes. As the course progresses, students will explore essential programming concepts such as animations, loops, and conditional statements. They'll learn to use variables to keep track of scores and understand the principles of broadcasting and receiving messages. By the end of the course, students will have a solid foundation in Scratch programming, enabling them to create their own interactive projects and games. Join us to embark on a fun-filled coding adventure with Scratch!",
+      "timetables": [],
+      "price": 10000,
+      "discount": 0.0,
+      "discounted_price": 10000,
+      "availability": 10,
+      "one_to_one_tutoring": true,
+      "mode": "online",
+      "sessions": 1
+    },
+    {
+      "id": 7,
+      "title": "Scratch Intermediate",
+      "coverImage": "/assets/scratch_int.png",
+      "description": "Building on the fundamentals from Scratch Level 1, our Scratch Level 2 course expands both the concepts and functionality of student projects. Learners will delve into more advanced motion and control blocks, custom blocks for modular coding, and lists for managing collections of data. This course encourages the creation of dynamic and interactive projects, with increased complexity and more sophisticated game mechanics. Students will also explore cloning to create multiple sprite instances, advanced variables for enhanced data handling, and complex conditional statements for refined decision-making. The introduction of event handling techniques will enable students to develop more interactive and responsive programs. By the end of Scratch Level 2, students will be proficient in creating multi-faceted projects with intricate animations, improved interactivity, and refined logic. Join us to elevate your Scratch skills and bring more ambitious ideas to life!",
+      "timetables": [],
+      "price": 10000,
+      "discount": 0.0,
+      "discounted_price": 10000,
+      "availability": 15,
+      "one_to_one_tutoring": true,
+      "mode": "online",
+      "sessions": 1
+    },
+    {
+      "id": 8,
+      "title": "Scratch Advanced",
+      "coverImage": "/assets/scratch_adv.jpeg",
+      "description": "Scratch Level 3 takes programming to new heights by focusing on both advanced concepts and enhanced functionality. Students will build on their existing knowledge to create complex, multi-level games with sophisticated features. The course covers advanced topics such as physics simulations, integrating external data, and implementing recursive functions and algorithms. Emphasis is placed on designing interactive, multi-sprite environments with more detailed animations and behaviors. In this level, students will also tackle collaborative projects, learning to work in teams to share and develop their creations. They will refine their debugging and optimization skills to ensure their projects run smoothly. By the end of Scratch Level 3, students will be adept at handling complex programming challenges, capable of creating highly interactive and polished projects. Join us to master advanced Scratch programming and bring your most creative and intricate ideas to life!",
+      "timetables": [],
+      "price": 10000,
+      "discount": 0.0,
+      "discounted_price": 10000,
+      "availability": 12,
+      "one_to_one_tutoring": true,
+      "mode": "online",
+      "sessions": 1
+    },
+
+    {
+      "id": 9,
+      "title": "Minecraft Coding",
+      "coverImage": "/assets/minecraft1.jpg",
+      "description": "",
+      "timetables": [
+        {
+          "location": "Online",
+          "dates": "July 1 - 12 (Mon - Fri)",
+          "timings": "1PM - 2PM"
+        }
+      ],
+      "price": 10000,
+      "discount": 0.0,
+      "discounted_price": 10000,
+      "availability": 10,
+      "one_to_one_tutoring": true,
+      "mode": "online",
+      "sessions": 1
+    },
+    {
+      "id": 10,
+      "title": "Minecraft(with Python), Thunkable",
+      "coverImage": "/assets/thunkable.png",
+      "description": "",
+      "timetables": [
+        {
+          "location": "Leo's Workshop Gulberg",
+          "dates": "July 22 - Aug 2 (Mon - Fri)",
+          "timings": "10AM - 11AM"
+        }
+      ],
+      "price": 10000,
+      "discount": 0.0,
+      "discounted_price": 10000,
+      "availability": 10,
+      "one_to_one_tutoring": true
+    },
+    {
+      "id": 11,
+      "title": "Introduction to Data Science",
+      "coverImage": "/assets/ds.jpg",
+      "description": "",
+      "timetables": [
+        {
+          "location": "Leo's Workshop Gulberg",
+          "dates": "July 22 - Aug 2 (Mon - Fri)",
+          "timings": "10AM - 11AM"
+        }
+      ],
+      "price": 10000,
+      "discount": 0.0,
+      "discounted_price": 10000,
+      "availability": 10,
+      "one_to_one_tutoring": true
+    },
+    {
+      "id": 12,
+      "title": "Introduction to C++",
+      "coverImage": "/assets/cpp.png",
+      "description": "",
+      "timetables": [
+        {
+          "location": "Leo's Workshop Gulberg",
+          "dates": "July 22 - Aug 2 (Mon - Fri)",
+          "timings": "10AM - 11AM"
+        }
+      ],
+      "price": 10000,
+      "discount": 0.0,
+      "discounted_price": 10000,
+      "availability": 10,
+      "one_to_one_tutoring": true,
+      "mode": "online",
+      "sessions": 1
+    }
+  ]
+}

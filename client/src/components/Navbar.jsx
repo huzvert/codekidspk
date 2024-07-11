@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useContext } from "react";
 import { Link, useLocation } from "react-router-dom";
 import CartContext from "../context/cartContext";
-import Logo from "../assets/logo1.png";
+import Logo from "/assets/logo1.png";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import Badge from "../components/Badge";

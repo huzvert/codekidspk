@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import logo from "../assets/logo1.png";
+import logo from "/assets/logo1.png";
 import { Button } from "@/components/ui/button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";

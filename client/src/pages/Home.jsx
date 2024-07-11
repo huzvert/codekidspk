@@ -6,9 +6,9 @@ import ServicesPopup from "@/components/ServicesPopup";
 import TrialClassPopup from "@/components/TrialClassPopup";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import hero_image from "../assets/arif-riyanto-vJP-wZ6hGBg-unsplash.jpg";
-import offering_image from "../assets/kelly-sikkema-37Gug7AWjoo-unsplash.jpg";
-import mission_image from "../assets/kidonIPAD.jpg";
+import hero_image from "/assets/arif-riyanto-vJP-wZ6hGBg-unsplash.jpg";
+import offering_image from "/assets/kelly-sikkema-37Gug7AWjoo-unsplash.jpg";
+import mission_image from "/assets/kidonIPAD.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBookOpen,
@@ -348,7 +348,7 @@ function Testimonials() {
   const [testimonials, setTestimonials] = useState([]);
 
   useEffect(() => {
-    fetch("src/content/testimonials.json")
+    fetch("/content/testimonials.json")
       .then(response => response.json())
       .then(data => setTestimonials(data.testimonials));
   }, []);
@@ -400,7 +400,7 @@ function FAQs() {
   const [faqs, setFaqs] = useState([]);
 
   useEffect(() => {
-    fetch("src/content/faqs.json")
+    fetch("/content/faqs.json")
       .then(response => response.json())
       .then(data => setFaqs(data.faqs));
   }, []);

@@ -1,0 +1,87 @@
+{
+  "programs": [
+    {
+      "id": 1,
+      "title": "Python",
+      "requirements": {
+        "age": "Age: 10+ years",
+        "prerequisites": ""
+      },
+      "coverImage": "/assets/python.jpg",
+      "courses": [1, 2]
+    },
+
+    {
+      "id": 2,
+      "title": "Web Development",
+      "requirements": {
+        "age": "Age: 11+ years",
+        "prerequisites": ""
+      },
+      "coverImage": "/assets/web.jpg",
+      "courses": [3]
+    },
+    {
+      "id": 3,
+      "title": "App Development",
+      "requirements": {
+        "age": "Age: 8+ years",
+        "prerequisites": ""
+      },
+      "coverImage": "/assets/app.jpeg",
+      "courses": [4]
+    },
+    {
+      "id": 4,
+      "title": "Scratch",
+      "requirements": {
+        "age": "Age: 7+ years",
+        "prerequisites": ""
+      },
+      "coverImage": "/assets/program_scratch.jpg",
+      "courses": [6, 7, 8]
+    },
+
+    {
+      "id": 5,
+      "title": "Minecraft Education",
+      "requirements": {
+        "age": "Age: 7+ years",
+        "prerequisites": ""
+      },
+      "coverImage": "/assets/minecraft.jpg",
+      "courses": [9, 10]
+    },
+
+    {
+      "id": 6,
+      "title": "Roblox Studio",
+      "requirements": {
+        "age": "Age: 9+ years",
+        "prerequisites": ""
+      },
+      "coverImage": "/assets/Roblox1.jpg",
+      "courses": [5]
+    },
+    {
+      "id": 7,
+      "title": "C++",
+      "requirements": {
+        "age": "Age: 11+ years",
+        "prerequisites": ""
+      },
+      "coverImage": "/assets/c++.jpg",
+      "courses": [12]
+    },
+    {
+      "id": 8,
+      "title": "AI/ML",
+      "requirements": {
+        "age": "Age: 13+ years",
+        "prerequisites": ""
+      },
+      "coverImage": "/assets/AIML.jpg",
+      "courses": [11]
+    }
+  ]
+}

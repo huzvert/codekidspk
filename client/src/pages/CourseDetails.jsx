@@ -10,7 +10,7 @@ export default function CourseDetails() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const data = await fetch("/src/content/courses.json");
+        const data = await fetch("/content/courses.json");
         const response = await data.json();
         const course = response.courses.find(
           course => course.id === parseInt(id)
@@ -30,7 +30,7 @@ export default function CourseDetails() {
         {/* Background Image and overlay*/}
         <div
           className="absolute inset-0 -mx-4 bg-cover bg-center z-0"
-          style={{ backgroundImage: `url(/${course?.coverImage})` }}
+          style={{ backgroundImage: `url(${course?.coverImage})` }}
         >
           <div className="absolute inset-0 bg-black opacity-70 z-10"></div>
         </div>

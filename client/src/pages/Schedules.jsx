@@ -11,7 +11,7 @@ export default function Schedules() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const coursesResponse = await fetch("/src/content/courses.json");
+        const coursesResponse = await fetch("/content/courses.json");
         const courses = await coursesResponse.json();
 
         // Extract schedule data from courses, excluding empty timetables

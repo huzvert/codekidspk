@@ -82,7 +82,6 @@ export default function AddToCart({ course }) {
             name="enrollments"
             placeholder="Enter enrollments"
             min="1"
-            max={course.availability} // Maximum enrollments
             required
             value={enrollments}
             onChange={e => setEnrollments(e.target.value)}

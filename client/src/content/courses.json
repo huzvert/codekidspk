@@ -16,7 +16,9 @@
       "discount": 0.0,
       "discounted_price": 10000,
       "availability": 10,
-      "one_to_one_tutoring": true
+      "one_to_one_tutoring": true,
+      "mode": "online",
+      "sessions": 1
     },
     {
       "id": 2,
@@ -34,7 +36,9 @@
       "discount": 0.0,
       "discounted_price": 10000,
       "availability": 15,
-      "one_to_one_tutoring": true
+      "one_to_one_tutoring": true,
+      "mode": "online",
+      "sessions": 1
     },
 
     {
@@ -53,7 +57,9 @@
       "discount": 0.0,
       "discounted_price": 10000,
       "availability": 12,
-      "one_to_one_tutoring": true
+      "one_to_one_tutoring": true,
+      "mode": "online",
+      "sessions": 1
     },
 
     {
@@ -72,7 +78,9 @@
       "discount": 0.0,
       "discounted_price": 10000,
       "availability": 10,
-      "one_to_one_tutoring": true
+      "one_to_one_tutoring": true,
+      "mode": "online",
+      "sessions": 1
     },
 
     {
@@ -91,7 +99,9 @@
       "discount": 0.0,
       "discounted_price": 10000,
       "availability": 10,
-      "one_to_one_tutoring": true
+      "one_to_one_tutoring": true,
+      "mode": "online",
+      "sessions": 1
     },
 
     {
@@ -104,7 +114,9 @@
       "discount": 0.0,
       "discounted_price": 10000,
       "availability": 10,
-      "one_to_one_tutoring": true
+      "one_to_one_tutoring": true,
+      "mode": "online",
+      "sessions": 1
     },
     {
       "id": 7,
@@ -116,7 +128,9 @@
       "discount": 0.0,
       "discounted_price": 10000,
       "availability": 15,
-      "one_to_one_tutoring": true
+      "one_to_one_tutoring": true,
+      "mode": "online",
+      "sessions": 1
     },
     {
       "id": 8,
@@ -128,7 +142,9 @@
       "discount": 0.0,
       "discounted_price": 10000,
       "availability": 12,
-      "one_to_one_tutoring": true
+      "one_to_one_tutoring": true,
+      "mode": "online",
+      "sessions": 1
     },
 
     {
@@ -147,7 +163,9 @@
       "discount": 0.0,
       "discounted_price": 10000,
       "availability": 10,
-      "one_to_one_tutoring": true
+      "one_to_one_tutoring": true,
+      "mode": "online",
+      "sessions": 1
     },
     {
       "id": 10,
@@ -165,7 +183,9 @@
       "discount": 0.0,
       "discounted_price": 10000,
       "availability": 10,
-      "one_to_one_tutoring": true
+      "one_to_one_tutoring": true,
+      "mode": "online",
+      "sessions": 1
     }
   ]
 }

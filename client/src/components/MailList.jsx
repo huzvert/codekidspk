@@ -32,7 +32,7 @@ function MailList() {
       setIsSubmitted(true);
       setTimeout(() => {
         setIsSubmitted(false);
-        setEmail(""); // Clear the email input after submission
+        setEmail("");
       }, 3000);
     } catch (error) {
       console.error("There was a problem with the submission:", error);
@@ -44,7 +44,7 @@ function MailList() {
   return (
     <>
       <h3 className="font-heading mb-3">
-        Join Our Mailing List for Course Updates
+        Join Our Contact List for Course Updates
       </h3>
       {isSubmitted ? (
         <div className="text-center text-c_primary-light">
@@ -54,8 +54,8 @@ function MailList() {
         <form onSubmit={handleSubmit} className="flex flex-col text-white">
           <input
             id="email"
-            type="email"
-            placeholder="Enter your email"
+            type="tel"
+            placeholder="Enter your contact number"
             value={email}
             onChange={handleInputChange}
             required

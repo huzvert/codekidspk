@@ -60,6 +60,11 @@ export default function CourseDetails() {
           }
 
           <div className="mb-4">
+            <h4 className="text-gray-800 font-semibold">Mode of Study</h4>
+            <p className="text-gray-600">{course?.mode}</p>
+          </div>
+
+          <div className="mb-4">
             <h4 className="text-gray-800 font-semibold">Price</h4>
             <p className="text-gray-600">
               Original Price: PKR {course?.price}/-{" "}
@@ -70,10 +75,6 @@ export default function CourseDetails() {
             <p className="text-gray-600">
               Discounted Price: PKR {course?.discounted_price}/-
             </p>
-          </div>
-          <div>
-            <h4 className="text-gray-800 font-semibold">Availability</h4>
-            <p className="text-gray-600">{course?.availability} seats</p>
           </div>
 
           <AddToCart course={course} />

@@ -41,7 +41,7 @@ export default function About() {
 
         {/* Content */}
         <div className="relative z-20 text-center">
-          <h2 className="text-white">First, solve the problem. Then write the code.</h2>
+          <h2 className="text-white">Empowering Kids Through Coding</h2>
 
           <div className="mt-12 flex flex-col sm:flex-row gap-10 sm:gap-20 justify-center">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-20">

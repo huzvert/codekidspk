@@ -53,7 +53,7 @@ export default function Home() {
         <div className="relative z-20 min-h-screen xl:min-h-max text-center text-white flex flex-col xl:gap-y-96 justify-center sm:justify-normal items-center 2xl:max-w-[1440px] 2xl:mx-auto">
           <div className="max-w-2xl sm:mt-32">
             <h1 className="text-3xl sm:text-6xl">
-              Empowering the Next Generation of Coders
+              Empowering the next generation of coders
             </h1>
             <p className="text-white text-lg sm:text-2xl">
               Join <span className="text-c_accent">Code Kids PK</span> and
@@ -117,10 +117,9 @@ export default function Home() {
           <span className="absolute left-1/2 transform -translate-x-1/2 bottom-[-10px] w-3/4 h-0.5 bg-c_accent"></span>
         </h2>
         <p className="mt-6 mb-12 max-w-3xl mx-auto">
-          There are unique opportunities for young people moving into the
-          workplace today, but also unprecedented difficulties and demands. Code
-          Kids was started by parents who have a good understanding of those
-          necessary skills not currently taught in mainstream schools.
+        Code Kids PK is led by young professionals who are uniquely positioned to understand 
+        the current demands of the job market. This firsthand insight allows us to tailor 
+        our curriculum to teach exactly what is needed for success in today's dynamic workplace.
         </p>
 
         {/* Values */}
@@ -144,10 +143,8 @@ export default function Home() {
             </div>
             <h3 className="">Bridging Generational Disconnect</h3>
             <p>
-              Our instructors, who are Gen Z university students themselves,
-              bring a fresh perspective to teaching. They bring fresh
-              perspectives, current industry insights, and relatable teaching
-              styles that resonate with young learners.
+            Our instructors, who are Gen Z university students themselves, bring a fresh perspective to teaching. 
+            They bring current industry insights and relatable teaching styles that resonate with young learners.
             </p>
           </div>
 
@@ -157,10 +154,9 @@ export default function Home() {
             </div>
             <h3 className="">Innovative Curriculum</h3>
             <p>
-              Our curriculum begins with essential foundational skills, ensuring
-              a thorough understanding. As students move forward, they'll
-              explore advanced concepts and future-ready skills, equipping them
-              to thrive in the rapidly evolving tech landscape.
+            Our curriculum begins with essential foundational skills, ensuring a thorough understanding. 
+            As students move forward, they'll explore advanced concepts and future-ready skills, 
+            equipping them to thrive in the rapidly evolving tech landscape.
             </p>
           </div>
 
@@ -170,9 +166,8 @@ export default function Home() {
             </div>
             <h3 className="">Flexible Learning Options</h3>
             <p>
-              Choose from diverse formats including full-time, part-time, and
-              online courses, allowing your child to study at their own pace and
-              balance learning with other commitments.
+            Choose from diverse formats including full-time, part-time, and online courses, 
+            allowing your child to study at their own pace and balance learning with other day-to-day commitments.
             </p>
           </div>
         </div>

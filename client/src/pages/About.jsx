@@ -41,7 +41,7 @@ export default function About() {
 
         {/* Content */}
         <div className="relative z-20 text-center">
-          <h2 className="text-white">Empowering Kids Through Coding</h2>
+          <h2 className="text-white">First, solve the problem. Then write the code.</h2>
 
           <div className="mt-12 flex flex-col sm:flex-row gap-10 sm:gap-20 justify-center">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-20">
@@ -105,6 +105,46 @@ export default function About() {
               src="\assets\LCF.png"
               alt=""
             />
+            <img
+              className="w-64 mx-4 self-start flex-none"
+              src="\assets\stem.jpg"
+              alt=""
+            />
+            <img
+              className="w-64 mx-4 self-start flex-none"
+              src="\assets\kickstart.png"
+              alt=""
+            />
+            <img
+              className="w-64 mx-4 self-start flex-none"
+              src="\assets\leos.png"
+              alt=""
+            />
+            <img
+              className="w-64 mx-4 self-start flex-none"
+              src="\assets\mashion.png"
+              alt=""
+            />
+            <img
+              className="w-64 mx-4 self-start flex-none"
+              src="\assets\scarsdale.jpeg"
+              alt=""
+            />
+            <img
+              className="w-64 mx-4 self-start flex-none"
+              src="\assets\tns2.jpg"
+              alt=""
+            />
+            <img
+              className="w-64 mx-4 self-start flex-none"
+              src="\assets\LCF.png"
+              alt=""
+            />
+            <img
+              className="w-64 mx-4 self-start flex-none"
+              src="\assets\stem.jpg"
+              alt=""
+            />
 
             <img
               className="w-64 mx-4 self-start flex-none"
@@ -136,35 +176,9 @@ export default function About() {
               src="\assets\LCF.png"
               alt=""
             />
-
             <img
               className="w-64 mx-4 self-start flex-none"
-              src="\assets\kickstart.png"
-              alt=""
-            />
-            <img
-              className="w-64 mx-4 self-start flex-none"
-              src="\assets\leos.png"
-              alt=""
-            />
-            <img
-              className="w-64 mx-4 self-start flex-none"
-              src="\assets\mashion.png"
-              alt=""
-            />
-            <img
-              className="w-64 mx-4 self-start flex-none"
-              src="\assets\scarsdale.jpeg"
-              alt=""
-            />
-            <img
-              className="w-64 mx-4 self-start flex-none"
-              src="\assets\tns2.jpg"
-              alt=""
-            />
-            <img
-              className="w-64 mx-4 self-start flex-none"
-              src="\assets\LCF.png"
+              src="\assets\stem.jpg"
               alt=""
             />
           </div>
@@ -177,126 +191,135 @@ export default function About() {
           <span className="absolute left-1/2 transform -translate-x-1/2 bottom-[-10px] w-3/4 h-0.5 bg-c_accent"></span>
         </h2>
         <p className="mt-6 mb-12 max-w-3xl mx-auto">
-          We are a team of fun loving techies who love working with children and
-          inspiring them through awesome, hands-on projects. We convert end
-          users of tech into creators and designers, ready to be the creative
-          problem-solvers of the future!
+        Meet the amazing team that makes Code Kids PK possible! We're a passionate group of tech enthusiasts who 
+        thrive on inspiring children through engaging, hands-on projects. Our mission is to empower young minds 
+        to transition from tech users to innovative creators and designers, preparing them to tackle tomorrow's 
+        challenges with creativity and confidence.
         </p>
-
+    
         <div className="flex flex-col md:flex-row gap-12 justify-center items-center mt-12">
-          <div className="pb-4 border flex flex-col items-center">
+        <a href="https://www.linkedin.com/in/mehrab-mohammad-ahmad-b9799816a/" target="_blank"><div className="pb-4 border flex flex-col items-center">
             <img src="\assets\mehrab.png" alt="Team Member" className="w-80" />
             <h3 className="mt-4">Mehrab Ahmad</h3>
             <p>CEO</p>
           </div>
+          </a>
+          
 
-          <div className="pb-4 border flex flex-col items-center">
+
+          <a href="https://www.linkedin.com/in/iamzammad" target="_blank"><div className="pb-4 border flex flex-col items-center">
             <img src="\assets\zammad.jpg" alt="Team Member" className="w-80" />
-            <h3 className="mt-4">Zammad Khan</h3>
+           <h3 className="mt-4">Zammad Khan</h3>
             <p>Managing Director</p>
           </div>
+          </a>
         </div>
 
         <div className="flex flex-col md:flex-row gap-12 justify-center items-center mt-12">
-          <div className="pb-4 border flex flex-col items-center">
+        <a href=""><div className="pb-4 border flex flex-col items-center">
             <img src="\assets\bilal.png" alt="Team Member" className="w-80" />
             <h3 className="mt-4">Muhammad Bilal</h3>
             <p>Coding Instructor</p>
           </div>
+          </a>
 
-          <div className="pb-4 border flex flex-col items-center">
-            <img src="\assets\Danish.jpg" alt="Team Member" className="w-80" />
-            <h3 className="mt-4">Danish Athar</h3>
+          <a href="https://www.linkedin.com/in/danish-athar-391955242/" target="_blank"><div className="pb-4 border flex flex-col items-center">
+            <img src="\assets\Danish.JPG" alt="Team Member" className="w-80" />
+           <h3 className="mt-4">Danish Athar</h3>
             <p>Coding Instructor</p>
           </div>
+          </a>
 
-          <div className="pb-4 border flex flex-col items-center">
+          <a href="https://www.linkedin.com/in/knatiq82/" target="_blank"><div className="pb-4 border flex flex-col items-center">
             <img src="\assets\Natiq.jpg" alt="Team Member" className="w-80" />
             <h3 className="mt-4">Natiq Khan</h3>
             <p>Coding Instructor</p>
           </div>
+          </a>
         </div>
         <div className="flex flex-col md:flex-row gap-12 justify-center items-center mt-12">
-          <div className="pb-4 border flex flex-col items-center">
+        <a href="https://www.linkedin.com/in/abdul-samad-358a36242" target="blank"><div className="pb-4 border flex flex-col items-center">
             <img src="\assets\Samad.jpg" alt="Team Member" className="w-80" />
             <h3 className="mt-4">Abdul Samad</h3>
             <p>Coding Instructor</p>
           </div>
-          <div className="pb-4 border flex flex-col items-center">
+          </a>
+          <a href="https://www.linkedin.com/in/yusra-zainab-1554aa297" target="_blank"><div className="pb-4 border flex flex-col items-center">
             <img src="\assets\Yusra.jpg" alt="Team Member" className="w-80" />
             <h3 className="mt-4">Yusra Zainab</h3>
             <p>Coding Instructor</p>
           </div>
-          <div className="pb-4 border flex flex-col items-center">
-            <img
-              src="\assets\Yasjudan.jpeg"
-              alt="Team Member"
-              className="w-80"
-            />
+          </a>
+          <a href="https://www.linkedin.com/in/yasjudan-a-1b5173279" target="_blank"><div className="pb-4 border flex flex-col items-center">
+            <img src="\assets\Yasjudan.jpeg" alt="Team Member" className="w-80"/>
             <h3 className="mt-4">Yasjudan Akram</h3>
             <p>Coding Instructor</p>
           </div>
+          </a>
         </div>
 
         <div className="flex flex-col md:flex-row gap-12 justify-center items-center mt-12">
-          <div className="pb-4 border flex flex-col items-center">
+        <a href="https://www.linkedin.com/in/muhammad-adil-a84127202" target="_blank"><div className="pb-4 border flex flex-col items-center">
             <img src="\assets\Adil.jpg" alt="Team Member" className="w-80" />
-            <h3 className="mt-4">Muhammad Adil</h3>
+           <h3 className="mt-4">Muhammad Adil</h3>
             <p>Tech Lead</p>
           </div>
+          </a>
 
-          <div className="pb-4 border flex flex-col items-center">
+          <a href="https://www.linkedin.com/in/abdulrauf12/" target="_blank"><div className="pb-4 border flex flex-col items-center">
             <img src="\assets\Rauf.png" alt="Team Member" className="w-80" />
             <h3 className="mt-4">Abdul Rauf</h3>
             <p>Technical Assistant</p>
           </div>
-          <div className="pb-4 border flex flex-col items-center">
+          </a>
+          <a href="http://www.linkedin.com/in/myraali" target="_blank"><div className="pb-4 border flex flex-col items-center">
             <img src="\assets\Myra.jpeg" alt="Team Member" className="w-80" />
             <h3 className="mt-4">Myra Ali</h3>
             <p>HR Associate</p>
           </div>
+          </a>
         </div>
         <div className="flex flex-col md:flex-row gap-12 justify-center items-center mt-12">
-          <div className="pb-4 border flex flex-col items-center">
+        <a href="https://www.linkedin.com/in/hussain-ashar-8a48a5124/" target="_blank"><div className="pb-4 border flex flex-col items-center">
             <img src="\assets\Hussain.jpg" alt="Team Member" className="w-80" />
             <h3 className="mt-4">Hussain Ashar Mehtab</h3>
             <p>Social Media Manager</p>
           </div>
+          </a>
 
-          <div className="pb-4 border flex flex-col items-center">
+          <a href="https://www.linkedin.com/in/munzira-ali-91b119316" target="_blank"><div className="pb-4 border flex flex-col items-center">
             <img src="\assets\Munzira.jpg" alt="Team Member" className="w-80" />
             <h3 className="mt-4">Munzira Ali</h3>
             <p>Teaching Assistant</p>
           </div>
-
-          <div className="pb-4 border flex flex-col items-center">
-            <img src="\assets\male_ph.jpg" alt="Team Member" className="w-80" />
-            <h3 className="mt-4">Mohib Ahmad</h3>
-            <p>Marketing And Affiliations Intern</p>
-          </div>
+          </a>
         </div>
+        </section>
+        <section className="text-center">
+        <h2 className="relative inline-block text-3xl sm:text-6xl">
+          Meet Our Interns
+          <span className="absolute left-1/2 transform -translate-x-1/2 bottom-[-10px] w-3/4 h-0.5 bg-c_accent"></span>
+        </h2>
+        <p className="mt-6 mb-12 max-w-3xl mx-auto">
+        Meet our talented summer interns at Code Kids PK - each one brings a unique perspective to the team, 
+        but all share a common passion for continuing our mission and advancing the impact of Code Kids PK. 
+        Together, we're dedicated to inspiring children and empowering them to explore their creativity in order 
+        to shape a future where every child is a confident creator and problem-solver.
+        </p>
         <div className="flex flex-col md:flex-row gap-12 justify-center items-center mt-12">
-          <div className="pb-4 border flex flex-col items-center">
+        <a href=""><div className="pb-4 border flex flex-col items-center">
             <img src="\assets\Arfa.jpg" alt="Team Member" className="w-80" />
             <h3 className="mt-4">Arfa Abdul Naseer</h3>
             <p>HR Intern</p>
-          </div>
-          <div className="pb-4 border flex flex-col items-center">
-            <img
-              src="\assets\Abdullah.jpg"
-              alt="Team Member"
-              className="w-80"
-            />
-            <h3 className="mt-4">Abdullah Farooq</h3>
+          </div></a>
+
+          <a href="https://www.linkedin.com/in/abdullah-farooq-8b00881b6/" target="_blank"><div className="pb-4 border flex flex-col items-center">
+            <img src="\assets\Abdullah.jpg" alt="Team Member" className="w-80"/>
+           <h3 className="mt-4">Abdullah Farooq</h3>
             <p>Web Development Intern</p>
           </div>
-
-          <div className="pb-4 border flex flex-col items-center">
-            <img src="\assets\Haya.jpeg" alt="Team Member" className="w-80" />
-            <h3 className="mt-4">Haya Farid</h3>
-            <p>Cirriculum Development Intern</p>
+          </a>
           </div>
-        </div>
       </section>
     </main>
   );

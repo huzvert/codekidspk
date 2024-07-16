@@ -6,9 +6,9 @@ import ServicesPopup from "@/components/ServicesPopup";
 import TrialClassPopup from "@/components/TrialClassPopup";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import hero_image from "/assets/arif-riyanto-vJP-wZ6hGBg-unsplash.jpg";
-import offering_image from "/assets/kelly-sikkema-37Gug7AWjoo-unsplash.jpg";
-import mission_image from "/assets/kidonIPAD.jpg";
+import hero_image from "../assets/arif-riyanto-vJP-wZ6hGBg-unsplash.jpg";
+import offering_image from "../assets/kelly-sikkema-37Gug7AWjoo-unsplash.jpg";
+import mission_image from "../assets/kidonIPAD.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBookOpen,
@@ -50,91 +50,79 @@ export default function Home() {
         </div>
 
         {/* Content */}
-        <div className="relative z-20 min-h-screen xl:min-h-max text-center text-white flex flex-col xl:gap-y-96 justify-center sm:justify-normal items-center 2xl:max-w-[1440px] 2xl:mx-auto">
+        <div className="relative z-20 min-h-screen text-center text-white flex flex-col justify-center sm:justify-normal items-center">
           <div className="max-w-2xl sm:mt-32">
             <h1 className="text-3xl sm:text-6xl">
               Empowering the Next Generation of Coders
             </h1>
             <p className="text-white text-lg sm:text-2xl">
-              Join <span className="text-c_accent">Code Kids PK</span> and
-              embark on a journey of coding and creativity.
+              Join <span className="text-c_accent">Code Kids PK</span> and embark on
+              a journey of coding and creativity.
             </p>
-            <Link to="/programs">
-              <Button
-                variant="outline"
-                className="mt-10 mb-36 sm:mb-16 py-6 md:p-7 outline-button"
-              >
-                Explore Our Programs
-              </Button>
-            </Link>
           </div>
+          <Link to="/programs">
+            <Button
+              variant="outline"
+              className="mt-10 mb-36 sm:mb-16 py-6 md:p-7 outline-button"
+            >
+              Explore Our Programs
+            </Button>
+          </Link>
 
           {/* Mailing List Subscription */}
-          <div className="absolute xl:relative xl:self-end bottom-3 sm:right-0 text-white z-30">
+          <div className="absolute bottom-3 sm:right-0 text-white z-30">
             <MailList />
           </div>
         </div>
       </section>
 
       {/* ----------------- Mission & Vision -------------- editing */}
-      <section className="relative p-0 grid lg:grid-cols-1 shadow-md">
+      <section className="relative p-0 grid md:grid-cols-[1fr_1.5fr] lg:grid-cols-1 shadow-md">
+
         <div className="relative py-16 md:py-32 px-6 md:px-12 self-stretch bg-[#000000] -mx-4 bg-center z-0">
           <div
             className="absolute inset-0 bg-cover bg-center z-0 opacity-50"
             style={{ backgroundImage: `url(${mission_image})` }}
           ></div>
           <div className="relative flex flex-col gap-16 w-full mx-auto h-full justify-center items-center z-10">
-            <h2 className="relative text-white inline-block text-3xl sm:text-6xl">
+              <h2 className="relative text-white inline-block text-3xl sm:text-6xl">
               Mission
               <span className="absolute left-1/2 transform -translate-x-1/2 bottom-[-10px] w-3/4 h-0.5 bg-c_accent"></span>
             </h2>
             <div className="flex gap-8">
-              <p className="text-white text-center max-w-prose lg:max-w-screen-lg">
-                At Code Kids PK, we are dedicated to transforming the learners
-                of today into the disrupters of tomorrow. Our mission is to
-                spark a lifelong passion for innovation and curiosity in each
-                student. We create an environment where exploration,
-                experimentation, and collaboration are not just encouraged but
-                celebrated, fostering a sense of inclusion and support. Our
-                educational approach goes beyond the traditional, emphasizing
-                hands-on learning that cultivates critical thinking,
-                problem-solving skills, and a deep reverence for STEM
-                disciplines. We are committed to inspiring young minds to
-                embrace technology, encouraging them to see themselves as future
-                innovators, changemakers, and leaders. By empowering the leaders
-                of tomorrow, we are laying the groundwork for a brighter, more
-                innovative future for all.
+              <p className="text-white text-center">
+                At Code Kids PK, we are dedicated to transforming the learners of today into the disrupters of tomorrow. Our mission is to spark a lifelong passion for innovation and curiosity in each student. We create an environment where exploration, experimentation, and collaboration are not just encouraged but celebrated, fostering a sense of inclusion and support. Our educational approach goes beyond the traditional, emphasizing hands-on learning that cultivates critical thinking, problem-solving skills, and a deep reverence for STEM disciplines. We are committed to inspiring young minds to embrace technology, encouraging them to see themselves as future innovators, changemakers, and leaders. By empowering the leaders of tomorrow, we are laying the groundwork for a brighter, more innovative future for all.
               </p>
             </div>
-          </div>
+        
         </div>
-      </section>
+        </div>
+
+        </section>
 
       {/* ----------------- Core Values -------------- */}
-      <section className="text-center 2xl:max-w-[1440px] 2xl:mx-auto">
+      <section className="text-center">
         <h2 className="relative inline-block text-3xl sm:text-6xl">
-          Our Unique Offerings
+        Our Unique Offerings
           <span className="absolute left-1/2 transform -translate-x-1/2 bottom-[-10px] w-3/4 h-0.5 bg-c_accent"></span>
         </h2>
         <p className="mt-6 mb-12 max-w-3xl mx-auto">
-          There are unique opportunities for young people moving into the
-          workplace today, but also unprecedented difficulties and demands. Code
-          Kids was started by parents who have a good understanding of those
-          necessary skills not currently taught in mainstream schools.
+        Code Kids PK is led by young professionals who are uniquely positioned to understand 
+        the current demands of the job market. This firsthand insight allows us to tailor 
+        our curriculum to teach exactly what is needed for success in today's dynamic workplace.
         </p>
 
         {/* Values */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
           <div className="p-3 flex flex-col bg-c_primary-light/10 rounded-md shadow-md">
             <div className="mb-4 self-center text-white w-24 h-24 rounded-full p-2 bg-c_primary-light flex justify-center items-center">
               <FontAwesomeIcon size="3x" icon={faRoad} />
             </div>
             <h3 className="">Progressive Learning Path</h3>
             <p>
-              Start your child’s journey with fundamental basics in coding,
-              laying a strong groundwork and later delve into advanced concepts
-              and cutting-edge skills that prepare for the future of technology
-              and innovation.
+            Start your child’s journey with fundamental basics in coding, 
+            laying a strong groundwork and later delve into advanced concepts and cutting-edge 
+            skills that prepare for the future of technology and innovation.
             </p>
           </div>
 
@@ -144,10 +132,8 @@ export default function Home() {
             </div>
             <h3 className="">Bridging Generational Disconnect</h3>
             <p>
-              Our instructors, who are Gen Z university students themselves,
-              bring a fresh perspective to teaching. They bring fresh
-              perspectives, current industry insights, and relatable teaching
-              styles that resonate with young learners.
+            Our instructors, who are Gen Z university students themselves, bring a fresh perspective to teaching. 
+            They bring current industry insights and relatable teaching styles that resonate with young learners.
             </p>
           </div>
 
@@ -157,10 +143,9 @@ export default function Home() {
             </div>
             <h3 className="">Innovative Curriculum</h3>
             <p>
-              Our curriculum begins with essential foundational skills, ensuring
-              a thorough understanding. As students move forward, they'll
-              explore advanced concepts and future-ready skills, equipping them
-              to thrive in the rapidly evolving tech landscape.
+            Our curriculum begins with essential foundational skills, ensuring a thorough understanding. 
+            As students move forward, they'll explore advanced concepts and future-ready skills, 
+            equipping them to thrive in the rapidly evolving tech landscape.
             </p>
           </div>
 
@@ -170,9 +155,8 @@ export default function Home() {
             </div>
             <h3 className="">Flexible Learning Options</h3>
             <p>
-              Choose from diverse formats including full-time, part-time, and
-              online courses, allowing your child to study at their own pace and
-              balance learning with other commitments.
+            Choose from diverse formats including full-time, part-time, and online courses, 
+            allowing your child to study at their own pace and balance learning with other day-to-day commitments.
             </p>
           </div>
         </div>
@@ -230,9 +214,8 @@ function Offerings() {
             <span className="absolute left-1/2 transform -translate-x-1/2 bottom-[-10px] w-3/4 h-0.5 bg-c_accent"></span>
           </h2>
           <p className="text-white mt-6 mb-12 max-w-3xl mx-auto">
-            Step into a vibrant learning environment where we make coding
-            accessible and enjoyable, equipping young learners with skills
-            crucial for future innovation.
+                Step into a vibrant learning environment where we make coding accessible and enjoyable, 
+                equipping young learners with skills crucial for future innovation.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -242,8 +225,8 @@ function Offerings() {
               </div>
               <h3>Camps and Classes</h3>
               <p className="text-white flex-grow">
-                Engage in immersive, project-based learning through holiday
-                camps and after-school/weekend classes during the school year!
+                Engage in immersive, project-based learning through holiday camps and after-school/weekend 
+                classes during the school year!
               </p>
               <Link to="/programs">
                 <Button
@@ -261,9 +244,8 @@ function Offerings() {
               </div>
               <h3>1:1 Tutoring</h3>
               <p className="text-white flex-grow">
-                Experience our personalized tutoring sessions designed to cater
-                to your child's unique needs, helping them excel through
-                focused, individualized learning.
+                    Experience our personalized tutoring sessions designed to cater to your child's unique needs, 
+                    helping them excel through focused, individualized learning.
               </p>
               <Button
                 onClick={handleTutoringClick}
@@ -280,8 +262,8 @@ function Offerings() {
               </div>
               <h3 className="">Services</h3>
               <p className="text-white flex-grow">
-                We provide a variety of services, from birthday parties and
-                school workshops to corporate events and tech-focused offerings.
+                  We provide a variety of services, 
+                  from birthday parties and school workshops to corporate events and tech-focused offerings.
               </p>
 
               <Button
@@ -348,7 +330,7 @@ function Testimonials() {
   const [testimonials, setTestimonials] = useState([]);
 
   useEffect(() => {
-    fetch("/content/testimonials.json")
+    fetch("src/content/testimonials.json")
       .then(response => response.json())
       .then(data => setTestimonials(data.testimonials));
   }, []);
@@ -389,8 +371,8 @@ function Testimonials() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="md:m-4 bg-c_primary-light" />
-        <CarouselNext className="md:m-4 bg-c_primary-light" />
+        <CarouselPrevious />
+        <CarouselNext />
       </Carousel>
     </section>
   );
@@ -400,7 +382,7 @@ function FAQs() {
   const [faqs, setFaqs] = useState([]);
 
   useEffect(() => {
-    fetch("/content/faqs.json")
+    fetch("src/content/faqs.json")
       .then(response => response.json())
       .then(data => setFaqs(data.faqs));
   }, []);

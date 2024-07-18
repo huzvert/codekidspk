@@ -13,15 +13,36 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
+function applyDiscount(Course, enrollments) {
+  if (Course.discount) {
+    const discountPrice = (Course.price * Course.discount) / 100;
+    Course.price = Course.price - discountPrice;
+  }
+
+  if (
+    Course.multi_enrollment_discount?.applicable &&
+    enrollments >= Course.multi_enrollment_discount?.min_enrollments
+  ) {
+    Course.price =
+      Course.price -
+      (Course.price * Course.multi_enrollment_discount.discount_percentage) /
+        100;
+  }
+
+  return Course;
+}
+
 export default function AddToCart({ course }) {
   const { cart, setCart } = useContext(CartContext);
   const [enrollments, setEnrollments] = useState(1);
   const [date, setDate] = useState("");
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
+  const Course = applyDiscount(JSON.parse(JSON.stringify(course)), enrollments);
+
   const handleAddToCart = () => {
     const existingCourseIndex = cart.items.findIndex(
-      item => item.id === course.id
+      item => item.id === Course.id
     );
     let newItems;
 
@@ -37,19 +58,19 @@ export default function AddToCart({ course }) {
       newItems = [
         ...cart.items,
         {
-          id: course.id,
-          name: course.title,
-          price: course.price,
+          id: Course.id,
+          name: Course.title,
+          price: Course.price,
           enrollments: Number(enrollments),
           date: date,
-          image: course.coverImage,
+          image: Course.coverImage,
         },
       ];
     }
 
     setCart({
       items: newItems,
-      total: cart.total + Number(course.price) * Number(enrollments),
+      total: cart.total + Number(Course.price) * Number(enrollments),
     });
     setIsDialogOpen(false); // Close the dialog
   };
@@ -68,9 +89,9 @@ export default function AddToCart({ course }) {
 
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
-          <DialogTitle>{course.title}</DialogTitle>
+          <DialogTitle>{Course.title}</DialogTitle>
           <DialogDescription>
-            Price: <span className="text-c_accent">PKR {course.price}/-</span>
+            Price: <span className="text-c_accent">PKR {Course.price}/-</span>
           </DialogDescription>
         </DialogHeader>
 
@@ -94,9 +115,9 @@ export default function AddToCart({ course }) {
             id="date"
             name="date"
             className="input bg-white border border-gray-300 rounded-md p-2 w-full focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
-            onChange={e => setDate(course.timetables[e.target.value])}
+            onChange={e => setDate(Course.timetables[e.target.value])}
           >
-            {course.timetables?.map((timetable, index) => (
+            {Course.timetables?.map((timetable, index) => (
               <option key={index} value={index}>
                 {timetable.dates} - {timetable.timings}
               </option>

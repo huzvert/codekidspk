@@ -67,15 +67,37 @@ export default function CourseDetails() {
           <div className="mb-4">
             <h4 className="text-gray-800 font-semibold">Price</h4>
             <p className="text-gray-600">
-              Original Price: PKR {course?.price}/-{" "}
-            </p>
-            {course?.discount > 0 && (
-              <p className="text-gray-600">Discount: {course?.discount}%</p>
-            )}
-            <p className="text-gray-600">
-              Discounted Price: PKR {course?.discounted_price}/-
+              PKR{" "}
+              {course.discount > 0 ? (
+                <>
+                  <span className="line-through text-gray-500">
+                    {course?.price}/-
+                  </span>
+                  <span className="text-c_accent font-bold ml-2">
+                    {course?.price - course?.price * (course?.discount / 100)}/-
+                  </span>
+                </>
+              ) : (
+                <span className="text-c_accent font-bold">
+                  {course?.price}/-
+                </span>
+              )}
             </p>
           </div>
+
+          {course?.multi_enrollment_discount?.applicable && (
+            <div className="mb-4">
+              <h4 className="text-gray-800 font-semibold">
+                Multi-Enrollment Discount
+              </h4>
+              <p className="text-gray-600">
+                Enroll {course.multi_enrollment_discount.min_enrollments} or
+                more students in this course to receive a{" "}
+                {course.multi_enrollment_discount.discount_percentage}% discount
+                per student!
+              </p>
+            </div>
+          )}
 
           <AddToCart course={course} />
         </div>

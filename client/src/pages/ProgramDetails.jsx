@@ -91,8 +91,33 @@ function CourseCard({ course }) {
         </div>
 
         <div className="font-bold mt-3 underline">
-          Price: <span className="text-c_accent"> PKR {course.price}/- </span>
+          Price:{" "}
+          <span className="text-gray-600">
+            PKR{" "}
+            {course.discount > 0 ? (
+              <>
+                <span className="line-through text-gray-500">
+                  {course?.price}/-
+                </span>
+                <span className="text-c_accent font-bold ml-2">
+                  {course?.price - course?.price * (course?.discount / 100)}/-
+                </span>
+              </>
+            ) : (
+              <span className="text-c_accent font-bold">{course?.price}/-</span>
+            )}
+          </span>
         </div>
+
+        {course?.multi_enrollment_discount?.applicable && (
+          <div className="font-bold mt-3 underline">
+            <span className="text-c_accent">
+              {course.multi_enrollment_discount.discount_percentage}%
+            </span>{" "}
+            off for {course.multi_enrollment_discount.min_enrollments}+
+            enrollments!
+          </div>
+        )}
 
         <div className="mt-auto space-x-5">
           <Link to={`/programs/course/${course.id}`}>

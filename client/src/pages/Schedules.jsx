@@ -128,7 +128,7 @@ export default function Schedules() {
       <div className="max-w-xl">
         <FilterByLocations locations={locations} setLocations={setLocations} />
       </div>
-      <div className="container mx-auto py-8">
+      <div className="lg:container mx-auto py-8">
         {filteredSchedules.length > 0 || months.length ? (
           <Schedule title="Filtered" schedule={filteredSchedules} />
         ) : (

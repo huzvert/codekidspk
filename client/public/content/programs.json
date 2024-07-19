@@ -8,7 +8,7 @@
         "prerequisites": ""
       },
       "coverImage": "/assets/python.jpg",
-      "courses": [1, 2]
+      "courses": [14]
     },
 
     {
@@ -19,7 +19,7 @@
         "prerequisites": ""
       },
       "coverImage": "/assets/web.jpg",
-      "courses": [3]
+      "courses": [15]
     },
     {
       "id": 3,
@@ -29,7 +29,7 @@
         "prerequisites": ""
       },
       "coverImage": "/assets/app.jpeg",
-      "courses": [4]
+      "courses": [4,13]
     },
     {
       "id": 4,
@@ -50,7 +50,7 @@
         "prerequisites": ""
       },
       "coverImage": "/assets/minecraft.jpg",
-      "courses": [9, 10]
+      "courses": [10]
     },
 
     {

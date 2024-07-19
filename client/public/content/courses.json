@@ -323,6 +323,76 @@
       "one_to_one_tutoring": true,
       "mode": "online",
       "sessions": 1
+    },
+    {
+      "id": 13,
+      "title": "Thunkable for Beginners (7+)",
+      "coverImage": "/assets/thunkable.png",
+      "description": "",
+      "timetables": [
+        {
+          "location": "Leo's Workshop Gulberg",
+          "dates": "July 29 - Aug 9 (Mon - Fri)",
+          "timings": "10AM - 11AM"
+        }
+      ],
+      "price": 10000,
+      "multi_enrollment_discount": {
+        "applicable": true,
+        "min_enrollments": 2,
+        "discount_percentage": 15
+      },
+      "discount": 0,
+      "availability": 10,
+      "one_to_one_tutoring": true,
+      "sessions": 1
+    },
+    {
+      "id": 14,
+      "title": "Introductory Python (10+)",
+      "coverImage": "/assets/python_adv.png",
+      "description": "",
+      "timetables": [
+        {
+          "location": "Leo's Workshop Gulberg",
+          "dates": "July 29 - Aug 9 (Mon - Fri)",
+          "timings": "10AM - 11AM"
+        }
+      ],
+      "price": 10000,
+      "multi_enrollment_discount": {
+        "applicable": true,
+        "min_enrollments": 2,
+        "discount_percentage": 15
+      },
+      "discount": 0,
+      "availability": 10,
+      "one_to_one_tutoring": true,
+      "sessions": 1
+    },
+    {
+      "id": 15,
+      "title": "Introduction to JavaScript (12+)",
+      "coverImage": "/assets/webdev_intro.png",
+      "description": "",
+      "timetables": [
+        {
+          "location": "Leo's Workshop Gulberg",
+          "dates": "July 29 - Aug 9 (Mon - Fri)",
+          "timings": "10AM - 11AM"
+        }
+      ],
+      "price": 10000,
+      "multi_enrollment_discount": {
+        "applicable": true,
+        "min_enrollments": 2,
+        "discount_percentage": 15
+      },
+      "discount": 0,
+      "availability": 10,
+      "one_to_one_tutoring": true,
+      "sessions": 1
     }
+
   ]
 }

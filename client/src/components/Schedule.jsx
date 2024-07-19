@@ -16,6 +16,8 @@ function Schedule({ title, schedule = [], theme = "dark" }) {
   const hasDates = schedule.some(item => item?.dates);
   const hasTimings = schedule.some(item => item?.timings);
   const hasCourse = schedule.some(item => item?.course);
+  const hasCamp = schedule.some(item => item?.camp);
+  const hasSessions = schedule.some(item => item?.sessions);
 
   // Theme-based class names
   const cardClass =
@@ -37,6 +39,10 @@ function Schedule({ title, schedule = [], theme = "dark" }) {
           <Table className="min-w-full divide-y divide-gray-700">
             <TableHeader>
               <TableRow className={headerClass}>
+                {hasCamp && <TableHead className={cellClass}>Camp</TableHead>}
+                {hasSessions && (
+                  <TableHead className={cellClass}>Sessions</TableHead>
+                )}
                 {hasLocation && (
                   <TableHead className={cellClass}>Location</TableHead>
                 )}
@@ -52,19 +58,37 @@ function Schedule({ title, schedule = [], theme = "dark" }) {
             <TableBody>
               {schedule.map((item, index) => (
                 <TableRow key={index} className={`${hoverClass} ${cardClass}`}>
+                  {hasCamp && (
+                    <TableCell className={cellClass}>
+                      {item?.camp || "-"}
+                    </TableCell>
+                  )}
+                  {hasSessions && (
+                    <TableCell className={cellClass}>
+                      {item?.sessions !== undefined && item?.sessions !== -1
+                        ? item.sessions
+                        : "-"}
+                    </TableCell>
+                  )}
                   {hasLocation && (
                     <TableCell className={cellClass}>
-                      {item?.location}
+                      {item?.location || "-"}
                     </TableCell>
                   )}
                   {hasDates && (
-                    <TableCell className={cellClass}>{item?.dates}</TableCell>
+                    <TableCell className={cellClass}>
+                      {item?.dates || "-"}
+                    </TableCell>
                   )}
                   {hasTimings && (
-                    <TableCell className={cellClass}>{item?.timings}</TableCell>
+                    <TableCell className={cellClass}>
+                      {item?.timings || "-"}
+                    </TableCell>
                   )}
                   {hasCourse && (
-                    <TableCell className={cellClass}>{item?.course}</TableCell>
+                    <TableCell className={cellClass}>
+                      {item?.course || "-"}
+                    </TableCell>
                   )}
                 </TableRow>
               ))}

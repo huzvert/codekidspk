@@ -5,8 +5,29 @@ import { ChevronDown, Check } from "lucide-react";
 export default function Schedules() {
   const [schedules, setSchedules] = useState([]);
   const [filteredSchedules, setFilteredSchedules] = useState([]);
+  const [camps, setCamps] = useState([]);
   const [locations, setLocations] = useState([]);
   const [months, setMonths] = useState([]);
+
+  const monthMapping = {
+    Jan: "January",
+    Feb: "February",
+    Mar: "March",
+    Apr: "April",
+    May: "May",
+    Jun: "June",
+    Jul: "July",
+    Aug: "August",
+    Sep: "September",
+    Oct: "October",
+    Nov: "November",
+    Dec: "December",
+  };
+
+  const normalizeMonth = dateStr => {
+    const monthAbbreviation = dateStr.substring(0, 3);
+    return monthMapping[monthAbbreviation] || dateStr;
+  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -19,6 +40,8 @@ export default function Schedules() {
           .filter(course => course.timetables.length > 0)
           .map(course =>
             course.timetables.map(timetable => ({
+              camp: timetable.camp,
+              sessions: timetable.sessions,
               location: timetable.location,
               dates: timetable.dates,
               timings: timetable.timings,
@@ -42,8 +65,16 @@ export default function Schedules() {
           location,
           selected: false,
         }));
-
         setLocations(uniqueLocations);
+
+        // Extract unique camps from all timetables
+        const uniqueCamps = new Set();
+        courses.courses.forEach(course => {
+          course.timetables.forEach(timetable => {
+            uniqueCamps.add(timetable.camp);
+          });
+        });
+        setCamps(Array.from(uniqueCamps));
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -59,7 +90,9 @@ export default function Schedules() {
     if (months.length > 0) {
       filteredSchedules = filteredSchedules.filter(schedule =>
         months.some(month =>
-          schedule.dates.toLowerCase().includes(month.toLowerCase())
+          normalizeMonth(schedule.dates)
+            .toLowerCase()
+            .includes(month.toLowerCase())
         )
       );
     }
@@ -93,21 +126,31 @@ export default function Schedules() {
         />
       </div>
       <div className="max-w-xl">
-        <FilterByLocatons locations={locations} setLocations={setLocations} />
+        <FilterByLocations locations={locations} setLocations={setLocations} />
       </div>
-      <Schedule
-        title="Summer Camps (July)"
-        schedule={
-          filteredSchedules.length > 0 || months.length
-            ? filteredSchedules
-            : schedules
-        }
-      />
+      <div className="container mx-auto py-8">
+        {filteredSchedules.length > 0 || months.length ? (
+          <Schedule title="Filtered" schedule={filteredSchedules} />
+        ) : (
+          <ul>
+            {camps.map((camp, index) => (
+              <div key={index}>
+                <Schedule
+                  title={camp}
+                  schedule={schedules.filter(
+                    schedule => schedule.camp === camp
+                  )}
+                />
+              </div>
+            ))}
+          </ul>
+        )}
+      </div>
     </div>
   );
 }
 
-function FilterByLocatons({ locations, setLocations }) {
+function FilterByLocations({ locations, setLocations }) {
   return (
     <div className="flex flex-col">
       <h2 className="text-lg md:text-xl lg:text-2xl font-semibold text-gray-800 mb-4">

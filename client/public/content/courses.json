@@ -97,14 +97,14 @@
           "camp": "Summer Camps(June)",
           "sessions": 4,
           "location": "Daftarkhwan DHA Phase V",
-          "dates": "June 3 - 13 (Mon to Thu)",
+          "dates": "June 3 - 13 (Mon - Thu)",
           "timings": "11AM to 12PM"
         },
         {
           "camp": "Summer Camps(July)",
           "sessions": -1,
           "location": "NASTP Cantt.",
-          "dates": "July 8 - 12 (Mon to Fri)",
+          "dates": "July 8 - 12 (Mon - Fri)",
           "timings": "11AM to 12PM"
         }
       ],
@@ -131,7 +131,7 @@
           "camp": "Summer Camps(July)",
           "sessions": -1,
           "location": "NASTP Cantt.",
-          "dates": "July 22 - 26 (Mon to Fri)",
+          "dates": "July 22 - 26 (Mon - Fri)",
           "timings": "11AM - 12PM"
         }
       ],
@@ -213,14 +213,14 @@
           "camp": "Summer Camps(June)",
           "sessions": 4,
           "location": "Daftarkhwan DHA Phase V",
-          "dates": "June 3 - 13 (Mon to Thu)",
+          "dates": "June 3 - 13 (Mon - Thu)",
           "timings": "11AM to 12PM"
         },
         {
           "camp": "Summer Camps(June)",
           "sessions": -1,
           "location": "NASTP Cantt.",
-          "dates": "June 24 - 28 (Mon to Fri)",
+          "dates": "June 24 - 28 (Mon - Fri)",
           "timings": "11AM to 12PM"
         },
         {
@@ -260,7 +260,7 @@
           "camp": "Summer Camps(July)",
           "sessions": 5,
           "location": "Leo's Workshop Gulberg",
-          "dates": "July 22 - Aug 2 (Mon to Fri)",
+          "dates": "July 22 - Aug 2 (Mon - Fri)",
           "timings": "10AM to 11AM"
         }
       ],
@@ -284,11 +284,11 @@
           "camp": "Summer Camps(August)",
           "sessions": 10,
           "location": "Online",
-          "dates": "Aug 12-23 (Mon - Fri)",
+          "dates": "Aug 12 - 23 (Mon - Fri)",
           "timings": "12PM to 1PM"
         }
       ],
-      "price": 10000,
+      "price": 12000,
       "multi_enrollment_discount": {
         "applicable": true,
         "min_enrollments": 2,
@@ -300,7 +300,7 @@
     },
     {
       "id": 12,
-      "title": "Introduction to C++",
+      "title": "Fundamentals of C++",
       "coverImage": "/assets/cpp.png",
       "description": "",
       "timetables": [
@@ -308,11 +308,11 @@
           "camp": "Summer Camps(August)",
           "sessions": 10,
           "location": "Online",
-          "dates": "July 29 - Aug 9 (Mon - Fri)",
-          "timings": "12PM to 1PM"
+          "dates": "Aug 5 - 22 (Mon - Thu)",
+          "timings": "1PM to 2:30PM"
         }
       ],
-      "price": 10000,
+      "price": 12000,
       "multi_enrollment_discount": {
         "applicable": true,
         "min_enrollments": 2,
@@ -331,12 +331,14 @@
       "description": "",
       "timetables": [
         {
-          "location": "Leo's Workshop Gulberg",
+          "camp": "Summer Camps(August)",
+          "sessions": 10,
+          "location": "Online",
           "dates": "July 29 - Aug 9 (Mon - Fri)",
-          "timings": "10AM - 11AM"
+          "timings": "11AM to 12PM"
         }
       ],
-      "price": 10000,
+      "price": 11000,
       "multi_enrollment_discount": {
         "applicable": true,
         "min_enrollments": 2,
@@ -392,7 +394,70 @@
       "availability": 10,
       "one_to_one_tutoring": true,
       "sessions": 1
+    },
+    {
+      "id": 16,
+      "title": "Web Development with JavaScript",
+      "coverImage": "/assets/webdev_intro.png",
+      "description": "",
+      "timetables": [
+        {
+          "camp":"Summer Camps(August)",
+          "sessions": 10,
+          "location": "Online",
+          "dates": "July 29 - Aug 9 (Mon - Fri)",
+          "timings": "1PM to 2PM"
+        }
+      ],
+      "price": 11000,
+      "multi_enrollment_discount": {
+        "applicable": true,
+        "min_enrollments": 2,
+        "discount_percentage": 15
+      },
+      "discount": 0,
+      "availability": 10,
+      "one_to_one_tutoring": true,
+      "sessions": 1
+    },
+    {
+      "id": 17,
+      "title": "Minecraft Coding",
+      "coverImage": "/assets/webdev_intro.png",
+      "description": "",
+      "timetables": [
+        {
+          "camp":"Summer Camps(June)",
+          "sessions": -1,
+          "location": "NASTP Cantt.",
+          "dates": "June 24 - 28 (Mon - Fri)",
+          "timings": "11 AM to 12PM"
+        },
+        {
+          "camp":"Summer Camps(June)",
+          "sessions": 4,
+          "location": "Daftarkhwan DHA Phase V",
+          "dates": "June 3 - 13 (Mon - Thu)",
+          "timings": "11 AM to 12PM"
+        },
+        {
+          "camp":"Summer Camps(August)",
+          "sessions": 10,
+          "location": "Online",
+          "dates": "Aug 12 -23 (Mon - Fri)",
+          "timings": "11 AM to 12PM"
+        }
+      ],
+      "price": 11000,
+      "multi_enrollment_discount": {
+        "applicable": true,
+        "min_enrollments": 2,
+        "discount_percentage": 15
+      },
+      "discount": 0,
+      "availability": 10,
+      "one_to_one_tutoring": true,
+      "sessions": 1
     }
-
   ]
 }

@@ -19,7 +19,7 @@
         "prerequisites": ""
       },
       "coverImage": "/assets/web.jpg",
-      "courses": [15]
+      "courses": [15, 16]
     },
     {
       "id": 3,
@@ -50,7 +50,7 @@
         "prerequisites": ""
       },
       "coverImage": "/assets/minecraft.jpg",
-      "courses": [10]
+      "courses": [10, 17]
     },
 
     {
@@ -82,6 +82,16 @@
       },
       "coverImage": "/assets/AIML.jpg",
       "courses": [11]
+    },
+    {
+      "id": 9,
+      "title": "Thunkable",
+      "requirements": {
+        "age": "Age: 7+ years",
+        "prerequisites": ""
+      },
+      "coverImage": "/assets/thunkable.png",
+      "courses": [13]
     }
   ]
 }

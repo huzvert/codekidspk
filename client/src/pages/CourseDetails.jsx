@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import AddToCart from "@/components/AddToCart";
 import Schedule from "@/components/Schedule";
+import { getTodayDateAndMonth } from "@/lib/utils"
 
 export default function CourseDetails() {
   const [course, setCourse] = useState({});
@@ -15,6 +16,9 @@ export default function CourseDetails() {
         const course = response.courses.find(
           course => course.id === parseInt(id)
         );
+        
+        const {date: currDate, month: currMonth} = getTodayDateAndMonth();
+        course.timetables = course.timetables.filter(timetable => timetable.end_month > currMonth || (timetable.end_month == currMonth && timetable.end_date >= currDate));
         setCourse(course);
       } catch (error) {
         console.error("Error fetching data:", error);

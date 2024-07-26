@@ -21,6 +21,11 @@ export default function ProgramDetails() {
     ))
   }
 
+  function filterOutdatesTimetables(timetables) {
+    const {date: currDate, month: currMonth} = getTodayDateAndMonth();
+    return timetables.filter(timetable => timetable.end_month > currMonth || (timetable.end_month == currMonth && timetable.end_date >= currDate));
+  }
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -36,8 +41,12 @@ export default function ProgramDetails() {
           courseIds.includes(course.id)
         );
         
-        const uptodateCourses = filterOutdatedCourses(courses);
+        let uptodateCourses = filterOutdatedCourses(courses);
         if (!uptodateCourses.length) setNoCourses(true);
+        uptodateCourses = uptodateCourses.map(course => {
+          course.timetables = filterOutdatesTimetables(course.timetables)
+          return course;
+        })
         setCourses(uptodateCourses);
       } catch (error) {
         console.error("Error fetching data:", error);

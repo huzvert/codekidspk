@@ -4,11 +4,21 @@ import { Button } from "@/components/ui/button";
 import SkeletonCard from "@/components/SkeletonCard";
 import AddToCart from "@/components/AddToCart";
 import { Link } from "react-router-dom";
+import { getTodayDateAndMonth } from "@/lib/utils"
 
 export default function ProgramDetails() {
   const [program, setProgram] = useState([]);
   const [courses, setCourses] = useState([]);
   const { id } = useParams();
+
+  function filterOutdatedCourses(courses) {
+    const {date: currDate, month: currMonth} = getTodayDateAndMonth();
+    return courses.filter(course => {
+      course.timetables.filter(timetable => {
+          
+      })
+    })
+  }
 
   useEffect(() => {
     const fetchData = async () => {
@@ -24,7 +34,8 @@ export default function ProgramDetails() {
         const courses = coursesResponse.courses.filter(course =>
           courseIds.includes(course.id)
         );
-
+        
+        console.log(courses)
         setCourses(courses);
       } catch (error) {
         console.error("Error fetching data:", error);

@@ -65,7 +65,6 @@ export default function Schedules() {
             locationSet.add(schedule.location);
           }
         });
-
         const uniqueLocations = Array.from(locationSet).map(location => ({
           location,
           selected: false,
@@ -75,7 +74,9 @@ export default function Schedules() {
         // Extract unique camps from all timetables
         const uniqueCamps = new Set();
         courses.courses.forEach(course => {
-          course.timetables.forEach(timetable => {
+          course.timetables
+            .filter(timetable => timetable.end_month > currMonth || (timetable.end_month == currMonth && timetable.end_date >= currDate))
+            .forEach(timetable => {
             uniqueCamps.add(timetable.camp);
           });
         });

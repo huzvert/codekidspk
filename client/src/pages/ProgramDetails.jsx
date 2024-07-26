@@ -9,15 +9,16 @@ import { getTodayDateAndMonth } from "@/lib/utils"
 export default function ProgramDetails() {
   const [program, setProgram] = useState([]);
   const [courses, setCourses] = useState([]);
+  const [noCourses, setNoCourses] = useState(false);
   const { id } = useParams();
 
   function filterOutdatedCourses(courses) {
     const {date: currDate, month: currMonth} = getTodayDateAndMonth();
-    return courses.filter(course => {
-      course.timetables.filter(timetable => {
-          
-      })
-    })
+    return courses.filter(course => (
+      course.timetables.some(timetable => (
+        timetable.end_month > currMonth || (timetable.end_month == currMonth && timetable.end_date >= currDate)
+      ))
+    ))
   }
 
   useEffect(() => {
@@ -35,8 +36,9 @@ export default function ProgramDetails() {
           courseIds.includes(course.id)
         );
         
-        console.log(courses)
-        setCourses(courses);
+        const uptodateCourses = filterOutdatedCourses(courses);
+        if (!uptodateCourses.length) setNoCourses(true);
+        setCourses(uptodateCourses);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -44,6 +46,22 @@ export default function ProgramDetails() {
 
     fetchData();
   }, [id]);
+
+  if (noCourses) {
+    return (
+      <div className="min-h-[100vh] flex items-center justify-center bg-gray-100">
+        <div className="text-center">
+          <h2 className="text-3xl font-semibold text-gray-700 mb-4">No Courses Available</h2>
+          <p className="text-lg text-gray-500">Currently, there are no courses being offered. Please check back later.</p>
+          <div className="mt-6">
+            <Link to="/programs">
+              <Button className="default-button">Explore Other Programs</Button>
+            </Link>
+          </div>
+        </div>
+      </div>
+    )
+  }  
 
   return (
     <main>

@@ -11,14 +11,22 @@
           "sessions": 8,
           "location": "Online",
           "dates": "June 3 - 13 (Mon - Thu)",
-          "timings": "12PM - 1PM"
+          "timings": "12PM - 1PM",
+          "start_date": 3,
+          "start_month": 6,
+          "end_date": 13,
+          "end_month": 6
         },
         {
           "camp": "Summer Camps(July)",
           "sessions": 10,
           "location": "Online",
           "dates": "July 1 - 12 (Mon - Fri)",
-          "timings": "11AM - 12PM"
+          "timings": "11AM - 12PM",
+          "start_date": 1,
+          "start_month": 7,
+          "end_date": 12,
+          "end_month": 7
         }
       ],
       "price": 10000,
@@ -44,7 +52,11 @@
           "sessions": 10,
           "location": "Online",
           "dates": "July 1 - 12 (Mon - Fri)",
-          "timings": "11AM - 12PM"
+          "timings": "11AM - 12PM",
+          "start_date": 1,
+          "start_month": 7,
+          "end_date": 12,
+          "end_month": 7
         }
       ],
       "price": 10000,
@@ -59,6 +71,7 @@
       "mode": "online",
       "sessions": 1
     },
+    
 
     {
       "id": 3,
@@ -71,7 +84,11 @@
           "sessions": 10,
           "location": "Online",
           "dates": "July 1 - 12 (Mon - Fri)",
-          "timings": "1PM - 2PM"
+          "timings": "1PM - 2PM",
+          "start_date": 1,
+          "start_month": 7,
+          "end_date": 12,
+          "end_month": 7
         }
       ],
       "price": 10000,
@@ -86,7 +103,6 @@
       "mode": "online",
       "sessions": 1
     },
-
     {
       "id": 4,
       "title": "App Development with Thunkable",
@@ -98,14 +114,22 @@
           "sessions": 4,
           "location": "Daftarkhwan DHA Phase V",
           "dates": "June 3 - 13 (Mon - Thu)",
-          "timings": "11AM to 12PM"
+          "timings": "11AM - 12PM",
+          "start_date": 3,
+          "start_month": 6,
+          "end_date": 13,
+          "end_month": 6
         },
         {
           "camp": "Summer Camps(July)",
           "sessions": -1,
           "location": "NASTP Cantt.",
           "dates": "July 8 - 12 (Mon - Fri)",
-          "timings": "11AM to 12PM"
+          "timings": "11AM - 12PM",
+          "start_date": 8,
+          "start_month": 7,
+          "end_date": 12,
+          "end_month": 7
         }
       ],
       "price": 10000,
@@ -120,7 +144,6 @@
       "mode": "online",
       "sessions": 1
     },
-
     {
       "id": 5,
       "title": "Roblox Studio Coding",
@@ -132,7 +155,11 @@
           "sessions": -1,
           "location": "NASTP Cantt.",
           "dates": "July 22 - 26 (Mon - Fri)",
-          "timings": "11AM - 12PM"
+          "timings": "11AM - 12PM",
+          "start_date": 22,
+          "start_month": 7,
+          "end_date": 26,
+          "end_month": 7
         }
       ],
       "price": 10000,
@@ -147,6 +174,7 @@
       "mode": "online",
       "sessions": 1
     },
+      
 
     {
       "id": 6,
@@ -214,28 +242,44 @@
           "sessions": 4,
           "location": "Daftarkhwan DHA Phase V",
           "dates": "June 3 - 13 (Mon - Thu)",
-          "timings": "11AM to 12PM"
+          "timings": "11AM - 12PM",
+          "start_date": 3,
+          "start_month": 6,
+          "end_date": 13,
+          "end_month": 6
         },
         {
           "camp": "Summer Camps(June)",
           "sessions": -1,
           "location": "NASTP Cantt.",
           "dates": "June 24 - 28 (Mon - Fri)",
-          "timings": "11AM to 12PM"
+          "timings": "11AM - 12PM",
+          "start_date": 24,
+          "start_month": 6,
+          "end_date": 28,
+          "end_month": 6
         },
         {
           "camp": "Summer Camps(July)",
           "sessions": 10,
           "location": "Online",
           "dates": "July 1 - 12 (Mon - Fri)",
-          "timings": "12PM to 1PM"
+          "timings": "12PM - 1PM",
+          "start_date": 1,
+          "start_month": 7,
+          "end_date": 12,
+          "end_month": 7
         },
         {
           "camp": "Summer Camps(August)",
           "sessions": 10,
           "location": "Online",
           "dates": "Aug 12 - 23 (Mon - Fri)",
-          "timings": "11AM to 12PM"
+          "timings": "11AM - 12PM",
+          "start_date": 12,
+          "start_month": 8,
+          "end_date": 23,
+          "end_month": 8
         }
       ],
       "price": 10000,
@@ -261,7 +305,11 @@
           "sessions": 5,
           "location": "Leo's Workshop Gulberg",
           "dates": "July 22 - Aug 2 (Mon - Fri)",
-          "timings": "10AM to 11AM"
+          "timings": "10AM - 11AM",
+          "start_date": 22,
+          "start_month": 7,
+          "end_date": 2,
+          "end_month": 8
         }
       ],
       "price": 10000,
@@ -285,7 +333,11 @@
           "sessions": 10,
           "location": "Online",
           "dates": "Aug 12 - 23 (Mon - Fri)",
-          "timings": "12PM to 1PM"
+          "timings": "12PM - 1PM",
+          "start_date": 12,
+          "start_month": 8,
+          "end_date": 23,
+          "end_month": 8
         }
       ],
       "price": 12000,
@@ -309,7 +361,11 @@
           "sessions": 10,
           "location": "Online",
           "dates": "Aug 5 - 22 (Mon - Thu)",
-          "timings": "1PM to 2:30PM"
+          "timings": "1PM - 2:30PM",
+          "start_date": 5,
+          "start_month": 8,
+          "end_date": 22,
+          "end_month": 8
         }
       ],
       "price": 12000,
@@ -335,7 +391,11 @@
           "sessions": 10,
           "location": "Online",
           "dates": "July 29 - Aug 9 (Mon - Fri)",
-          "timings": "11AM to 12PM"
+          "timings": "11AM - 12PM",
+          "start_date": 29,
+          "start_month": 7,
+          "end_date": 9,
+          "end_month": 8
         }
       ],
       "price": 11000,
@@ -358,7 +418,11 @@
         {
           "location": "Leo's Workshop Gulberg",
           "dates": "July 29 - Aug 9 (Mon - Fri)",
-          "timings": "10AM - 11AM"
+          "timings": "10AM - 11AM",
+          "start_date": 29,
+          "start_month": 7,
+          "end_date": 9,
+          "end_month": 8
         }
       ],
       "price": 10000,
@@ -381,7 +445,11 @@
         {
           "location": "Leo's Workshop Gulberg",
           "dates": "July 29 - Aug 9 (Mon - Fri)",
-          "timings": "10AM - 11AM"
+          "timings": "10AM - 11AM",
+          "start_date": 29,
+          "start_month": 7,
+          "end_date": 9,
+          "end_month": 8
         }
       ],
       "price": 10000,
@@ -402,11 +470,15 @@
       "description": "",
       "timetables": [
         {
-          "camp":"Summer Camps(August)",
+          "camp": "Summer Camps(August)",
           "sessions": 10,
           "location": "Online",
           "dates": "July 29 - Aug 9 (Mon - Fri)",
-          "timings": "1PM to 2PM"
+          "timings": "1PM - 2PM",
+          "start_date": 29,
+          "start_month": 7,
+          "end_date": 9,
+          "end_month": 8
         }
       ],
       "price": 11000,
@@ -427,25 +499,37 @@
       "description": "",
       "timetables": [
         {
-          "camp":"Summer Camps(June)",
+          "camp": "Summer Camps(June)",
           "sessions": -1,
           "location": "NASTP Cantt.",
           "dates": "June 24 - 28 (Mon - Fri)",
-          "timings": "11 AM to 12PM"
+          "timings": "11AM - 12PM",
+          "start_date": 24,
+          "start_month": 6,
+          "end_date": 28,
+          "end_month": 6
         },
         {
-          "camp":"Summer Camps(June)",
+          "camp": "Summer Camps(June)",
           "sessions": 4,
           "location": "Daftarkhwan DHA Phase V",
           "dates": "June 3 - 13 (Mon - Thu)",
-          "timings": "11 AM to 12PM"
+          "timings": "11AM - 12PM",
+          "start_date": 3,
+          "start_month": 6,
+          "end_date": 13,
+          "end_month": 6
         },
         {
-          "camp":"Summer Camps(August)",
+          "camp": "Summer Camps(August)",
           "sessions": 10,
           "location": "Online",
-          "dates": "Aug 12 -23 (Mon - Fri)",
-          "timings": "11 AM to 12PM"
+          "dates": "Aug 12 - 23 (Mon - Fri)",
+          "timings": "11AM - 12PM",
+          "start_date": 12,
+          "start_month": 8,
+          "end_date": 23,
+          "end_month": 8
         }
       ],
       "price": 11000,
@@ -458,6 +542,6 @@
       "availability": 10,
       "one_to_one_tutoring": true,
       "sessions": 1
-    }
+    } 
   ]
 }

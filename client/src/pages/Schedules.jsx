@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import Schedule from "@/components/Schedule";
 import { ChevronDown, Check } from "lucide-react";
+import { getTodayDateAndMonth } from "@/lib/utils"
 
 export default function Schedules() {
   const [schedules, setSchedules] = useState([]);
@@ -35,11 +36,15 @@ export default function Schedules() {
         const coursesResponse = await fetch("/content/courses.json");
         const courses = await coursesResponse.json();
 
+        const {date: currDate, month: currMonth} = getTodayDateAndMonth();
+        
         // Extract schedule data from courses, excluding empty timetables
         const scheduleData = courses.courses
           .filter(course => course.timetables.length > 0)
           .map(course =>
-            course.timetables.map(timetable => ({
+            course.timetables
+            .filter(timetable => timetable.end_month > currMonth || (timetable.end_month == currMonth && timetable.end_date >= currDate))
+            .map(timetable => ({
               camp: timetable.camp,
               sessions: timetable.sessions,
               location: timetable.location,
